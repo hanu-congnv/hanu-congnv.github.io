@@ -1,0 +1,1222 @@
+<html><head><style>body {
+    display: inline-block;
+    padding: 15px;
+}
+h1, h2 {
+    text-align: center;
+}
+#score {
+    color: blue;
+}
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+table, tr, th, td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+td {
+    vertical-align: text-top;
+}
+.insert {
+    background: #f8d7da;
+}
+.delete {
+    background: #cce5ff;
+}/*
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
+</style></head><body>
+<h1>file: temp\a1_2101040105\Assignment</h1>
+<h2 id='score'>Score: 0.0 (0 passed/ total 30 testcases)</h2>
+<h2 id='score'>NOTE: Sample Only = false</h2>
+<h3>Normal Test Cases</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>-----------------------------------
+1. l</span><span class='INSERT'>Load</span><span class='EQUAL'>i</span><span class='DELETE'>st all</span><span class='INSERT'>ng</span><span class='EQUAL'> books</span><span class='INSERT'>...</span><span class='EQUAL'>
+</span><span class='DELETE'>2.</span><span class='INSERT'>Exception in</span><span class='EQUAL'> </span><span class='INSERT'>thre</span><span class='EQUAL'>ad</span><span class='DELETE'>d</span><span class='EQUAL'> </span><span class='INSERT'>"m</span><span class='EQUAL'>a</span><span class='DELETE'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>ew</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='DELETE'>book
+3</span><span class='INSERT'>java</span><span class='EQUAL'>.</span><span class='DELETE'> ed</span><span class='EQUAL'>i</span><span class='DELETE'>t b</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>No</span><span class='EQUAL'>t</span><span class='INSERT'>FoundExc</span><span class='EQUAL'>e</span><span class='DELETE'> a bo</span><span class='INSERT'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>k
+5.</span><span class='INSERT'>n:</span><span class='EQUAL'> </span><span class='INSERT'>C:\PR1\</span><span class='EQUAL'>s</span><span class='DELETE'>ea</span><span class='EQUAL'>rc</span><span class='DELETE'>h </span><span class='INSERT'>\tutorial\</span><span class='EQUAL'>books</span><span class='INSERT'>.txt</span><span class='EQUAL'> </span><span class='DELETE'>by nam</span><span class='INSERT'>(Th</span><span class='EQUAL'>e</span><span class='DELETE'>
+6.</span><span class='EQUAL'> s</span><span class='DELETE'>or</span><span class='INSERT'>ys</span><span class='EQUAL'>t</span><span class='INSERT'>em</span><span class='EQUAL'> </span><span class='DELETE'>bo</span><span class='INSERT'>cann</span><span class='EQUAL'>o</span><span class='DELETE'>ks</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>fin</span><span class='EQUAL'>d</span><span class='DELETE'>esc</span><span class='INSERT'> th</span><span class='EQUAL'>e</span><span class='DELETE'>nding</span><span class='EQUAL'> </span><span class='DELETE'>by</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>p</span><span class='DELETE'>r</span><span class='INSERT'>ec</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>fi</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d)</span><span class='EQUAL'>
+</span><span class='DELETE'>0</span><span class='INSERT'>	at java</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/j</span><span class='EQUAL'>av</span><span class='DELETE'>e & ex</span><span class='INSERT'>a.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> </span><span class='INSERT'>eam.</span><span class='EQUAL'>op</span><span class='DELETE'>tio</span><span class='INSERT'>e</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Inv</span><span class='INSERT'>0(N</span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>t</span><span class='EQUAL'>i</span><span class='DELETE'>d</span><span class='INSERT'>ve</span><span class='EQUAL'> </span><span class='DELETE'>op</span><span class='INSERT'>Me</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'>h</span><span class='EQUAL'>o</span><span class='DELETE'>n!
+-----------------------------------</span><span class='INSERT'>d)</span><span class='EQUAL'>
+</span><span class='DELETE'>1. lis</span><span class='INSERT'>	a</span><span class='EQUAL'>t </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='DELETE'>ll </span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='DELETE'>ook</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'>
+2. </span><span class='INSERT'>e/j</span><span class='EQUAL'>a</span><span class='DELETE'>dd </span><span class='INSERT'>v</span><span class='EQUAL'>a</span><span class='DELETE'> new bo</span><span class='INSERT'>.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+3</span><span class='EQUAL'>.</span><span class='DELETE'> ed</span><span class='INSERT'>F</span><span class='EQUAL'>i</span><span class='INSERT'>leInputS</span><span class='EQUAL'>t</span><span class='DELETE'> b</span><span class='INSERT'>ream.</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+4. d</span><span class='INSERT'>p</span><span class='EQUAL'>e</span><span class='INSERT'>n(Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> book
+5</span><span class='INSERT'>m</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>se</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>rch bo</span><span class='INSERT'>va.i</span><span class='EQUAL'>o</span><span class='DELETE'>ks by </span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='INSERT'>.<init>(Fil</span><span class='EQUAL'>e</span><span class='INSERT'>InputStream.java:158)</span><span class='EQUAL'>
+</span><span class='DELETE'>6. sor</span><span class='INSERT'>	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>ook</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> d</span><span class='EQUAL'>e</span><span class='DELETE'>s</span><span class='INSERT'>/java.util.S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='INSERT'>r.<i</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='EQUAL'>i</span><span class='INSERT'>t>(Sca</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='INSERT'>ner.java:641)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>by p</span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>1.<in</span><span class='EQUAL'>i</span><span class='INSERT'>t>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>r1</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e &</span><span class='INSERT'>a:56)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>BookManag</span><span class='EQUAL'>e</span><span class='DELETE'>x</span><span class='INSERT'>r.loadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='INSERT'>le(B</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>okManage</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>.java:30)
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>n.main(Mai</span><span class='EQUAL'>n</span><span class='INSERT'>.java</span><span class='EQUAL'>:</span><span class='INSERT'>13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Loading books...
+Exception in thread "main" java.io.FileNotFoundExcepti</span><span class='EQUAL'>o</span><span class='INSERT'>n: C:\PR1\src\t</span><span class='EQUAL'>u</span><span class='INSERT'>to</span><span class='EQUAL'>r</span><span class='INSERT'>ial\books.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cann</span><span class='EQUAL'>o</span><span class='INSERT'>t find the </span><span class='EQUAL'>p</span><span class='INSERT'>a</span><span class='EQUAL'>t</span><span class='INSERT'>h specified)
+	at java.base/java.</span><span class='EQUAL'>io</span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>219)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.io.FileInputStream.<init></span><span class='EQUAL'>(</span><span class='INSERT'>Fil</span><span class='EQUAL'>e</span><span class='INSERT'>InputStrea</span><span class='EQUAL'>m</span><span class='DELETE'>p</span><span class='INSERT'>.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> Scanner1.<init>(Scanner1.java:56</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad "main"</span><span class='EQUAL'> </span><span class='INSERT'>java.io.FileNotFoundException: C:\PR1\src\tutorial\</span><span class='EQUAL'>book</span><span class='INSERT'>s.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cannot f</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'> the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>	a</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>ok </span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='INSERT'>.op</span><span class='EQUAL'>e</span><span class='DELETE'>:
+E</span><span class='EQUAL'>n</span><span class='INSERT'>0(Na</span><span class='EQUAL'>t</span><span class='INSERT'>ive M</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>thod)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputStream.</span><span class='EQUAL'>o</span><span class='DELETE'>k</span><span class='INSERT'>pen(FileInputStream.java:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.<</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>nit>(Fil</span><span class='EQUAL'>e</span><span class='INSERT'>InputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>Added</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.</span><span class='EQUAL'>u</span><span class='INSERT'>til.S</span><span class='EQUAL'>c</span><span class='INSERT'>anner.<init>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>ssfu</span><span class='INSERT'>r.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.</span><span class='EQUAL'>l</span><span class='INSERT'>oadFromFi</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>e(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.io.FileNotFoundException: C:\PR1\src\tutorial\</span><span class='EQUAL'>book</span><span class='INSERT'>s.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cannot f</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'> the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>	a</span><span class='EQUAL'>t</span><span class='INSERT'> java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.open0(Native</span><span class='EQUAL'> </span><span class='INSERT'>Method)
+	at java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputStream.</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>pen(FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='DELETE'>e</span><span class='INSERT'>.java</span><span class='EQUAL'>:</span><span class='INSERT'>219)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/java.io.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>pu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='INSERT'>am.<init>(FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.java:158)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>ook p</span><span class='INSERT'>ase/java.util.Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='INSERT'>r.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='DELETE'>Dupl</span><span class='INSERT'>	at Scanner1.<in</span><span class='EQUAL'>i</span><span class='INSERT'>t>(S</span><span class='EQUAL'>ca</span><span class='INSERT'>nner1.java:56)
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r.loa</span><span class='EQUAL'>d</span><span class='INSERT'>FromFile(BookManager.java:30)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+ID    Name       </span><span class='EQUAL'> </span><span class='DELETE'>                                 </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>th</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+    1</span><span class='INSERT'>ad</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>"ma</span><span class='EQUAL'>in</span><span class='DELETE'>k big</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.io.FileNotFou</span><span class='EQUAL'>nd</span><span class='INSERT'>Exception:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>C:\PR1\s</span><span class='EQUAL'>r</span><span class='INSERT'>c\tut</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='EQUAL'>ri</span><span class='DELETE'>ch                            10</span><span class='INSERT'>al\books</span><span class='EQUAL'>.</span><span class='DELETE'>95
+    2</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='INSERT'>(</span><span class='EQUAL'>The </span><span class='DELETE'>7</span><span class='INSERT'>system</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>c</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='INSERT'>nno</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='DELETE'>o</span><span class='EQUAL'>f</span><span class='INSERT'>ind</span><span class='EQUAL'> </span><span class='INSERT'>t</span><span class='EQUAL'>h</span><span class='DELETE'>ig</span><span class='INSERT'>e pat</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='INSERT'>ci</span><span class='EQUAL'>f</span><span class='DELETE'>f</span><span class='INSERT'>i</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>d)
+	at java.base/java.io.FileInputStream.open0(Na</span><span class='EQUAL'>tive </span><span class='INSERT'>Method)
+	at java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.</span><span class='EQUAL'>op</span><span class='INSERT'>en(Fi</span><span class='EQUAL'>le</span><span class='DELETE'>            15</span><span class='INSERT'>InputStream</span><span class='EQUAL'>.</span><span class='INSERT'>java:21</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.base/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.<init>(FileInputSt</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>eam.java:158)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>Po</span><span class='INSERT'>java.base/java.u</span><span class='EQUAL'>t</span><span class='INSERT'>il.Scanner.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(Scann</span><span class='EQUAL'>er</span><span class='DELETE'>                                      </span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanner</span><span class='EQUAL'>1</span><span class='INSERT'>.<init>(Scanner1.java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)
+	at BookManager</span><span class='EQUAL'>.</span><span class='DELETE'>4</span><span class='INSERT'>loadFromFile(BookManager.java:3</span><span class='EQUAL'>0</span><span class='INSERT'>)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur opt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Enter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='DELETE'> id:</span><span class='INSERT'>s...</span><span class='EQUAL'>
+E</span><span class='DELETE'>n</span><span class='INSERT'>xcep</span><span class='EQUAL'>t</span><span class='DELETE'>er b</span><span class='INSERT'>i</span><span class='EQUAL'>o</span><span class='DELETE'>ok</span><span class='INSERT'>n</span><span class='EQUAL'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='INSERT'> thre</span><span class='EQUAL'>a</span><span class='INSERT'>d "</span><span class='EQUAL'>m</span><span class='DELETE'>e:
+E</span><span class='INSERT'>ai</span><span class='EQUAL'>n</span><span class='DELETE'>ter</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileN</span><span class='EQUAL'>o</span><span class='DELETE'>k pri</span><span class='INSERT'>tFoundEx</span><span class='EQUAL'>ce</span><span class='DELETE'>:
+U</span><span class='EQUAL'>p</span><span class='DELETE'>da</span><span class='EQUAL'>t</span><span class='DELETE'>ed</span><span class='INSERT'>ion:</span><span class='EQUAL'> </span><span class='INSERT'>C:\PR1\</span><span class='EQUAL'>s</span><span class='DELETE'>u</span><span class='INSERT'>r</span><span class='EQUAL'>c</span><span class='DELETE'>cessf</span><span class='INSERT'>\t</span><span class='EQUAL'>u</span><span class='DELETE'>lly.
+-----------------------------------
+1. l</span><span class='INSERT'>tor</span><span class='EQUAL'>i</span><span class='DELETE'>st </span><span class='EQUAL'>al</span><span class='DELETE'>l </span><span class='INSERT'>\</span><span class='EQUAL'>books</span><span class='DELETE'>
+2</span><span class='EQUAL'>.</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='DELETE'>add</span><span class='INSERT'>(The system</span><span class='EQUAL'> </span><span class='INSERT'>c</span><span class='EQUAL'>a</span><span class='INSERT'>nnot</span><span class='EQUAL'> </span><span class='INSERT'>fi</span><span class='EQUAL'>n</span><span class='INSERT'>d th</span><span class='EQUAL'>e</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>book
+3.</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>cif</span><span class='EQUAL'>i</span><span class='INSERT'>ed)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>o</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> bo</span><span class='INSERT'>m.</span><span class='EQUAL'>o</span><span class='DELETE'>k
+5. s</span><span class='INSERT'>p</span><span class='EQUAL'>e</span><span class='INSERT'>n0(N</span><span class='EQUAL'>a</span><span class='DELETE'>rc</span><span class='INSERT'>tive Met</span><span class='EQUAL'>h</span><span class='DELETE'> b</span><span class='EQUAL'>o</span><span class='DELETE'>oks</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>y n</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>
+6</span><span class='INSERT'>/java</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>i</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>.FileInpu</span><span class='EQUAL'>t</span><span class='DELETE'> bo</span><span class='INSERT'>Stream.</span><span class='EQUAL'>o</span><span class='DELETE'>ks desc</span><span class='INSERT'>p</span><span class='EQUAL'>en</span><span class='DELETE'>d</span><span class='INSERT'>(F</span><span class='EQUAL'>i</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='DELETE'>g by </span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>am</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/j</span><span class='EQUAL'>av</span><span class='DELETE'>e & ex</span><span class='INSERT'>a.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>eam.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(F</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>                                          P</span><span class='INSERT'>/java.util.Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:641)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>Scanner</span><span class='EQUAL'>1</span><span class='DELETE'> Th</span><span class='INSERT'>.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d Grow </span><span class='INSERT'>ne</span><span class='EQUAL'>r</span><span class='DELETE'>ich                            </span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7 h</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>f hi</span><span class='INSERT'>okMana</span><span class='EQUAL'>g</span><span class='DELETE'>h</span><span class='INSERT'>er.</span><span class='EQUAL'>l</span><span class='DELETE'>y effect</span><span class='INSERT'>oadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>v</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'> pe</span><span class='INSERT'>(Bo</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>kManag</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:30)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry Pot</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>in.mai</span><span class='EQUAL'>n</span><span class='DELETE'>d the De</span><span class='INSERT'>(M</span><span class='EQUAL'>a</span><span class='DELETE'>thly H</span><span class='INSERT'>in.j</span><span class='EQUAL'>a</span><span class='DELETE'>llows               2</span><span class='INSERT'>va:1</span><span class='EQUAL'>3</span><span class='DELETE'>.00</span><span class='INSERT'>)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/java.io.FileInputStream.ope</span><span class='EQUAL'>n</span><span class='INSERT'>0(Na</span><span class='EQUAL'>t</span><span class='INSERT'>iv</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'> Method)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputStream.</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>pen(F</span><span class='EQUAL'>i</span><span class='DELETE'>d</span><span class='INSERT'>leInputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>219)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.io.File</span><span class='EQUAL'>In</span><span class='INSERT'>putStream.<init>(FileInputStream.ja</span><span class='EQUAL'>va</span><span class='INSERT'>:158)
+	at java.base/java.uti</span><span class='EQUAL'>l</span><span class='INSERT'>.Scanner.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loa</span><span class='EQUAL'>d</span><span class='INSERT'>FromFile(BookManager.java:30)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>h</span><span class='EQUAL'>r</span><span class='DELETE'> k</span><span class='EQUAL'>e</span><span class='DELETE'>ywor</span><span class='INSERT'>a</span><span class='EQUAL'>d</span><span class='DELETE'>:
+ID</span><span class='EQUAL'> </span><span class='DELETE'>  </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>.io.Fil</span><span class='EQUAL'>e</span><span class='DELETE'>             </span><span class='INSERT'>NotFoundException:</span><span class='EQUAL'> </span><span class='DELETE'>                            </span><span class='INSERT'>C:\</span><span class='EQUAL'>P</span><span class='INSERT'>R1\src\tuto</span><span class='EQUAL'>ri</span><span class='DELETE'>c</span><span class='INSERT'>al\books.txt (Th</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='EQUAL'> </span><span class='INSERT'>system</span><span class='EQUAL'> </span><span class='INSERT'>cannot</span><span class='EQUAL'> </span><span class='INSERT'>find</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>the</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>pat</span><span class='EQUAL'>h</span><span class='INSERT'> specifi</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>e/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>.F</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='INSERT'>eInputStr</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>am.op</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>n0(Na</span><span class='EQUAL'>tive </span><span class='INSERT'>Method)
+	at java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.</span><span class='EQUAL'>op</span><span class='INSERT'>en(Fi</span><span class='EQUAL'>le</span><span class='DELETE'>            </span><span class='INSERT'>InputStream.java:2</span><span class='EQUAL'>1</span><span class='DELETE'>5.</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='INSERT'>se/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.<init>(FileInputSt</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>eam.java:158)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>Po</span><span class='INSERT'>java.base/java.u</span><span class='EQUAL'>t</span><span class='INSERT'>il.Scanner.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(Scann</span><span class='EQUAL'>er</span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d </span><span class='INSERT'>ner1.<ini</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>>(Scann</span><span class='EQUAL'>e</span><span class='DELETE'> De</span><span class='INSERT'>r1.java:56)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>BookMan</span><span class='EQUAL'>a</span><span class='INSERT'>ger.</span><span class='EQUAL'>l</span><span class='INSERT'>oadFromFi</span><span class='EQUAL'>l</span><span class='INSERT'>e(B</span><span class='EQUAL'>o</span><span class='DELETE'>ws               15</span><span class='INSERT'>okManager</span><span class='EQUAL'>.</span><span class='DELETE'>4</span><span class='INSERT'>java:3</span><span class='EQUAL'>0</span><span class='INSERT'>)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/java.io.FileInputStream.ope</span><span class='EQUAL'>n</span><span class='INSERT'>0(Na</span><span class='EQUAL'>t</span><span class='INSERT'>iv</span><span class='EQUAL'>e</span><span class='INSERT'> Method)
+	at java.base/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.open(FileInputStream.java:219)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>k</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>yw</span><span class='INSERT'>/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputSt</span><span class='EQUAL'>r</span><span class='DELETE'>d</span><span class='INSERT'>eam.<init>(FileInputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.util.Scanner.<init></span><span class='EQUAL'>(</span><span class='INSERT'>Scann</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFro</span><span class='EQUAL'>m</span><span class='DELETE'>p</span><span class='INSERT'>File(BookManager.java:30)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> Main.main(Main.java:13</span><span class='EQUAL'>)</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+Af</span><span class='INSERT'> in </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad "main"</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>java.i</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>.FileNotFoundExcep</span><span class='EQUAL'>ti</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='EQUAL'>:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='DELETE'>   Name                                          </span><span class='INSERT'>C:\</span><span class='EQUAL'>P</span><span class='INSERT'>R1\src\tuto</span><span class='EQUAL'>ri</span><span class='DELETE'>ce
+</span><span class='INSERT'>al\books.txt</span><span class='EQUAL'> </span><span class='DELETE'>   2 </span><span class='INSERT'>(</span><span class='EQUAL'>The </span><span class='DELETE'>7</span><span class='INSERT'>system</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>c</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='INSERT'>nno</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='DELETE'>o</span><span class='EQUAL'>f</span><span class='INSERT'>ind</span><span class='EQUAL'> </span><span class='INSERT'>t</span><span class='EQUAL'>h</span><span class='DELETE'>ig</span><span class='INSERT'>e pat</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='INSERT'>ci</span><span class='EQUAL'>f</span><span class='DELETE'>f</span><span class='INSERT'>ied)
+	at java.base/java.io.FileInputStream.op</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>n0(Na</span><span class='EQUAL'>tive </span><span class='INSERT'>Method)
+	at java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.</span><span class='EQUAL'>op</span><span class='INSERT'>en(Fi</span><span class='EQUAL'>le</span><span class='DELETE'>            </span><span class='INSERT'>InputStream.java:2</span><span class='EQUAL'>1</span><span class='DELETE'>5.</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>java.base/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInpu</span><span class='EQUAL'>t</span><span class='INSERT'>S</span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='EQUAL'>r</span><span class='DELETE'> </span><span class='INSERT'>e</span><span class='EQUAL'>a</span><span class='INSERT'>m.<i</span><span class='EQUAL'>n</span><span class='DELETE'>d </span><span class='INSERT'>it>(FileInputS</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>r</span><span class='EQUAL'>e</span><span class='INSERT'>am.java:158)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='INSERT'>va.u</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='INSERT'>.Sc</span><span class='EQUAL'>a</span><span class='DELETE'>llows               15</span><span class='INSERT'>nner.<init>(Scanner</span><span class='EQUAL'>.</span><span class='INSERT'>java:6</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>1)</span><span class='EQUAL'>
+</span><span class='DELETE'>   </span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanner</span><span class='EQUAL'>1</span><span class='DELETE'> Th</span><span class='INSERT'>.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d</span><span class='INSERT'>ner1.java:56)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>BookManage</span><span class='EQUAL'>r</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>adF</span><span class='EQUAL'>r</span><span class='INSERT'>omF</span><span class='EQUAL'>i</span><span class='DELETE'>ch                            1</span><span class='INSERT'>le(BookManager.java:3</span><span class='EQUAL'>0</span><span class='INSERT'>)
+	at Main</span><span class='EQUAL'>.</span><span class='DELETE'>95</span><span class='INSERT'>main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>(empty)</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>(</span><span class='INSERT'>Loading books...
+Exception in thr</span><span class='EQUAL'>e</span><span class='INSERT'>ad "</span><span class='EQUAL'>m</span><span class='INSERT'>ain" java.io.FileNotFoundExce</span><span class='EQUAL'>pt</span><span class='INSERT'>ion: C:\PR1\src\tutorial\books.txt (The s</span><span class='EQUAL'>y</span><span class='INSERT'>stem cannot find the path specified</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='DELETE'>
+En</span><span class='INSERT'> C:\PR1\src\tu</span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>o</span><span class='EQUAL'>r</span><span class='DELETE'> </span><span class='INSERT'>ial\</span><span class='EQUAL'>book</span><span class='INSERT'>s.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cannot f</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'> the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/java.io.Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='INSERT'>am.open0(Native Metho</span><span class='EQUAL'>d</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.io.FileInp</span><span class='EQUAL'>u</span><span class='DELETE'>cc</span><span class='INSERT'>tStream.open(FileInputStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.java:219)
+	at java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.ba</span><span class='EQUAL'>s</span><span class='DELETE'>f</span><span class='INSERT'>e/java.</span><span class='EQUAL'>u</span><span class='INSERT'>ti</span><span class='EQUAL'>l</span><span class='INSERT'>.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>oadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>h</span><span class='EQUAL'>r</span><span class='DELETE'> book</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"ma</span><span class='EQUAL'>i</span><span class='DELETE'>d:
+I</span><span class='EQUAL'>n</span><span class='INSERT'>" ja</span><span class='EQUAL'>va</span><span class='DELETE'>l</span><span class='INSERT'>.</span><span class='EQUAL'>i</span><span class='DELETE'>d ID!
+-----------------------------------
+1</span><span class='INSERT'>o</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>Fi</span><span class='EQUAL'>l</span><span class='INSERT'>eNotFoundExcept</span><span class='EQUAL'>i</span><span class='INSERT'>on: C:\PR1\</span><span class='EQUAL'>s</span><span class='INSERT'>rc\</span><span class='EQUAL'>t</span><span class='DELETE'> </span><span class='INSERT'>utori</span><span class='EQUAL'>al</span><span class='DELETE'>l </span><span class='INSERT'>\</span><span class='EQUAL'>books</span><span class='DELETE'>
+2</span><span class='EQUAL'>.</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='DELETE'>add</span><span class='INSERT'>(The</span><span class='EQUAL'> </span><span class='INSERT'>system c</span><span class='EQUAL'>a</span><span class='INSERT'>nnot</span><span class='EQUAL'> </span><span class='INSERT'>fi</span><span class='EQUAL'>n</span><span class='INSERT'>d th</span><span class='EQUAL'>e</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>book
+3.</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>c</span><span class='EQUAL'>i</span><span class='INSERT'>fied)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>o</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> book
+5</span><span class='INSERT'>m</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>op</span><span class='EQUAL'>e</span><span class='INSERT'>n0(N</span><span class='EQUAL'>a</span><span class='DELETE'>rch</span><span class='INSERT'>tive</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>Meth</span><span class='EQUAL'>o</span><span class='DELETE'>oks</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>y n</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>
+6</span><span class='INSERT'>/java</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>i</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>.FileInpu</span><span class='EQUAL'>t</span><span class='DELETE'> books d</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'>sc</span><span class='INSERT'>am.op</span><span class='EQUAL'>en</span><span class='DELETE'>d</span><span class='INSERT'>(F</span><span class='EQUAL'>i</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='DELETE'>g by </span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>am</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e &</span><span class='INSERT'>a:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>x</span><span class='INSERT'>/java.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>eam.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(F</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>                                          Pr</span><span class='INSERT'>/java.ut</span><span class='EQUAL'>i</span><span class='INSERT'>l.S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>
+    1 Th</span><span class='INSERT'>r.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d G</span><span class='INSERT'>ne</span><span class='EQUAL'>r</span><span class='DELETE'>ow</span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>1.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>anner</span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7 h</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>f hi</span><span class='INSERT'>okMana</span><span class='EQUAL'>g</span><span class='DELETE'>h</span><span class='INSERT'>er.</span><span class='EQUAL'>l</span><span class='DELETE'>y effect</span><span class='INSERT'>oadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>ve p</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='INSERT'>(B</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>okManag</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:30)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry Po</span><span class='EQUAL'>t</span><span class='DELETE'>ter</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>d the De</span><span class='INSERT'>.main(Main.j</span><span class='EQUAL'>a</span><span class='DELETE'>thly H</span><span class='INSERT'>v</span><span class='EQUAL'>a</span><span class='DELETE'>llows               </span><span class='INSERT'>:</span><span class='EQUAL'>1</span><span class='DELETE'>5.40</span><span class='INSERT'>3)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>S</span><span class='INSERT'>	at j</span><span class='EQUAL'>av</span><span class='INSERT'>a.base/java.</span><span class='EQUAL'>i</span><span class='INSERT'>o.FileI</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='INSERT'>putStream.open0(Native</span><span class='EQUAL'> </span><span class='INSERT'>Me</span><span class='EQUAL'>t</span><span class='INSERT'>h</span><span class='EQUAL'>o</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>f</span><span class='INSERT'>java.base/java.io.F</span><span class='EQUAL'>ile</span><span class='INSERT'>InputStream</span><span class='EQUAL'>.</span><span class='INSERT'>open(FileInputStream</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at java</span><span class='EQUAL'>.</span><span class='INSERT'>base/java.io.FileInputStream.<init>(FileInputStream.java:158)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at </span><span class='EQUAL'>B</span><span class='DELETE'>y</span><span class='INSERT'>ookManager.loadFromFile(BookManag</span><span class='EQUAL'>e</span><span class='DELETE'>!</span><span class='INSERT'>r.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='EQUAL'>Loading books...
+</span><span class='DELETE'>-----------------------------------
+1.</span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in thread "main" java.io.Fi</span><span class='EQUAL'>l</span><span class='INSERT'>eNotFoundExcept</span><span class='EQUAL'>i</span><span class='INSERT'>on: C:\PR1\</span><span class='EQUAL'>s</span><span class='INSERT'>rc\</span><span class='EQUAL'>t</span><span class='DELETE'> </span><span class='INSERT'>utori</span><span class='EQUAL'>al</span><span class='DELETE'>l </span><span class='INSERT'>\</span><span class='EQUAL'>books</span><span class='DELETE'>
+2</span><span class='EQUAL'>.</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='DELETE'>add</span><span class='INSERT'>(The</span><span class='EQUAL'> </span><span class='INSERT'>system c</span><span class='EQUAL'>a</span><span class='INSERT'>nnot</span><span class='EQUAL'> </span><span class='INSERT'>fi</span><span class='EQUAL'>n</span><span class='INSERT'>d th</span><span class='EQUAL'>e</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>book
+3.</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>c</span><span class='EQUAL'>i</span><span class='INSERT'>fied)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>o</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> b</span><span class='INSERT'>m.</span><span class='EQUAL'>o</span><span class='INSERT'>pen0(Native Meth</span><span class='EQUAL'>o</span><span class='DELETE'>k</span><span class='INSERT'>d)</span><span class='EQUAL'>
+</span><span class='DELETE'>5.</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>se</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>rch b</span><span class='INSERT'>va.i</span><span class='EQUAL'>o</span><span class='DELETE'>oks by </span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='DELETE'>e
+6</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='EQUAL'>o</span><span class='DELETE'>rt books desc</span><span class='INSERT'>p</span><span class='EQUAL'>en</span><span class='DELETE'>d</span><span class='INSERT'>(F</span><span class='EQUAL'>i</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='DELETE'>g by </span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>am</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='INSERT'>a.bas</span><span class='EQUAL'>e</span><span class='DELETE'> & ex</span><span class='INSERT'>/java.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>eam.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(F</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>.bas</span><span class='EQUAL'>e</span><span class='DELETE'>                                          Pr</span><span class='INSERT'>/java.ut</span><span class='EQUAL'>i</span><span class='INSERT'>l.S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>
+    1 Th</span><span class='INSERT'>r.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d G</span><span class='INSERT'>ne</span><span class='EQUAL'>r</span><span class='DELETE'>ow</span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>1.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>anner</span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7 h</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>f hi</span><span class='INSERT'>okMana</span><span class='EQUAL'>g</span><span class='DELETE'>hly </span><span class='EQUAL'>e</span><span class='DELETE'>ffect</span><span class='INSERT'>r.loadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>ve p</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='INSERT'>(B</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>okManag</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:30)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry Pot</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>d the De</span><span class='INSERT'>.main(Main.j</span><span class='EQUAL'>a</span><span class='DELETE'>thly H</span><span class='INSERT'>v</span><span class='EQUAL'>a</span><span class='DELETE'>llows               </span><span class='INSERT'>:</span><span class='EQUAL'>1</span><span class='DELETE'>5.40</span><span class='INSERT'>3)
+</span></pre></td><td><strong>Failed</strong></td></tr></table>
+<h3>Test Script: Main</h3><div class='error'><strong>Compilation error: </strong> <pre>Main.java:35: error: method printBooks in class BookManager cannot be applied to given types;
+                    manager.printBooks(manager.getBooks());
+                           ^
+  required: no arguments
+  found:    ArrayList<Book>
+  reason: actual and formal argument lists differ in length
+Main.java:120: error: method printBooks in class BookManager cannot be applied to given types;
+                    manager.printBooks(temp);
+                           ^
+  required: no arguments
+  found:    ArrayList<Book>
+  reason: actual and formal argument lists differ in length
+Main.java:125: error: method printBooks in class BookManager cannot be applied to given types;
+                    manager.printBooks(manager.getBooks());
+                           ^
+  required: no arguments
+  found:    ArrayList<Book>
+  reason: actual and formal argument lists differ in length
+3 errors
+</pre></div><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>-----------------------------------
+1. l</span><span class='INSERT'>Load</span><span class='EQUAL'>i</span><span class='DELETE'>st all</span><span class='INSERT'>ng</span><span class='EQUAL'> books</span><span class='INSERT'>...</span><span class='EQUAL'>
+</span><span class='DELETE'>2.</span><span class='INSERT'>Exception in</span><span class='EQUAL'> </span><span class='INSERT'>thre</span><span class='EQUAL'>ad</span><span class='DELETE'>d</span><span class='EQUAL'> </span><span class='INSERT'>"m</span><span class='EQUAL'>a</span><span class='DELETE'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>ew</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='DELETE'>book
+3</span><span class='INSERT'>java</span><span class='EQUAL'>.</span><span class='DELETE'> ed</span><span class='EQUAL'>i</span><span class='DELETE'>t b</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>No</span><span class='EQUAL'>t</span><span class='INSERT'>FoundExc</span><span class='EQUAL'>e</span><span class='DELETE'> a bo</span><span class='INSERT'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>k
+5.</span><span class='INSERT'>n:</span><span class='EQUAL'> </span><span class='INSERT'>C:\PR1\</span><span class='EQUAL'>s</span><span class='DELETE'>ea</span><span class='EQUAL'>rc</span><span class='DELETE'>h </span><span class='INSERT'>\tutorial\</span><span class='EQUAL'>books</span><span class='INSERT'>.txt</span><span class='EQUAL'> </span><span class='DELETE'>by nam</span><span class='INSERT'>(Th</span><span class='EQUAL'>e</span><span class='DELETE'>
+6.</span><span class='EQUAL'> s</span><span class='DELETE'>or</span><span class='INSERT'>ys</span><span class='EQUAL'>t</span><span class='INSERT'>em</span><span class='EQUAL'> </span><span class='DELETE'>bo</span><span class='INSERT'>cann</span><span class='EQUAL'>o</span><span class='DELETE'>ks</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>fin</span><span class='EQUAL'>d</span><span class='DELETE'>esc</span><span class='INSERT'> th</span><span class='EQUAL'>e</span><span class='DELETE'>nding</span><span class='EQUAL'> </span><span class='DELETE'>by</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>p</span><span class='DELETE'>r</span><span class='INSERT'>ec</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>fi</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d)</span><span class='EQUAL'>
+</span><span class='DELETE'>0</span><span class='INSERT'>	at java</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/j</span><span class='EQUAL'>av</span><span class='DELETE'>e & ex</span><span class='INSERT'>a.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> </span><span class='INSERT'>eam.</span><span class='EQUAL'>op</span><span class='DELETE'>tio</span><span class='INSERT'>e</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Inv</span><span class='INSERT'>0(N</span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>t</span><span class='EQUAL'>i</span><span class='DELETE'>d</span><span class='INSERT'>ve</span><span class='EQUAL'> </span><span class='DELETE'>op</span><span class='INSERT'>Me</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'>h</span><span class='EQUAL'>o</span><span class='DELETE'>n!
+-----------------------------------</span><span class='INSERT'>d)</span><span class='EQUAL'>
+</span><span class='DELETE'>1. lis</span><span class='INSERT'>	a</span><span class='EQUAL'>t </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='DELETE'>ll </span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='DELETE'>ook</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'>
+2. </span><span class='INSERT'>e/j</span><span class='EQUAL'>a</span><span class='DELETE'>dd </span><span class='INSERT'>v</span><span class='EQUAL'>a</span><span class='DELETE'> new bo</span><span class='INSERT'>.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+3</span><span class='EQUAL'>.</span><span class='DELETE'> ed</span><span class='INSERT'>F</span><span class='EQUAL'>i</span><span class='INSERT'>leInputS</span><span class='EQUAL'>t</span><span class='DELETE'> b</span><span class='INSERT'>ream.</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+4. d</span><span class='INSERT'>p</span><span class='EQUAL'>e</span><span class='INSERT'>n(Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> book
+5</span><span class='INSERT'>m</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>se</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>rch bo</span><span class='INSERT'>va.i</span><span class='EQUAL'>o</span><span class='DELETE'>ks by </span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='INSERT'>.<init>(Fil</span><span class='EQUAL'>e</span><span class='INSERT'>InputStream.java:158)</span><span class='EQUAL'>
+</span><span class='DELETE'>6. sor</span><span class='INSERT'>	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>ook</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> d</span><span class='EQUAL'>e</span><span class='DELETE'>s</span><span class='INSERT'>/java.util.S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='INSERT'>r.<i</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='EQUAL'>i</span><span class='INSERT'>t>(Sca</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='INSERT'>ner.java:641)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>by p</span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>1.<in</span><span class='EQUAL'>i</span><span class='INSERT'>t>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>r1</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e &</span><span class='INSERT'>a:56)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>BookManag</span><span class='EQUAL'>e</span><span class='DELETE'>x</span><span class='INSERT'>r.loadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='INSERT'>le(B</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>okManage</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>.java:30)
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>n.main(Mai</span><span class='EQUAL'>n</span><span class='INSERT'>.java</span><span class='EQUAL'>:</span><span class='INSERT'>13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Loading books...
+Exception in thread "main" java.io.FileNotFoundExcepti</span><span class='EQUAL'>o</span><span class='INSERT'>n: C:\PR1\src\t</span><span class='EQUAL'>u</span><span class='INSERT'>to</span><span class='EQUAL'>r</span><span class='INSERT'>ial\books.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cann</span><span class='EQUAL'>o</span><span class='INSERT'>t find the </span><span class='EQUAL'>p</span><span class='INSERT'>a</span><span class='EQUAL'>t</span><span class='INSERT'>h specified)
+	at java.base/java.</span><span class='EQUAL'>io</span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>219)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.io.FileInputStream.<init></span><span class='EQUAL'>(</span><span class='INSERT'>Fil</span><span class='EQUAL'>e</span><span class='INSERT'>InputStrea</span><span class='EQUAL'>m</span><span class='DELETE'>p</span><span class='INSERT'>.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> Scanner1.<init>(Scanner1.java:56</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad "main"</span><span class='EQUAL'> </span><span class='INSERT'>java.io.FileNotFoundException: C:\PR1\src\tutorial\</span><span class='EQUAL'>book</span><span class='INSERT'>s.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cannot f</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'> the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>	a</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>ok </span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='INSERT'>.op</span><span class='EQUAL'>e</span><span class='DELETE'>:
+E</span><span class='EQUAL'>n</span><span class='INSERT'>0(Na</span><span class='EQUAL'>t</span><span class='INSERT'>ive M</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>thod)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputStream.</span><span class='EQUAL'>o</span><span class='DELETE'>k</span><span class='INSERT'>pen(FileInputStream.java:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.<</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>nit>(Fil</span><span class='EQUAL'>e</span><span class='INSERT'>InputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>Added</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.</span><span class='EQUAL'>u</span><span class='INSERT'>til.S</span><span class='EQUAL'>c</span><span class='INSERT'>anner.<init>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>ssfu</span><span class='INSERT'>r.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.</span><span class='EQUAL'>l</span><span class='INSERT'>oadFromFi</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>e(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.io.FileNotFoundException: C:\PR1\src\tutorial\</span><span class='EQUAL'>book</span><span class='INSERT'>s.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cannot f</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'> the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>	a</span><span class='EQUAL'>t</span><span class='INSERT'> java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.open0(Native</span><span class='EQUAL'> </span><span class='INSERT'>Method)
+	at java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputStream.</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>pen(FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='DELETE'>e</span><span class='INSERT'>.java</span><span class='EQUAL'>:</span><span class='INSERT'>219)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/java.io.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>pu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='INSERT'>am.<init>(FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.java:158)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>ook p</span><span class='INSERT'>ase/java.util.Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='INSERT'>r.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='DELETE'>Dupl</span><span class='INSERT'>	at Scanner1.<in</span><span class='EQUAL'>i</span><span class='INSERT'>t>(S</span><span class='EQUAL'>ca</span><span class='INSERT'>nner1.java:56)
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r.loa</span><span class='EQUAL'>d</span><span class='INSERT'>FromFile(BookManager.java:30)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+ID    Name       </span><span class='EQUAL'> </span><span class='DELETE'>                                 </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>th</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+    1</span><span class='INSERT'>ad</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>"ma</span><span class='EQUAL'>in</span><span class='DELETE'>k big</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.io.FileNotFou</span><span class='EQUAL'>nd</span><span class='INSERT'>Exception:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>C:\PR1\s</span><span class='EQUAL'>r</span><span class='INSERT'>c\tut</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='EQUAL'>ri</span><span class='DELETE'>ch                            10</span><span class='INSERT'>al\books</span><span class='EQUAL'>.</span><span class='DELETE'>95
+    2</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='INSERT'>(</span><span class='EQUAL'>The </span><span class='DELETE'>7</span><span class='INSERT'>system</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>c</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='INSERT'>nno</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='DELETE'>o</span><span class='EQUAL'>f</span><span class='INSERT'>ind</span><span class='EQUAL'> </span><span class='INSERT'>t</span><span class='EQUAL'>h</span><span class='DELETE'>ig</span><span class='INSERT'>e pat</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='INSERT'>ci</span><span class='EQUAL'>f</span><span class='DELETE'>f</span><span class='INSERT'>i</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>d)
+	at java.base/java.io.FileInputStream.open0(Na</span><span class='EQUAL'>tive </span><span class='INSERT'>Method)
+	at java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.</span><span class='EQUAL'>op</span><span class='INSERT'>en(Fi</span><span class='EQUAL'>le</span><span class='DELETE'>            15</span><span class='INSERT'>InputStream</span><span class='EQUAL'>.</span><span class='INSERT'>java:21</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.base/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.<init>(FileInputSt</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>eam.java:158)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>Po</span><span class='INSERT'>java.base/java.u</span><span class='EQUAL'>t</span><span class='INSERT'>il.Scanner.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(Scann</span><span class='EQUAL'>er</span><span class='DELETE'>                                      </span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanner</span><span class='EQUAL'>1</span><span class='INSERT'>.<init>(Scanner1.java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)
+	at BookManager</span><span class='EQUAL'>.</span><span class='DELETE'>4</span><span class='INSERT'>loadFromFile(BookManager.java:3</span><span class='EQUAL'>0</span><span class='INSERT'>)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur opt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Enter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='DELETE'> id:</span><span class='INSERT'>s...</span><span class='EQUAL'>
+E</span><span class='DELETE'>n</span><span class='INSERT'>xcep</span><span class='EQUAL'>t</span><span class='DELETE'>er b</span><span class='INSERT'>i</span><span class='EQUAL'>o</span><span class='DELETE'>ok</span><span class='INSERT'>n</span><span class='EQUAL'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='INSERT'> thre</span><span class='EQUAL'>a</span><span class='INSERT'>d "</span><span class='EQUAL'>m</span><span class='DELETE'>e:
+E</span><span class='INSERT'>ai</span><span class='EQUAL'>n</span><span class='DELETE'>ter</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileN</span><span class='EQUAL'>o</span><span class='DELETE'>k pri</span><span class='INSERT'>tFoundEx</span><span class='EQUAL'>ce</span><span class='DELETE'>:
+U</span><span class='EQUAL'>p</span><span class='DELETE'>da</span><span class='EQUAL'>t</span><span class='DELETE'>ed</span><span class='INSERT'>ion:</span><span class='EQUAL'> </span><span class='INSERT'>C:\PR1\</span><span class='EQUAL'>s</span><span class='DELETE'>u</span><span class='INSERT'>r</span><span class='EQUAL'>c</span><span class='DELETE'>cessf</span><span class='INSERT'>\t</span><span class='EQUAL'>u</span><span class='DELETE'>lly.
+-----------------------------------
+1. l</span><span class='INSERT'>tor</span><span class='EQUAL'>i</span><span class='DELETE'>st </span><span class='EQUAL'>al</span><span class='DELETE'>l </span><span class='INSERT'>\</span><span class='EQUAL'>books</span><span class='DELETE'>
+2</span><span class='EQUAL'>.</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='DELETE'>add</span><span class='INSERT'>(The system</span><span class='EQUAL'> </span><span class='INSERT'>c</span><span class='EQUAL'>a</span><span class='INSERT'>nnot</span><span class='EQUAL'> </span><span class='INSERT'>fi</span><span class='EQUAL'>n</span><span class='INSERT'>d th</span><span class='EQUAL'>e</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>book
+3.</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>cif</span><span class='EQUAL'>i</span><span class='INSERT'>ed)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>o</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> bo</span><span class='INSERT'>m.</span><span class='EQUAL'>o</span><span class='DELETE'>k
+5. s</span><span class='INSERT'>p</span><span class='EQUAL'>e</span><span class='INSERT'>n0(N</span><span class='EQUAL'>a</span><span class='DELETE'>rc</span><span class='INSERT'>tive Met</span><span class='EQUAL'>h</span><span class='DELETE'> b</span><span class='EQUAL'>o</span><span class='DELETE'>oks</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>y n</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>
+6</span><span class='INSERT'>/java</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>i</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>.FileInpu</span><span class='EQUAL'>t</span><span class='DELETE'> bo</span><span class='INSERT'>Stream.</span><span class='EQUAL'>o</span><span class='DELETE'>ks desc</span><span class='INSERT'>p</span><span class='EQUAL'>en</span><span class='DELETE'>d</span><span class='INSERT'>(F</span><span class='EQUAL'>i</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='DELETE'>g by </span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>am</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/j</span><span class='EQUAL'>av</span><span class='DELETE'>e & ex</span><span class='INSERT'>a.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>eam.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(F</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>                                          P</span><span class='INSERT'>/java.util.Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:641)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>Scanner</span><span class='EQUAL'>1</span><span class='DELETE'> Th</span><span class='INSERT'>.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d Grow </span><span class='INSERT'>ne</span><span class='EQUAL'>r</span><span class='DELETE'>ich                            </span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7 h</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>f hi</span><span class='INSERT'>okMana</span><span class='EQUAL'>g</span><span class='DELETE'>h</span><span class='INSERT'>er.</span><span class='EQUAL'>l</span><span class='DELETE'>y effect</span><span class='INSERT'>oadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>v</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'> pe</span><span class='INSERT'>(Bo</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>kManag</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:30)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry Pot</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>in.mai</span><span class='EQUAL'>n</span><span class='DELETE'>d the De</span><span class='INSERT'>(M</span><span class='EQUAL'>a</span><span class='DELETE'>thly H</span><span class='INSERT'>in.j</span><span class='EQUAL'>a</span><span class='DELETE'>llows               2</span><span class='INSERT'>va:1</span><span class='EQUAL'>3</span><span class='DELETE'>.00</span><span class='INSERT'>)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/java.io.FileInputStream.ope</span><span class='EQUAL'>n</span><span class='INSERT'>0(Na</span><span class='EQUAL'>t</span><span class='INSERT'>iv</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'> Method)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputStream.</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>pen(F</span><span class='EQUAL'>i</span><span class='DELETE'>d</span><span class='INSERT'>leInputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>219)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.io.File</span><span class='EQUAL'>In</span><span class='INSERT'>putStream.<init>(FileInputStream.ja</span><span class='EQUAL'>va</span><span class='INSERT'>:158)
+	at java.base/java.uti</span><span class='EQUAL'>l</span><span class='INSERT'>.Scanner.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loa</span><span class='EQUAL'>d</span><span class='INSERT'>FromFile(BookManager.java:30)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>h</span><span class='EQUAL'>r</span><span class='DELETE'> k</span><span class='EQUAL'>e</span><span class='DELETE'>ywor</span><span class='INSERT'>a</span><span class='EQUAL'>d</span><span class='DELETE'>:
+ID</span><span class='EQUAL'> </span><span class='DELETE'>  </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>.io.Fil</span><span class='EQUAL'>e</span><span class='DELETE'>             </span><span class='INSERT'>NotFoundException:</span><span class='EQUAL'> </span><span class='DELETE'>                            </span><span class='INSERT'>C:\</span><span class='EQUAL'>P</span><span class='INSERT'>R1\src\tuto</span><span class='EQUAL'>ri</span><span class='DELETE'>c</span><span class='INSERT'>al\books.txt (Th</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='EQUAL'> </span><span class='INSERT'>system</span><span class='EQUAL'> </span><span class='INSERT'>cannot</span><span class='EQUAL'> </span><span class='INSERT'>find</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>the</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>pat</span><span class='EQUAL'>h</span><span class='INSERT'> specifi</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>e/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>.F</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='INSERT'>eInputStr</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>am.op</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>n0(Na</span><span class='EQUAL'>tive </span><span class='INSERT'>Method)
+	at java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.</span><span class='EQUAL'>op</span><span class='INSERT'>en(Fi</span><span class='EQUAL'>le</span><span class='DELETE'>            </span><span class='INSERT'>InputStream.java:2</span><span class='EQUAL'>1</span><span class='DELETE'>5.</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='INSERT'>se/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.<init>(FileInputSt</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>eam.java:158)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>Po</span><span class='INSERT'>java.base/java.u</span><span class='EQUAL'>t</span><span class='INSERT'>il.Scanner.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(Scann</span><span class='EQUAL'>er</span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d </span><span class='INSERT'>ner1.<ini</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>>(Scann</span><span class='EQUAL'>e</span><span class='DELETE'> De</span><span class='INSERT'>r1.java:56)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>BookMan</span><span class='EQUAL'>a</span><span class='INSERT'>ger.</span><span class='EQUAL'>l</span><span class='INSERT'>oadFromFi</span><span class='EQUAL'>l</span><span class='INSERT'>e(B</span><span class='EQUAL'>o</span><span class='DELETE'>ws               15</span><span class='INSERT'>okManager</span><span class='EQUAL'>.</span><span class='DELETE'>4</span><span class='INSERT'>java:3</span><span class='EQUAL'>0</span><span class='INSERT'>)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/java.io.FileInputStream.ope</span><span class='EQUAL'>n</span><span class='INSERT'>0(Na</span><span class='EQUAL'>t</span><span class='INSERT'>iv</span><span class='EQUAL'>e</span><span class='INSERT'> Method)
+	at java.base/java.io.FileInputSt</span><span class='EQUAL'>r</span><span class='INSERT'>eam.open(FileInputStream.java:219)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>k</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>yw</span><span class='INSERT'>/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInputSt</span><span class='EQUAL'>r</span><span class='DELETE'>d</span><span class='INSERT'>eam.<init>(FileInputStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.util.Scanner.<init></span><span class='EQUAL'>(</span><span class='INSERT'>Scann</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFro</span><span class='EQUAL'>m</span><span class='DELETE'>p</span><span class='INSERT'>File(BookManager.java:30)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> Main.main(Main.java:13</span><span class='EQUAL'>)</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+Af</span><span class='INSERT'> in </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad "main"</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>java.i</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>.FileNotFoundExcep</span><span class='EQUAL'>ti</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='EQUAL'>:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='DELETE'>   Name                                          </span><span class='INSERT'>C:\</span><span class='EQUAL'>P</span><span class='INSERT'>R1\src\tuto</span><span class='EQUAL'>ri</span><span class='DELETE'>ce
+</span><span class='INSERT'>al\books.txt</span><span class='EQUAL'> </span><span class='DELETE'>   2 </span><span class='INSERT'>(</span><span class='EQUAL'>The </span><span class='DELETE'>7</span><span class='INSERT'>system</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>c</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='INSERT'>nno</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='DELETE'>o</span><span class='EQUAL'>f</span><span class='INSERT'>ind</span><span class='EQUAL'> </span><span class='INSERT'>t</span><span class='EQUAL'>h</span><span class='DELETE'>ig</span><span class='INSERT'>e pat</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='INSERT'>ci</span><span class='EQUAL'>f</span><span class='DELETE'>f</span><span class='INSERT'>ied)
+	at java.base/java.io.FileInputStream.op</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>n0(Na</span><span class='EQUAL'>tive </span><span class='INSERT'>Method)
+	at java.base/java.io.FileIn</span><span class='EQUAL'>p</span><span class='INSERT'>utStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.</span><span class='EQUAL'>op</span><span class='INSERT'>en(Fi</span><span class='EQUAL'>le</span><span class='DELETE'>            </span><span class='INSERT'>InputStream.java:2</span><span class='EQUAL'>1</span><span class='DELETE'>5.</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>java.base/java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInpu</span><span class='EQUAL'>t</span><span class='INSERT'>S</span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='EQUAL'>r</span><span class='DELETE'> </span><span class='INSERT'>e</span><span class='EQUAL'>a</span><span class='INSERT'>m.<i</span><span class='EQUAL'>n</span><span class='DELETE'>d </span><span class='INSERT'>it>(FileInputS</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>r</span><span class='EQUAL'>e</span><span class='INSERT'>am.java:158)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='INSERT'>va.u</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='INSERT'>.Sc</span><span class='EQUAL'>a</span><span class='DELETE'>llows               15</span><span class='INSERT'>nner.<init>(Scanner</span><span class='EQUAL'>.</span><span class='INSERT'>java:6</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>1)</span><span class='EQUAL'>
+</span><span class='DELETE'>   </span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanner</span><span class='EQUAL'>1</span><span class='DELETE'> Th</span><span class='INSERT'>.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d</span><span class='INSERT'>ner1.java:56)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>BookManage</span><span class='EQUAL'>r</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>adF</span><span class='EQUAL'>r</span><span class='INSERT'>omF</span><span class='EQUAL'>i</span><span class='DELETE'>ch                            1</span><span class='INSERT'>le(BookManager.java:3</span><span class='EQUAL'>0</span><span class='INSERT'>)
+	at Main</span><span class='EQUAL'>.</span><span class='DELETE'>95</span><span class='INSERT'>main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>(empty)</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>(</span><span class='INSERT'>Loading books...
+Exception in thr</span><span class='EQUAL'>e</span><span class='INSERT'>ad "</span><span class='EQUAL'>m</span><span class='INSERT'>ain" java.io.FileNotFoundExce</span><span class='EQUAL'>pt</span><span class='INSERT'>ion: C:\PR1\src\tutorial\books.txt (The s</span><span class='EQUAL'>y</span><span class='INSERT'>stem cannot find the path specified</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='DELETE'>
+En</span><span class='INSERT'> C:\PR1\src\tu</span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>o</span><span class='EQUAL'>r</span><span class='DELETE'> </span><span class='INSERT'>ial\</span><span class='EQUAL'>book</span><span class='INSERT'>s.txt</span><span class='EQUAL'> </span><span class='INSERT'>(The system cannot f</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'> the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/java.io.Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='INSERT'>am.open0(Native Metho</span><span class='EQUAL'>d</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.io.FileInp</span><span class='EQUAL'>u</span><span class='DELETE'>cc</span><span class='INSERT'>tStream.open(FileInputStr</span><span class='EQUAL'>e</span><span class='INSERT'>am.java:219)
+	at java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.ba</span><span class='EQUAL'>s</span><span class='DELETE'>f</span><span class='INSERT'>e/java.</span><span class='EQUAL'>u</span><span class='INSERT'>ti</span><span class='EQUAL'>l</span><span class='INSERT'>.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>oadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>oks...
+Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>h</span><span class='EQUAL'>r</span><span class='DELETE'> book</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"ma</span><span class='EQUAL'>i</span><span class='DELETE'>d:
+I</span><span class='EQUAL'>n</span><span class='INSERT'>" ja</span><span class='EQUAL'>va</span><span class='DELETE'>l</span><span class='INSERT'>.</span><span class='EQUAL'>i</span><span class='DELETE'>d ID!
+-----------------------------------
+1</span><span class='INSERT'>o</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>Fi</span><span class='EQUAL'>l</span><span class='INSERT'>eNotFoundExcept</span><span class='EQUAL'>i</span><span class='INSERT'>on: C:\PR1\</span><span class='EQUAL'>s</span><span class='INSERT'>rc\</span><span class='EQUAL'>t</span><span class='DELETE'> </span><span class='INSERT'>utori</span><span class='EQUAL'>al</span><span class='DELETE'>l </span><span class='INSERT'>\</span><span class='EQUAL'>books</span><span class='DELETE'>
+2</span><span class='EQUAL'>.</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='DELETE'>add</span><span class='INSERT'>(The</span><span class='EQUAL'> </span><span class='INSERT'>system c</span><span class='EQUAL'>a</span><span class='INSERT'>nnot</span><span class='EQUAL'> </span><span class='INSERT'>fi</span><span class='EQUAL'>n</span><span class='INSERT'>d th</span><span class='EQUAL'>e</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>book
+3.</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>c</span><span class='EQUAL'>i</span><span class='INSERT'>fied)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>o</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> book
+5</span><span class='INSERT'>m</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>op</span><span class='EQUAL'>e</span><span class='INSERT'>n0(N</span><span class='EQUAL'>a</span><span class='DELETE'>rch</span><span class='INSERT'>tive</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>Meth</span><span class='EQUAL'>o</span><span class='DELETE'>oks</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>y n</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>
+6</span><span class='INSERT'>/java</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>i</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>.FileInpu</span><span class='EQUAL'>t</span><span class='DELETE'> books d</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'>sc</span><span class='INSERT'>am.op</span><span class='EQUAL'>en</span><span class='DELETE'>d</span><span class='INSERT'>(F</span><span class='EQUAL'>i</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='DELETE'>g by </span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>am</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e &</span><span class='INSERT'>a:219)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>x</span><span class='INSERT'>/java.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>eam.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(F</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>                                          Pr</span><span class='INSERT'>/java.ut</span><span class='EQUAL'>i</span><span class='INSERT'>l.S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>
+    1 Th</span><span class='INSERT'>r.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d G</span><span class='INSERT'>ne</span><span class='EQUAL'>r</span><span class='DELETE'>ow</span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>1.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>anner</span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7 h</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>f hi</span><span class='INSERT'>okMana</span><span class='EQUAL'>g</span><span class='DELETE'>h</span><span class='INSERT'>er.</span><span class='EQUAL'>l</span><span class='DELETE'>y effect</span><span class='INSERT'>oadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>ve p</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='INSERT'>(B</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>okManag</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:30)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry Po</span><span class='EQUAL'>t</span><span class='DELETE'>ter</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>d the De</span><span class='INSERT'>.main(Main.j</span><span class='EQUAL'>a</span><span class='DELETE'>thly H</span><span class='INSERT'>v</span><span class='EQUAL'>a</span><span class='DELETE'>llows               </span><span class='INSERT'>:</span><span class='EQUAL'>1</span><span class='DELETE'>5.40</span><span class='INSERT'>3)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ading books...
+Exception in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.i</span><span class='EQUAL'>o</span><span class='INSERT'>.FileNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)</span><span class='EQUAL'>
+</span><span class='DELETE'>S</span><span class='INSERT'>	at j</span><span class='EQUAL'>av</span><span class='INSERT'>a.base/java.</span><span class='EQUAL'>i</span><span class='INSERT'>o.FileI</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='INSERT'>putStream.open0(Native</span><span class='EQUAL'> </span><span class='INSERT'>Me</span><span class='EQUAL'>t</span><span class='INSERT'>h</span><span class='EQUAL'>o</span><span class='INSERT'>d)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>f</span><span class='INSERT'>java.base/java.io.F</span><span class='EQUAL'>ile</span><span class='INSERT'>InputStream</span><span class='EQUAL'>.</span><span class='INSERT'>open(FileInputStream</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at java</span><span class='EQUAL'>.</span><span class='INSERT'>base/java.io.FileInputStream.<init>(FileInputStream.java:158)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at </span><span class='EQUAL'>B</span><span class='DELETE'>y</span><span class='INSERT'>ookManager.loadFromFile(BookManag</span><span class='EQUAL'>e</span><span class='DELETE'>!</span><span class='INSERT'>r.java:30)
+	at Main.main(Main.java:13)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Exception in thread "main" java.io.FileNotFoundException: C:\PR1\src\tutorial\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+	at java.base/java.util.Scanner.<init>(Scanner.java:641)
+	at Scanner1.<init>(Scanner1.java:56)
+	at BookManager.loadFromFile(BookManager.java:30)
+	at Main.main(Main.java:13)
+</pre></td><td><pre><span class='EQUAL'>Loading books...
+</span><span class='DELETE'>-----------------------------------
+1.</span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in thread "main" java.io.Fi</span><span class='EQUAL'>l</span><span class='INSERT'>eNotFoundExcept</span><span class='EQUAL'>i</span><span class='INSERT'>on: C:\PR1\</span><span class='EQUAL'>s</span><span class='INSERT'>rc\</span><span class='EQUAL'>t</span><span class='DELETE'> </span><span class='INSERT'>utori</span><span class='EQUAL'>al</span><span class='DELETE'>l </span><span class='INSERT'>\</span><span class='EQUAL'>books</span><span class='DELETE'>
+2</span><span class='EQUAL'>.</span><span class='INSERT'>txt</span><span class='EQUAL'> </span><span class='DELETE'>add</span><span class='INSERT'>(The</span><span class='EQUAL'> </span><span class='INSERT'>system c</span><span class='EQUAL'>a</span><span class='INSERT'>nnot</span><span class='EQUAL'> </span><span class='INSERT'>fi</span><span class='EQUAL'>n</span><span class='INSERT'>d th</span><span class='EQUAL'>e</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>book
+3.</span><span class='INSERT'>path</span><span class='EQUAL'> </span><span class='INSERT'>sp</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>c</span><span class='EQUAL'>i</span><span class='INSERT'>fied)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>o</span><span class='INSERT'>ase/java.i</span><span class='EQUAL'>o</span><span class='DELETE'>k
+4</span><span class='EQUAL'>.</span><span class='DELETE'> de</span><span class='INSERT'>Fi</span><span class='EQUAL'>le</span><span class='INSERT'>Inpu</span><span class='EQUAL'>t</span><span class='INSERT'>Str</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='EQUAL'>a</span><span class='DELETE'> b</span><span class='INSERT'>m.</span><span class='EQUAL'>o</span><span class='INSERT'>pen0(Native Meth</span><span class='EQUAL'>o</span><span class='DELETE'>k</span><span class='INSERT'>d)</span><span class='EQUAL'>
+</span><span class='DELETE'>5.</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>se</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>rch b</span><span class='INSERT'>va.i</span><span class='EQUAL'>o</span><span class='DELETE'>oks by </span><span class='INSERT'>.FileI</span><span class='EQUAL'>n</span><span class='INSERT'>putStre</span><span class='EQUAL'>am</span><span class='DELETE'>e
+6</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='EQUAL'>o</span><span class='DELETE'>rt books desc</span><span class='INSERT'>p</span><span class='EQUAL'>en</span><span class='DELETE'>d</span><span class='INSERT'>(F</span><span class='EQUAL'>i</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='DELETE'>g by </span><span class='EQUAL'>p</span><span class='INSERT'>utSt</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>am</span><span class='EQUAL'>.</span><span class='INSERT'>java:219)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='INSERT'>a.bas</span><span class='EQUAL'>e</span><span class='DELETE'> & ex</span><span class='INSERT'>/java.</span><span class='EQUAL'>i</span><span class='DELETE'>t
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>.FileInp</span><span class='EQUAL'>u</span><span class='INSERT'>tSt</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>eam.<ini</span><span class='EQUAL'>t</span><span class='INSERT'>>(F</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='INSERT'>leI</span><span class='EQUAL'>n</span><span class='INSERT'>putStream.java</span><span class='EQUAL'>:</span><span class='INSERT'>158)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>.bas</span><span class='EQUAL'>e</span><span class='DELETE'>                                          Pr</span><span class='INSERT'>/java.ut</span><span class='EQUAL'>i</span><span class='INSERT'>l.S</span><span class='EQUAL'>c</span><span class='INSERT'>ann</span><span class='EQUAL'>e</span><span class='DELETE'>
+    1 Th</span><span class='INSERT'>r.<</span><span class='EQUAL'>in</span><span class='DELETE'>k b</span><span class='EQUAL'>i</span><span class='DELETE'>g </span><span class='INSERT'>t>(Sc</span><span class='EQUAL'>an</span><span class='DELETE'>d G</span><span class='INSERT'>ne</span><span class='EQUAL'>r</span><span class='DELETE'>ow</span><span class='INSERT'>.java:641)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'>1.<</span><span class='EQUAL'>i</span><span class='INSERT'>nit>(S</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>anner</span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>6)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7 h</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>bi</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>f hi</span><span class='INSERT'>okMana</span><span class='EQUAL'>g</span><span class='DELETE'>hly </span><span class='EQUAL'>e</span><span class='DELETE'>ffect</span><span class='INSERT'>r.loadFromF</span><span class='EQUAL'>i</span><span class='DELETE'>ve p</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='INSERT'>(B</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>okManag</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:30)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5 H</span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>rry Pot</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>d the De</span><span class='INSERT'>.main(Main.j</span><span class='EQUAL'>a</span><span class='DELETE'>thly H</span><span class='INSERT'>v</span><span class='EQUAL'>a</span><span class='DELETE'>llows               </span><span class='INSERT'>:</span><span class='EQUAL'>1</span><span class='DELETE'>5.40</span><span class='INSERT'>3)
+</span></pre></td><td><strong>Failed</strong></td></tr></table>
+</body></html>

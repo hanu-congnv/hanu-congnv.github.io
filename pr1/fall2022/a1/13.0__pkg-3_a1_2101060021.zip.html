@@ -1,0 +1,3426 @@
+<html><head><style>body {
+    display: inline-block;
+    padding: 15px;
+}
+h1, h2 {
+    text-align: center;
+}
+#score {
+    color: blue;
+}
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+table, tr, th, td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+td {
+    vertical-align: text-top;
+}
+.insert {
+    background: #f8d7da;
+}
+.delete {
+    background: #cce5ff;
+}/*
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
+</style></head><body>
+<h1>file: temp\a1_2101060021\a1_2101060021</h1>
+<h2 id='score'>Score: 13.0 (4 passed/ total 30 testcases)</h2>
+<h2 id='score'>NOTE: Sample Only = false</h2>
+<h3>Normal Test Cases</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+</span><span class='EQUAL'>-----------------------------------
+1. list all books
+2. add a new book
+3. </span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>dit</span><span class='INSERT'>arch</span><span class='EQUAL'> book</span><span class='INSERT'> by ID</span><span class='EQUAL'>
+4. delete a book
+5. search books by name
+6. sort books descending by price
+</span><span class='INSERT'>7. edit books</span><span class='EQUAL'>
+</span><span class='DELETE'></span><span class='EQUAL'>0. save & exit
+-----------------------------------
+Your option:
+Invalid option</span><span class='DELETE'>!</span><span class='EQUAL'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. </span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>dit</span><span class='INSERT'>arch</span><span class='EQUAL'> book</span><span class='INSERT'> by ID</span><span class='EQUAL'>
+4. delete a book
+5. search books by name
+6. sort books descending by price
+</span><span class='INSERT'>7. edit books</span><span class='EQUAL'>
+</span><span class='DELETE'></span><span class='EQUAL'>0. save & exit
+-----------------------------------
+</span><span class='DELETE'></span><span class='EQUAL'>Your option:</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     
+Empty list-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>(e</span><span class='INSERT'>ID    NAME                                          PRICE     
+E</span><span class='EQUAL'>mpty</span><span class='DELETE'>)</span><span class='INSERT'> list-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>oks...
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'> all bo</span><span class='EQUAL'>o</span><span class='INSERT'>ks
+2. add a </span><span class='EQUAL'>n</span><span class='DELETE'>:</span><span class='INSERT'>ew book</span><span class='EQUAL'>
+</span><span class='DELETE'>Ent</span><span class='INSERT'>3. s</span><span class='EQUAL'>e</span><span class='INSERT'>a</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book </span><span class='DELETE'>id:</span><span class='INSERT'>by ID</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>4. dele</span><span class='EQUAL'>te</span><span class='INSERT'> a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book</span><span class='INSERT'>s by</span><span class='EQUAL'> name</span><span class='DELETE'>:</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>6. sort books desce</span><span class='EQUAL'>n</span><span class='INSERT'>ding by price
+7. edi</span><span class='EQUAL'>t</span><span class='INSERT'> books
+0. sav</span><span class='EQUAL'>e</span><span class='INSERT'> & exit
+-----------------------------------
+You</span><span class='EQUAL'>r </span><span class='INSERT'>option:
+Add new </span><span class='EQUAL'>book</span><span class='INSERT'>
+Get id 
+Get name 
+Get</span><span class='EQUAL'> price</span><span class='DELETE'>:</span><span class='EQUAL'>
+Added successfully</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Duplicated id
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>E</span><span class='INSERT'>Add </span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>w</span><span class='EQUAL'> book</span><span class='INSERT'>
+Get</span><span class='EQUAL'> id</span><span class='DELETE'>:</span><span class='INSERT'> </span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>Get </span><span class='EQUAL'>n</span><span class='INSERT'>ame 
+Ge</span><span class='EQUAL'>t</span><span class='INSERT'> pric</span><span class='EQUAL'>e</span><span class='INSERT'>
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book </span><span class='INSERT'>by ID
+4. delete a book
+5. search books by </span><span class='EQUAL'>name</span><span class='DELETE'>:</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>6. sort books descendi</span><span class='EQUAL'>n</span><span class='INSERT'>g by price
+7. edi</span><span class='EQUAL'>t</span><span class='INSERT'> books
+0. sav</span><span class='EQUAL'>e</span><span class='INSERT'> & exit
+-----------------------------------
+You</span><span class='EQUAL'>r </span><span class='INSERT'>option:
+Add new </span><span class='EQUAL'>book</span><span class='INSERT'>
+Get id 
+Get name 
+Get</span><span class='EQUAL'> price</span><span class='DELETE'>:</span><span class='EQUAL'>
+Duplicated </span><span class='INSERT'>id
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by </span><span class='EQUAL'>ID</span><span class='INSERT'>
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by </span><span class='EQUAL'>ID</span><span class='INSERT'>
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>search books by n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:
+Add</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+Get</span><span class='EQUAL'> </span><span class='INSERT'>id</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>name</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>price
+Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>ID
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     
+</span><span class='EQUAL'>    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter an ID book to search 
+ID    NAME                                          PRICE     -----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>oks...
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'> all b</span><span class='EQUAL'>o</span><span class='INSERT'>oks
+2. add a </span><span class='EQUAL'>n</span><span class='DELETE'>:</span><span class='INSERT'>ew book</span><span class='EQUAL'>
+</span><span class='DELETE'>Ent</span><span class='INSERT'>3. s</span><span class='EQUAL'>e</span><span class='INSERT'>a</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book </span><span class='DELETE'>id:</span><span class='INSERT'>by ID</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>4. dele</span><span class='EQUAL'>te</span><span class='INSERT'> a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book</span><span class='INSERT'>s by</span><span class='EQUAL'> name</span><span class='DELETE'>:</span><span class='EQUAL'>
+</span><span class='DELETE'>Ente</span><span class='INSERT'>6. so</span><span class='EQUAL'>r</span><span class='INSERT'>t</span><span class='EQUAL'> book</span><span class='INSERT'>s descending by</span><span class='EQUAL'> price</span><span class='INSERT'>
+7. edit books
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+</span><span class='DELETE'>Up</span><span class='INSERT'>A</span><span class='EQUAL'>d</span><span class='INSERT'>d new book
+Get id 
+Get n</span><span class='EQUAL'>a</span><span class='INSERT'>me 
+Ge</span><span class='EQUAL'>t</span><span class='INSERT'> price
+Add</span><span class='EQUAL'>ed successfully</span><span class='DELETE'>.</span><span class='EQUAL'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. </span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>dit</span><span class='INSERT'>arch</span><span class='EQUAL'> book</span><span class='INSERT'> by ID</span><span class='EQUAL'>
+4. delete a book
+5. search books by name
+6. sort books descending by price
+</span><span class='INSERT'>7. edit books</span><span class='EQUAL'>
+0. save & exit
+-----------------------------------
+Your option:
+</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by </span><span class='EQUAL'>ID</span><span class='INSERT'>
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>search books by n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:
+Add</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+Get</span><span class='EQUAL'> </span><span class='INSERT'>id</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>name</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>price
+Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>ID
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>ex</span><span class='EQUAL'>i</span><span class='DELETE'>nk</span><span class='INSERT'>t
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>opt</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>on:
+Enter</span><span class='EQUAL'> an</span><span class='DELETE'>d</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>ID book t</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='INSERT'>sea</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='EQUAL'>ch</span><span class='INSERT'> 
+ID    NAME</span><span class='EQUAL'>                            </span><span class='DELETE'>10.95
+</span><span class='EQUAL'>    </span><span class='DELETE'>2 The 7 habits of</span><span class='EQUAL'> </span><span class='DELETE'>highly</span><span class='EQUAL'> </span><span class='DELETE'>effective</span><span class='EQUAL'> </span><span class='DELETE'>people</span><span class='EQUAL'>       </span><span class='INSERT'>PRICE</span><span class='EQUAL'>     </span><span class='INSERT'>-----------------------------------
+</span><span class='EQUAL'>1</span><span class='DELETE'>5</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'> list all books</span><span class='EQUAL'>
+</span><span class='INSERT'>2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>r</span><span class='INSERT'>ch book b</span><span class='EQUAL'>y </span><span class='DELETE'>Pot</span><span class='INSERT'>ID
+4. dele</span><span class='EQUAL'>te</span><span class='DELETE'>r</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='EQUAL'> </span><span class='DELETE'>the</span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>s</span><span class='EQUAL'>ea</span><span class='DELETE'>t</span><span class='INSERT'>rc</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='DELETE'>  </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>23.00</span><span class='INSERT'>option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter an ID book to search 
+Invalid ID
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>E</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a </span><span class='EQUAL'>n</span><span class='INSERT'>ew book
+3. search book by ID
+4. dele</span><span class='EQUAL'>te</span><span class='INSERT'> a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book</span><span class='INSERT'>s</span><span class='EQUAL'> </span><span class='INSERT'>by name
+6. sort books descend</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+7. e</span><span class='EQUAL'>d</span><span class='INSERT'>it books
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter an ID book to search 
+</span><span class='EQUAL'>Invalid ID</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter a keyword to search book
+ID    NAME                                          PRICE     
+    5 Harry Potter and the Deathly Hallows               15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>E</span><span class='INSERT'>Add </span><span class='EQUAL'>n</span><span class='INSERT'>ew book
+Ge</span><span class='EQUAL'>t</span><span class='INSERT'> id 
+G</span><span class='EQUAL'>e</span><span class='INSERT'>t name 
+Get p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+Added</span><span class='EQUAL'> </span><span class='DELETE'>k</span><span class='INSERT'>succ</span><span class='EQUAL'>e</span><span class='INSERT'>ssfull</span><span class='EQUAL'>y</span><span class='DELETE'>w</span><span class='INSERT'>
+-----------------------------------
+1. list all b</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>oks
+2. a</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'>d a new book</span><span class='EQUAL'>
+</span><span class='INSERT'>3. search book by </span><span class='EQUAL'>ID</span><span class='INSERT'>
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5. search books</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>by n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:
+Add</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+Get</span><span class='EQUAL'> </span><span class='INSERT'>id</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>name</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>price
+Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>ID
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>& exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+</span><span class='EQUAL'>2</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>searc</span><span class='EQUAL'>h</span><span class='DELETE'>a</span><span class='INSERT'> book </span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>y ID
+4. dele</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='INSERT'>e</span><span class='EQUAL'> </span><span class='INSERT'>a b</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok
+5.</span><span class='EQUAL'> </span><span class='INSERT'>searc</span><span class='EQUAL'>h</span><span class='INSERT'> books by name
+6. sort books descend</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>g</span><span class='DELETE'>hl</span><span class='INSERT'> b</span><span class='EQUAL'>y </span><span class='INSERT'>pric</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>
+7. </span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>di</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'> books
+0. sa</span><span class='EQUAL'>ve </span><span class='INSERT'>& exit
+-----------------------------------
+Your o</span><span class='EQUAL'>p</span><span class='INSERT'>tion:
+Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r a keyword t</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'> s</span><span class='EQUAL'>e</span><span class='INSERT'>arch</span><span class='EQUAL'> </span><span class='INSERT'>book
+ID</span><span class='EQUAL'>    </span><span class='INSERT'>NAME   </span><span class='EQUAL'>       </span><span class='DELETE'>15.97</span><span class='INSERT'>                                PRICE     </span><span class='EQUAL'>
+    5 Harry Potter and the Deathly Hallows               15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter a keyword to search book
+ID    NAME                                          PRICE     
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>E</span><span class='INSERT'>Add </span><span class='EQUAL'>n</span><span class='INSERT'>ew book
+Ge</span><span class='EQUAL'>t</span><span class='INSERT'> id 
+G</span><span class='EQUAL'>e</span><span class='INSERT'>t name 
+Get p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully
+-----------------------------------
+1. list all boo</span><span class='EQUAL'>k</span><span class='INSERT'>s
+2. add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book
+3. search book b</span><span class='EQUAL'>y</span><span class='INSERT'> ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add ne</span><span class='EQUAL'>w</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='INSERT'>ok
+Get id 
+Get name 
+Get p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+A</span><span class='EQUAL'>d</span><span class='INSERT'>ded successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+</span><span class='DELETE'>(</span><span class='INSERT'>Add new book
+Get id 
+G</span><span class='EQUAL'>e</span><span class='INSERT'>t na</span><span class='EQUAL'>m</span><span class='INSERT'>e 
+Get </span><span class='EQUAL'>p</span><span class='INSERT'>rice
+Added successfully
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all books
+2. add a new book
+3. search book b</span><span class='EQUAL'>y</span><span class='DELETE'>)</span><span class='INSERT'> ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter a keyword to search book
+ID    NAME                                          PRICE     
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE         2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+A</span><span class='INSERT'>dd new book
+Get id 
+Get name 
+Get price
+Added success</span><span class='EQUAL'>f</span><span class='INSERT'>ully
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all books
+2. add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book
+3. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch book by ID
+4. delete a book
+5. search books by name
+6.</span><span class='EQUAL'> sort</span><span class='INSERT'> books descend</span><span class='EQUAL'>ing</span><span class='INSERT'> by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by </span><span class='EQUAL'>ID</span><span class='INSERT'>
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>search books by n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:
+Add</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+Get</span><span class='EQUAL'> </span><span class='INSERT'>id</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>name</span><span class='EQUAL'> </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>price
+Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>ID
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     </span><span class='EQUAL'>    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     -----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='DELETE'>(</span><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book
+3. search book by ID
+4. delete a book
+5. search books by na</span><span class='EQUAL'>m</span><span class='INSERT'>e
+6. sort books descending by </span><span class='EQUAL'>p</span><span class='INSERT'>rice
+7. edi</span><span class='EQUAL'>t</span><span class='INSERT'> books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     -----------------------------------
+1. list all books
+2. add a new book
+3. search book b</span><span class='EQUAL'>y</span><span class='DELETE'>)</span><span class='INSERT'> ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter an ID book to delete
+This book is deleted
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>E</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a </span><span class='EQUAL'>n</span><span class='INSERT'>ew book
+3. search book by ID
+4. dele</span><span class='EQUAL'>te</span><span class='INSERT'> a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book</span><span class='INSERT'>s</span><span class='EQUAL'> </span><span class='INSERT'>by name
+6. sort books descend</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+7. e</span><span class='EQUAL'>d</span><span class='INSERT'>it books
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by I</span><span class='EQUAL'>D</span><span class='INSERT'>
+4. d</span><span class='EQUAL'>elete</span><span class='INSERT'> a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Adde</span><span class='EQUAL'>d successfully</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter an ID book to delete
+This book is deleted
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Enter an ID book to delete
+Invalid ID
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>E</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a </span><span class='EQUAL'>n</span><span class='INSERT'>ew book
+3. search book by ID
+4. dele</span><span class='EQUAL'>te</span><span class='INSERT'> a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book</span><span class='INSERT'>s</span><span class='EQUAL'> </span><span class='INSERT'>by name
+6. sort books descend</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+7. e</span><span class='EQUAL'>d</span><span class='INSERT'>it books
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+</span><span class='DELETE'>I</span><span class='INSERT'>Add new book
+Get id 
+Get </span><span class='EQUAL'>n</span><span class='DELETE'>v</span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>me 
+Get pr</span><span class='EQUAL'>i</span><span class='INSERT'>ce
+Adde</span><span class='EQUAL'>d </span><span class='DELETE'>ID!</span><span class='INSERT'>successfully</span><span class='EQUAL'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. </span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>dit</span><span class='INSERT'>arch</span><span class='EQUAL'> book</span><span class='INSERT'> by ID</span><span class='EQUAL'>
+4. delete a book
+5. search books by name
+6. sort books descending by price
+</span><span class='INSERT'>7. edit books</span><span class='EQUAL'>
+0. save & exit
+-----------------------------------
+Your option:
+</span><span class='DELETE'>ID</span><span class='INSERT'>Add</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+Get</span><span class='EQUAL'> </span><span class='INSERT'>id</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>
+Get n</span><span class='EQUAL'>ame </span><span class='INSERT'>
+Get</span><span class='EQUAL'> </span><span class='INSERT'>price
+Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>ID
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+7.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>books
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:
+Enter</span><span class='EQUAL'> </span><span class='INSERT'>an</span><span class='EQUAL'> </span><span class='INSERT'>ID</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>to</span><span class='EQUAL'> </span><span class='INSERT'>delete
+Invalid</span><span class='EQUAL'> </span><span class='INSERT'>ID
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     
+</span><span class='EQUAL'>    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Saving and Existing.......
+Saving to file...
+java.io.FileNotFoundException: C:\IdeaProjects\PR_1\asg1-starterpack\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:67)
+	at BookManager.saveToFile(BookManager.java:185)
+	at Main.main(Main.java:138)
+Bye!
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='INSERT'>Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Add new book
+Get id 
+Get name 
+Get price
+Added successfully
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+Saving and Existing.......
+</span><span class='EQUAL'>Saving to file...
+</span><span class='INSERT'>java.io.FileNotFoundException: C:\IdeaProjects\PR_1\asg1-starterpack\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:67)
+	at BookManager.saveToFile(BookManager.java:185)
+	at Main.main(Main.java:138)
+</span><span class='EQUAL'>Bye!</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+ID    NAME                                          PRICE     
+Empty list-----------------------------------
+1. list all books
+2. add a new book
+3. search book by ID
+4. delete a book
+5. search books by name
+6. sort books descending by price
+7. edit books
+0. save & exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='EQUAL'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. </span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>dit</span><span class='INSERT'>arch</span><span class='EQUAL'> book</span><span class='INSERT'> by ID</span><span class='EQUAL'>
+4. delete a book
+5. search books by name
+6. sort books descending by price
+</span><span class='INSERT'>7. edit books</span><span class='EQUAL'>
+</span><span class='DELETE'></span><span class='EQUAL'>0. save & exit
+-----------------------------------
+Your option:
+ID    N</span><span class='DELETE'>ame</span><span class='INSERT'>AME</span><span class='EQUAL'>                                          P</span><span class='DELETE'>rice
+</span><span class='INSERT'>RICE</span><span class='EQUAL'>    </span><span class='DELETE'>1</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>
+Empty l</span><span class='EQUAL'>i</span><span class='DELETE'>nk</span><span class='INSERT'>st-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>st</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='INSERT'>ll</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ks
+2.</span><span class='EQUAL'> </span><span class='DELETE'>rich                    </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>     </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>10.95</span><span class='INSERT'>book</span><span class='EQUAL'>
+</span><span class='DELETE'>   </span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='DELETE'>2 Th</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'> 7 h</span><span class='EQUAL'>a</span><span class='INSERT'>rch </span><span class='EQUAL'>b</span><span class='DELETE'>its </span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='DELETE'>highl</span><span class='INSERT'>b</span><span class='EQUAL'>y </span><span class='INSERT'>ID
+4. d</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e </span><span class='DELETE'>people     </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>      1</span><span class='INSERT'>book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>n</span><span class='EQUAL'>a</span><span class='DELETE'>rry</span><span class='INSERT'>me
+6.</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>s</span><span class='EQUAL'>o</span><span class='DELETE'>tte</span><span class='EQUAL'>r</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='DELETE'>a</span><span class='INSERT'>books desce</span><span class='EQUAL'>nd</span><span class='INSERT'>ing</span><span class='EQUAL'> </span><span class='DELETE'>th</span><span class='INSERT'>by pric</span><span class='EQUAL'>e</span><span class='INSERT'>
+7.</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='EQUAL'>e</span><span class='DELETE'>a</span><span class='INSERT'>di</span><span class='EQUAL'>t</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s</span><span class='DELETE'>           </span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span><span class='INSERT'>option:
+</span></pre></td><td><strong>Failed</strong></td></tr></table>
+<h3>Test Script: Main</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Empty list-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Empty list-----------------------------------</span><span class='EQUAL'>
+</span><span class='DELETE'>(</span><span class='INSERT'>1. list all books
+2. add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book
+3. edit book
+4. delete a book
+5. search books by na</span><span class='EQUAL'>m</span><span class='INSERT'>e
+6. sort books descending by </span><span class='EQUAL'>p</span><span class='INSERT'>rice
+
+0. save & exi</span><span class='EQUAL'>t</span><span class='DELETE'>y)</span><span class='INSERT'>
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Duplicated ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:     1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:     1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>U</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by </span><span class='EQUAL'>p</span><span class='INSERT'>rice
+
+0. save & exit
+-----------------------------------
+Your option: Enter book i</span><span class='EQUAL'>d</span><span class='INSERT'>: Enter book n</span><span class='EQUAL'>a</span><span class='INSERT'>me: En</span><span class='EQUAL'>t</span><span class='INSERT'>er book price: Add</span><span class='EQUAL'>ed successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>Enter book n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Updated</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword:     5 Harry Potter and the Deathly Hallows               15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> Enter book id: </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'> nam</span><span class='EQUAL'>e</span><span class='INSERT'>: Enter book price: Added successfull</span><span class='EQUAL'>y</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a ne</span><span class='EQUAL'>w</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>ok
+3. e</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'>it book</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>search books by n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>id: Enter book n</span><span class='EQUAL'>a</span><span class='INSERT'>me: Enter </span><span class='EQUAL'>b</span><span class='INSERT'>ook pr</span><span class='EQUAL'>i</span><span class='INSERT'>ce: Added successfully.
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all book</span><span class='EQUAL'>s</span><span class='INSERT'>
+2. add</span><span class='EQUAL'> </span><span class='INSERT'>a new bo</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>k
+3.</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>ed</span><span class='EQUAL'>i</span><span class='DELETE'>ghly</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>book
+4. d</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e </span><span class='DELETE'>p</span><span class='INSERT'>a book
+5. s</span><span class='EQUAL'>e</span><span class='INSERT'>arch b</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>oks by nam</span><span class='EQUAL'>e</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>keyword:</span><span class='EQUAL'> </span><span class='DELETE'>15.97
+</span><span class='EQUAL'>    5 Harry Potter and the Deathly Hallows               15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword: Empty list-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'> id: Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r book name: Enter book price: Added successfull</span><span class='EQUAL'>y</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a ne</span><span class='EQUAL'>w</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='INSERT'>ok
+3. edit book
+4. delete a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch books by name
+6. sort books </span><span class='EQUAL'>d</span><span class='INSERT'>escending by price
+
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>(</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books desc</span><span class='EQUAL'>e</span><span class='INSERT'>nding by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword: E</span><span class='EQUAL'>mpty</span><span class='DELETE'>)</span><span class='INSERT'> list-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:     2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95
+After sorting:
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: </span><span class='EQUAL'>A</span><span class='INSERT'>dded success</span><span class='EQUAL'>f</span><span class='INSERT'>ully.
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all books
+2. add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book
+3. edit book
+4. delete a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch books by name
+6.</span><span class='EQUAL'> sort</span><span class='INSERT'> books descend</span><span class='EQUAL'>ing</span><span class='INSERT'> by price
+
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>add a new book
+3. edit book
+4. delete a book
+5. search books by n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'>     </span><span class='INSERT'>2</span><span class='EQUAL'> </span><span class='INSERT'>The</span><span class='EQUAL'> </span><span class='INSERT'>7</span><span class='EQUAL'> </span><span class='INSERT'>habits</span><span class='EQUAL'> </span><span class='INSERT'>of</span><span class='EQUAL'> </span><span class='INSERT'>highly</span><span class='EQUAL'> </span><span class='INSERT'>effective</span><span class='EQUAL'> </span><span class='INSERT'>people</span><span class='EQUAL'>            </span><span class='INSERT'>15.97
+</span><span class='EQUAL'>    </span><span class='INSERT'>5</span><span class='EQUAL'> </span><span class='INSERT'>Harry</span><span class='EQUAL'> </span><span class='INSERT'>Potter</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>the</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>Deathly Hallows               15.40
+    1 Think big and Grow </span><span class='EQUAL'>ric</span><span class='INSERT'>h                            10.95
+Aft</span><span class='EQUAL'>e</span><span class='INSERT'>r sorting:</span><span class='EQUAL'>
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+Empty list-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>(</span><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Aft</span><span class='EQUAL'>e</span><span class='INSERT'>r sorting:
+E</span><span class='EQUAL'>mpty</span><span class='DELETE'>)</span><span class='INSERT'> list-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: This book is deleted
+Deleted successfully!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: This book is deleted</span><span class='EQUAL'>
+Deleted successfully</span><span class='INSERT'>!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:     1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>I</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by </span><span class='EQUAL'>n</span><span class='INSERT'>ame
+6. sort books descending by price
+
+0. sa</span><span class='EQUAL'>v</span><span class='INSERT'>e & exit
+-----------------------------------
+Your option: Enter book id: Enter book n</span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>me: Enter book pr</span><span class='EQUAL'>i</span><span class='INSERT'>ce: Adde</span><span class='EQUAL'>d </span><span class='DELETE'>ID!</span><span class='INSERT'>successfully.</span><span class='EQUAL'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>Enter book n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Invalid</span><span class='EQUAL'> </span><span class='INSERT'>ID!
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Saving to file...
+java.io.FileNotFoundException: C:\IdeaProjects\PR_1\asg1-starterpack\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:67)
+	at BookManager.saveToFile(BookManager.java:185)
+	at Main.main(Main.java:128)
+Bye!
+Bye!
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Saving to file...
+</span><span class='INSERT'>java.io.FileNotFoundException: C:\IdeaProjects\PR_1\asg1-starterpack\books.txt (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:124)
+	at java.base/java.io.FileWriter.<init>(FileWriter.java:67)
+	at BookManager.saveToFile(BookManager.java:185)
+	at Main.main(Main.java:128)
+</span><span class='EQUAL'>Bye!</span><span class='INSERT'>
+Bye!
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Empty list-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='EQUAL'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID   </span><span class='EQUAL'> </span><span class='DELETE'>Na</span><span class='INSERT'>E</span><span class='EQUAL'>m</span><span class='DELETE'>e                                  </span><span class='INSERT'>pty</span><span class='EQUAL'> </span><span class='DELETE'>       Pr</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>ce</span><span class='INSERT'>st-----------------------------------</span><span class='EQUAL'>
+</span><span class='DELETE'>    </span><span class='EQUAL'>1</span><span class='DELETE'> Think</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>st</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='INSERT'>ll</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>w rich                      </span><span class='INSERT'>oks
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>  10</span><span class='INSERT'>book
+3</span><span class='EQUAL'>.</span><span class='DELETE'>95
+    2</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7 hab</span><span class='INSERT'>d</span><span class='EQUAL'>it</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f highly</span><span class='INSERT'>ok
+4.</span><span class='EQUAL'> </span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e </span><span class='DELETE'>pe</span><span class='INSERT'>a bo</span><span class='EQUAL'>o</span><span class='DELETE'>ple            15.97</span><span class='INSERT'>k</span><span class='EQUAL'>
+</span><span class='DELETE'>    </span><span class='EQUAL'>5</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>oks by</span><span class='EQUAL'> </span><span class='DELETE'>a</span><span class='EQUAL'>n</span><span class='DELETE'>d th</span><span class='INSERT'>am</span><span class='EQUAL'>e</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='DELETE'>Dea</span><span class='INSERT'>sor</span><span class='EQUAL'>t</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>       </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr></table>
+</body></html>

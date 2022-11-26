@@ -1,0 +1,1936 @@
+<html><head><style>body {
+    display: inline-block;
+    padding: 15px;
+}
+h1, h2 {
+    text-align: center;
+}
+#score {
+    color: blue;
+}
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+table, tr, th, td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+td {
+    vertical-align: text-top;
+}
+.insert {
+    background: #f8d7da;
+}
+.delete {
+    background: #cce5ff;
+}/*
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
+</style></head><body>
+<h1>file: temp\a1_1901040155\a1_1901040155</h1>
+<h2 id='score'>Score: 6.0 (2 passed/ total 30 testcases)</h2>
+<h2 id='score'>NOTE: Sample Only = false</h2>
+<h3>Normal Test Cases</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Invalid option!
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre><span class='DELETE'>-</span><span class='INSERT'>Loading books...
+ko thay file
+</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Invalid option!
+</span><span class='DELETE'>-</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: ID    Name                                          Price     
+(empty)
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='INSERT'> ID    Name                                          Price     </span><span class='EQUAL'>
+(empty)</span><span class='INSERT'>
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>A</span><span class='INSERT'>	at java.base/java.lang.ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.</span><span class='EQUAL'>de</span><span class='INSERT'>fineClass1(Native Metho</span><span class='EQUAL'>d</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass(Clas</span><span class='EQUAL'>s</span><span class='INSERT'>Loader.java:1013)
+	at java.base/java.sec</span><span class='EQUAL'>u</span><span class='INSERT'>rity.Se</span><span class='EQUAL'>c</span><span class='INSERT'>ureClassLoader.defineClass(Se</span><span class='EQUAL'>c</span><span class='INSERT'>ur</span><span class='EQUAL'>e</span><span class='INSERT'>ClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinCla</span><span class='EQUAL'>ss</span><span class='INSERT'>Loader.de</span><span class='EQUAL'>f</span><span class='INSERT'>ineClass(B</span><span class='EQUAL'>u</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='INSERT'>tinC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.sec</span><span class='EQUAL'>u</span><span class='DELETE'>p</span><span class='INSERT'>rity.SecureC</span><span class='EQUAL'>l</span><span class='INSERT'>assLoader.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='INSERT'>ureClassLoader.java:150)
+	</span><span class='EQUAL'>at</span><span class='INSERT'> java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>d</span><span class='INSERT'>k.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...</span><span class='EQUAL'>
+</span><span class='DELETE'>ID   </span><span class='INSERT'>ko</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>th</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>y fil</span><span class='EQUAL'>e</span><span class='INSERT'>
+----------------------------------
+1.</span><span class='EQUAL'> </span><span class='DELETE'>  </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>T</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='INSERT'>un</span><span class='EQUAL'>c</span><span class='INSERT'>at</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass</span><span class='EQUAL'>1</span><span class='INSERT'>(Native</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='DELETE'>ink</span><span class='INSERT'>od)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.Cl</span><span class='EQUAL'>a</span><span class='INSERT'>ssLoader.defi</span><span class='EQUAL'>n</span><span class='INSERT'>eClass(ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>java.base/java.secu</span><span class='EQUAL'>r</span><span class='INSERT'>ity.SecureClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='DELETE'>h                            10</span><span class='INSERT'>ureClassLoader</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:1</span><span class='EQUAL'>5</span><span class='INSERT'>0)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:86</span><span class='EQUAL'>2</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPat</span><span class='EQUAL'>h</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.BuiltinCla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sL</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.loadClassOrNull(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>tinClassLoader.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/jdk.int</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>rnal.loader.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>v</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.loadClass(BuiltinClassLoader.java:639)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>p</span><span class='INSERT'>java.base/jdk.internal.load</span><span class='EQUAL'>e</span><span class='INSERT'>r.ClassL</span><span class='EQUAL'>o</span><span class='INSERT'>aders$Ap</span><span class='EQUAL'>p</span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            </span><span class='INSERT'>r.loadClass(ClassLoaders.java:</span><span class='EQUAL'>1</span><span class='DELETE'>5.97</span><span class='INSERT'>88)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.base/jav</span><span class='EQUAL'>a</span><span class='INSERT'>.lang.ClassLoade</span><span class='EQUAL'>r</span><span class='INSERT'>.loadClass(ClassLoade</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>.java:521)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>Bo</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>kManag</span><span class='EQUAL'>er</span><span class='DELETE'>                </span><span class='INSERT'>.addnew(BookManager.java:58)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                      15</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='INSERT'>java:</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>2)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur opt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Enter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='DELETE'> id:</span><span class='INSERT'>s...</span><span class='EQUAL'>
+</span><span class='DELETE'>Enter boo</span><span class='EQUAL'>k</span><span class='DELETE'> name:
+Enter b</span><span class='EQUAL'>o</span><span class='DELETE'>ok</span><span class='EQUAL'> </span><span class='DELETE'>price:
+Upd</span><span class='INSERT'>th</span><span class='EQUAL'>a</span><span class='DELETE'>ted</span><span class='INSERT'>y</span><span class='EQUAL'> </span><span class='DELETE'>success</span><span class='EQUAL'>f</span><span class='DELETE'>ul</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='DELETE'>y.</span><span class='INSERT'>e</span><span class='EQUAL'>
+</span><span class='DELETE'>-</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+ID</span><span class='INSERT'> Enter book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='INSERT'>Truncated</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                              P</span><span class='INSERT'>java.base/java.lang.ClassLoade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>n</span><span class='EQUAL'>e</span><span class='DELETE'>
+    </span><span class='INSERT'>Class</span><span class='EQUAL'>1</span><span class='INSERT'>(Native</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='DELETE'>ink</span><span class='INSERT'>od)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.ClassLo</span><span class='EQUAL'>a</span><span class='INSERT'>der.defi</span><span class='EQUAL'>n</span><span class='INSERT'>eClass(ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>java.base/java.secu</span><span class='EQUAL'>r</span><span class='INSERT'>ity.SecureClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>ureClassLoader.java:</span><span class='EQUAL'>1</span><span class='INSERT'>5</span><span class='EQUAL'>0</span><span class='DELETE'>.95</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:86</span><span class='EQUAL'>2</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPat</span><span class='EQUAL'>h</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.BuiltinCla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sLoader.l</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>adClassOrNull(Built</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>nC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/jdk.internal.load</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>r.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>ve p</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>adClass(Bui</span><span class='EQUAL'>l</span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>java:63</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='INSERT'>se/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s$AppClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> th</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>r.loadClass(ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs.java:188)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.base/java.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.ClassLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='INSERT'>s(ClassLoader.java:521)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>BookManager.addnew(BookManager.java:58)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>             23</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='DELETE'>00</span><span class='INSERT'>java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>I</span><span class='INSERT'>	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(Builti</span><span class='EQUAL'>n</span><span class='INSERT'>ClassLoader.java:862)
+	at ja</span><span class='EQUAL'>va</span><span class='INSERT'>.base/jdk.internal.</span><span class='EQUAL'>l</span><span class='INSERT'>oader.Bu</span><span class='EQUAL'>i</span><span class='INSERT'>ltinClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...</span><span class='EQUAL'>
+</span><span class='DELETE'>Enter </span><span class='EQUAL'>k</span><span class='DELETE'>eyw</span><span class='EQUAL'>o</span><span class='DELETE'>rd:
+ID   </span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>th</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>y fil</span><span class='EQUAL'>e</span><span class='DELETE'>  </span><span class='INSERT'>
+----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>T</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='INSERT'>un</span><span class='EQUAL'>c</span><span class='INSERT'>at</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass1(Native</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>M</span><span class='EQUAL'>e</span><span class='INSERT'>thod)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.secur</span><span class='EQUAL'>it</span><span class='INSERT'>y.SecureClas</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='INSERT'>ader.de</span><span class='EQUAL'>f</span><span class='DELETE'> h</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>neC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>ass(SecureClassLoader.java:150)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>f</span><span class='INSERT'>/jdk.internal.loader.BuiltinClassLoader.de</span><span class='EQUAL'>f</span><span class='INSERT'>in</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>Class(Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>v</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:862)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>p</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/jdk.internal.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>ader.Bui</span><span class='EQUAL'>l</span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>findClassOnClassPathOrNull(BuiltinClassLoader.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'>r</span><span class='INSERT'>.base/jdk.inte</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>nal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.Buil</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'>inClassLoad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>.loadCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssOrNull(Builti</span><span class='EQUAL'>n</span><span class='INSERT'>ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/jdk.in</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>rnal.load</span><span class='EQUAL'>e</span><span class='INSERT'>r.BuiltinCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssLoader.loadClass(Buil</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>inC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:639)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>java.base/jdk.intern</span><span class='EQUAL'>al</span><span class='INSERT'>.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>ader.Cla</span><span class='EQUAL'>s</span><span class='DELETE'>              </span><span class='INSERT'>sLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:52</span><span class='EQUAL'>1</span><span class='INSERT'>)
+	at BookManager.addnew(BookManager.java:</span><span class='EQUAL'>5</span><span class='INSERT'>8)
+	at Main</span><span class='EQUAL'>.</span><span class='INSERT'>main(Main.java:</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>2)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> Enter book id: Enter book name: </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'> pric</span><span class='EQUAL'>e</span><span class='INSERT'>: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.securit</span><span class='EQUAL'>y</span><span class='DELETE'>w</span><span class='INSERT'>.SecureClassL</span><span class='EQUAL'>o</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.</span><span class='EQUAL'>d</span><span class='INSERT'>efineClass(SecureClassLoader.java</span><span class='EQUAL'>:</span><span class='INSERT'>150)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass</span><span class='EQUAL'>(</span><span class='INSERT'>BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>m</span><span class='INSERT'>r.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$A</span><span class='EQUAL'>p</span><span class='INSERT'>pClassLoader.loadClass(ClassLoaders.java:188)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...</span><span class='EQUAL'>
+</span><span class='DELETE'>Af</span><span class='INSERT'>ko </span><span class='EQUAL'>t</span><span class='INSERT'>hay fil</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>
+----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>li</span><span class='EQUAL'>s</span><span class='DELETE'>or</span><span class='EQUAL'>t</span><span class='DELETE'>ing:
+ID</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'> n</span><span class='EQUAL'>e</span><span class='INSERT'>w</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='DELETE'>        </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>T</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='INSERT'>un</span><span class='EQUAL'>c</span><span class='INSERT'>at</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='DELETE'>  2 Th</span><span class='INSERT'>fil</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>ase/java.lang.Clas</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='INSERT'>ader.de</span><span class='EQUAL'>f</span><span class='INSERT'>ineClass1(Native</span><span class='EQUAL'> </span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='INSERT'>od)
+	at java.base/java.lang.ClassLoader.def</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>neClass(C</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:1013)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/java.s</span><span class='EQUAL'>ec</span><span class='INSERT'>uri</span><span class='EQUAL'>t</span><span class='INSERT'>y.SecureClassLoader.def</span><span class='EQUAL'>i</span><span class='DELETE'>v</span><span class='INSERT'>neClass(S</span><span class='EQUAL'>e</span><span class='DELETE'> p</span><span class='INSERT'>cur</span><span class='EQUAL'>e</span><span class='DELETE'>op</span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            </span><span class='INSERT'>r.java:</span><span class='EQUAL'>15</span><span class='DELETE'>.97</span><span class='INSERT'>0)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.base/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.BuiltinClassL</span><span class='EQUAL'>o</span><span class='INSERT'>ader.defineClass(Buil</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'>inClassLoad</span><span class='EQUAL'>er</span><span class='INSERT'>.java:862)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.base/jdk.i</span><span class='EQUAL'>n</span><span class='INSERT'>ternal.loa</span><span class='EQUAL'>d</span><span class='DELETE'> </span><span class='INSERT'>er.BuiltinClassLoader.findClassOnClassPa</span><span class='EQUAL'>th</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:760)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/jdk.internal.lo</span><span class='EQUAL'>a</span><span class='INSERT'>der.Buil</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>inC</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='INSERT'>assLoader.loadCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssOrNu</span><span class='EQUAL'>ll</span><span class='DELETE'>ow</span><span class='INSERT'>(BuiltinClas</span><span class='EQUAL'>s</span><span class='DELETE'>               15</span><span class='INSERT'>Loader</span><span class='EQUAL'>.</span><span class='DELETE'>40
+    </span><span class='INSERT'>java:68</span><span class='EQUAL'>1</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>java.base/jdk.</span><span class='EQUAL'>in</span><span class='DELETE'>k</span><span class='INSERT'>ternal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>nternal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.l</span><span class='EQUAL'>an</span><span class='INSERT'>g.ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.loadClass(ClassLoader.java:521)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>BookManage</span><span class='EQUAL'>r</span><span class='INSERT'>.addnew(B</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>okManage</span><span class='EQUAL'>r</span><span class='DELETE'>ich                            10</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>8)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>(empty)</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: After sorting:
+ID    Name                                          Price     
+(empty)
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/java.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.defineClass1(Na</span><span class='EQUAL'>t</span><span class='INSERT'>iv</span><span class='EQUAL'>e</span><span class='INSERT'> Metho</span><span class='EQUAL'>d</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.sec</span><span class='EQUAL'>u</span><span class='INSERT'>rity.Se</span><span class='EQUAL'>c</span><span class='INSERT'>ureClassLoader.defineClass(Se</span><span class='EQUAL'>c</span><span class='INSERT'>ur</span><span class='EQUAL'>e</span><span class='INSERT'>Cla</span><span class='EQUAL'>ss</span><span class='INSERT'>Loader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.de</span><span class='EQUAL'>f</span><span class='INSERT'>ineClass(B</span><span class='EQUAL'>u</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='INSERT'>tinC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Your </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>pt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Enter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='INSERT'>s...
+ko</span><span class='EQUAL'> </span><span class='INSERT'>thay f</span><span class='EQUAL'>i</span><span class='DELETE'>d:
+Inva</span><span class='EQUAL'>l</span><span class='DELETE'>id ID!</span><span class='INSERT'>e</span><span class='EQUAL'>
+</span><span class='DELETE'>-</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+ID</span><span class='INSERT'> Enter book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='INSERT'>Truncated</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                              P</span><span class='INSERT'>java.base/java.lang.ClassLoade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>n</span><span class='EQUAL'>e</span><span class='DELETE'>
+    </span><span class='INSERT'>Class</span><span class='EQUAL'>1</span><span class='INSERT'>(Native</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='DELETE'>ink</span><span class='INSERT'>od)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.ClassLo</span><span class='EQUAL'>a</span><span class='INSERT'>der.defi</span><span class='EQUAL'>n</span><span class='INSERT'>eClass(ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>java.base/java.secu</span><span class='EQUAL'>r</span><span class='INSERT'>ity.SecureClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>ureClassLoader.java:</span><span class='EQUAL'>1</span><span class='DELETE'>0.9</span><span class='EQUAL'>5</span><span class='INSERT'>0)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:86</span><span class='EQUAL'>2</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPat</span><span class='EQUAL'>h</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.BuiltinCla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sL</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.loadClassOrNull(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>ltinC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/jdk.internal.load</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>r.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>ve p</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>adClass(Bui</span><span class='EQUAL'>l</span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>java:63</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.base/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s$AppClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> th</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>r.loadClass(ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs.java:188)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>java.base/jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.ClassLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='INSERT'>s(ClassLoader.java:521)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>BookManager.addnew(BookManager.java:58)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>             15</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='INSERT'>java:</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>2)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>S</span><span class='INSERT'>	at j</span><span class='EQUAL'>av</span><span class='INSERT'>a.base/java.lang.ClassLoader.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass1(Native Method)
+	at java.base/java.la</span><span class='EQUAL'>ng</span><span class='INSERT'>.ClassLoader.defineClass(ClassLoader.java:1013)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.securi</span><span class='EQUAL'>t</span><span class='INSERT'>y.SecureClassL</span><span class='EQUAL'>o</span><span class='INSERT'>ader.defineClass(SecureClassLoader.java:150)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.de</span><span class='EQUAL'>fi</span><span class='INSERT'>neC</span><span class='EQUAL'>l</span><span class='INSERT'>ass(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>java:862)
+	at java</span><span class='EQUAL'>.</span><span class='INSERT'>base/jdk.internal</span><span class='EQUAL'>.</span><span class='INSERT'>loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.</span><span class='EQUAL'>B</span><span class='DELETE'>y</span><span class='INSERT'>uiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>!</span><span class='INSERT'>r.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: ID    Name                                          Price     
+(empty)
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre><span class='EQUAL'>Loading books...
+</span><span class='DELETE'>-</span><span class='INSERT'>ko thay file
+</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>ID    Name                                          Price</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>    </span><span class='INSERT'>
+(empty)
+----------------------------------
+</span><span class='EQUAL'>1</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>nk</span><span class='INSERT'>st all</span><span class='EQUAL'> b</span><span class='DELETE'>ig</span><span class='INSERT'>ooks
+2.</span><span class='EQUAL'> a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> Grow rich</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>                         </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>10.95</span><span class='INSERT'>book</span><span class='EQUAL'>
+</span><span class='DELETE'>    2</span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7 hab</span><span class='INSERT'>d</span><span class='EQUAL'>it</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>k
+4.</span><span class='EQUAL'> </span><span class='DELETE'>high</span><span class='INSERT'>de</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='EQUAL'>e</span><span class='DELETE'>ffec</span><span class='EQUAL'>t</span><span class='DELETE'>ive peopl</span><span class='EQUAL'>e </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>          1</span><span class='INSERT'>book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>oks</span><span class='EQUAL'> </span><span class='DELETE'>and</span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>th</span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='DELETE'>Dea</span><span class='INSERT'>sor</span><span class='EQUAL'>t</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='DELETE'>    </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr></table>
+<h3>Test Script: Main</h3><div class='error'><strong>Compilation error: </strong> <pre>Main.java:35: error: cannot find symbol
+                    manager.printBooks(manager.getBooks());
+                                              ^
+  symbol:   method getBooks()
+  location: variable manager of type BookManager
+Main.java:50: error: cannot access Book
+                    Book book = new Book(id, name, price);
+                    ^
+  bad class file: .\Book.class
+    class file contains wrong class: java.util.Iterator
+    Please remove or make sure it appears in the correct subdirectory of the classpath.
+Main.java:66: error: cannot find symbol
+                    Book book = manager.getBookById(id);
+                                       ^
+  symbol:   method getBookById(int)
+  location: variable manager of type BookManager
+Main.java:91: error: cannot find symbol
+                    Book book = manager.getBookById(id);
+                                       ^
+  symbol:   method getBookById(int)
+  location: variable manager of type BookManager
+Main.java:125: error: cannot find symbol
+                    manager.printBooks(manager.getBooks());
+                                              ^
+  symbol:   method getBooks()
+  location: variable manager of type BookManager
+5 errors
+</pre></div><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Invalid option!
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre><span class='DELETE'>-</span><span class='INSERT'>Loading books...
+ko thay file
+</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Invalid option!
+</span><span class='DELETE'>-</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: ID    Name                                          Price     
+(empty)
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='INSERT'> ID    Name                                          Price     </span><span class='EQUAL'>
+(empty)</span><span class='INSERT'>
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>A</span><span class='INSERT'>	at java.base/java.lang.ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.</span><span class='EQUAL'>de</span><span class='INSERT'>fineClass1(Native Metho</span><span class='EQUAL'>d</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass(Clas</span><span class='EQUAL'>s</span><span class='INSERT'>Loader.java:1013)
+	at java.base/java.sec</span><span class='EQUAL'>u</span><span class='INSERT'>rity.Se</span><span class='EQUAL'>c</span><span class='INSERT'>ureClassLoader.defineClass(Se</span><span class='EQUAL'>c</span><span class='INSERT'>ur</span><span class='EQUAL'>e</span><span class='INSERT'>ClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinCla</span><span class='EQUAL'>ss</span><span class='INSERT'>Loader.de</span><span class='EQUAL'>f</span><span class='INSERT'>ineClass(B</span><span class='EQUAL'>u</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='INSERT'>tinC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.sec</span><span class='EQUAL'>u</span><span class='DELETE'>p</span><span class='INSERT'>rity.SecureC</span><span class='EQUAL'>l</span><span class='INSERT'>assLoader.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='INSERT'>ureClassLoader.java:150)
+	</span><span class='EQUAL'>at</span><span class='INSERT'> java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>d</span><span class='INSERT'>k.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...</span><span class='EQUAL'>
+</span><span class='DELETE'>ID   </span><span class='INSERT'>ko</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>th</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>y fil</span><span class='EQUAL'>e</span><span class='INSERT'>
+----------------------------------
+1.</span><span class='EQUAL'> </span><span class='DELETE'>  </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>T</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='INSERT'>un</span><span class='EQUAL'>c</span><span class='INSERT'>at</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass</span><span class='EQUAL'>1</span><span class='INSERT'>(Native</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='DELETE'>ink</span><span class='INSERT'>od)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.Cl</span><span class='EQUAL'>a</span><span class='INSERT'>ssLoader.defi</span><span class='EQUAL'>n</span><span class='INSERT'>eClass(ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>java.base/java.secu</span><span class='EQUAL'>r</span><span class='INSERT'>ity.SecureClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='DELETE'>h                            10</span><span class='INSERT'>ureClassLoader</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:1</span><span class='EQUAL'>5</span><span class='INSERT'>0)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:86</span><span class='EQUAL'>2</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPat</span><span class='EQUAL'>h</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.BuiltinCla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sL</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.loadClassOrNull(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>tinClassLoader.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/jdk.int</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>rnal.loader.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>v</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.loadClass(BuiltinClassLoader.java:639)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>p</span><span class='INSERT'>java.base/jdk.internal.load</span><span class='EQUAL'>e</span><span class='INSERT'>r.ClassL</span><span class='EQUAL'>o</span><span class='INSERT'>aders$Ap</span><span class='EQUAL'>p</span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            </span><span class='INSERT'>r.loadClass(ClassLoaders.java:</span><span class='EQUAL'>1</span><span class='DELETE'>5.97</span><span class='INSERT'>88)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.base/jav</span><span class='EQUAL'>a</span><span class='INSERT'>.lang.ClassLoade</span><span class='EQUAL'>r</span><span class='INSERT'>.loadClass(ClassLoade</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>.java:521)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>Bo</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>kManag</span><span class='EQUAL'>er</span><span class='DELETE'>                </span><span class='INSERT'>.addnew(BookManager.java:58)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                      15</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='INSERT'>java:</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>2)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur opt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Enter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='DELETE'> id:</span><span class='INSERT'>s...</span><span class='EQUAL'>
+</span><span class='DELETE'>Enter boo</span><span class='EQUAL'>k</span><span class='DELETE'> name:
+Enter b</span><span class='EQUAL'>o</span><span class='DELETE'>ok</span><span class='EQUAL'> </span><span class='DELETE'>price:
+Upd</span><span class='INSERT'>th</span><span class='EQUAL'>a</span><span class='DELETE'>ted</span><span class='INSERT'>y</span><span class='EQUAL'> </span><span class='DELETE'>success</span><span class='EQUAL'>f</span><span class='DELETE'>ul</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='DELETE'>y.</span><span class='INSERT'>e</span><span class='EQUAL'>
+</span><span class='DELETE'>-</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+ID</span><span class='INSERT'> Enter book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='INSERT'>Truncated</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                              P</span><span class='INSERT'>java.base/java.lang.ClassLoade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>n</span><span class='EQUAL'>e</span><span class='DELETE'>
+    </span><span class='INSERT'>Class</span><span class='EQUAL'>1</span><span class='INSERT'>(Native</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='DELETE'>ink</span><span class='INSERT'>od)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.ClassLo</span><span class='EQUAL'>a</span><span class='INSERT'>der.defi</span><span class='EQUAL'>n</span><span class='INSERT'>eClass(ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>java.base/java.secu</span><span class='EQUAL'>r</span><span class='INSERT'>ity.SecureClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>ureClassLoader.java:</span><span class='EQUAL'>1</span><span class='INSERT'>5</span><span class='EQUAL'>0</span><span class='DELETE'>.95</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:86</span><span class='EQUAL'>2</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPat</span><span class='EQUAL'>h</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.BuiltinCla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sLoader.l</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>adClassOrNull(Built</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>nC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/jdk.internal.load</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>r.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>ve p</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>adClass(Bui</span><span class='EQUAL'>l</span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>java:63</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='INSERT'>se/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s$AppClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> th</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>r.loadClass(ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs.java:188)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.base/java.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.ClassLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='INSERT'>s(ClassLoader.java:521)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>BookManager.addnew(BookManager.java:58)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>             23</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='DELETE'>00</span><span class='INSERT'>java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>I</span><span class='INSERT'>	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(Builti</span><span class='EQUAL'>n</span><span class='INSERT'>ClassLoader.java:862)
+	at ja</span><span class='EQUAL'>va</span><span class='INSERT'>.base/jdk.internal.</span><span class='EQUAL'>l</span><span class='INSERT'>oader.Bu</span><span class='EQUAL'>i</span><span class='INSERT'>ltinClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...</span><span class='EQUAL'>
+</span><span class='DELETE'>Enter </span><span class='EQUAL'>k</span><span class='DELETE'>eyw</span><span class='EQUAL'>o</span><span class='DELETE'>rd:
+ID   </span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>th</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>y fil</span><span class='EQUAL'>e</span><span class='DELETE'>  </span><span class='INSERT'>
+----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>T</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='INSERT'>un</span><span class='EQUAL'>c</span><span class='INSERT'>at</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass1(Native</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>M</span><span class='EQUAL'>e</span><span class='INSERT'>thod)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/java.secur</span><span class='EQUAL'>it</span><span class='INSERT'>y.SecureClas</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='INSERT'>ader.de</span><span class='EQUAL'>f</span><span class='DELETE'> h</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>neC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>ass(SecureClassLoader.java:150)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>f</span><span class='INSERT'>/jdk.internal.loader.BuiltinClassLoader.de</span><span class='EQUAL'>f</span><span class='INSERT'>in</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>Class(Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>v</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:862)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>p</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/jdk.internal.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>ader.Bui</span><span class='EQUAL'>l</span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>findClassOnClassPathOrNull(BuiltinClassLoader.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'>r</span><span class='INSERT'>.base/jdk.inte</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>nal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.Buil</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'>inClassLoad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>.loadCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssOrNull(Builti</span><span class='EQUAL'>n</span><span class='INSERT'>ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/jdk.in</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>rnal.load</span><span class='EQUAL'>e</span><span class='INSERT'>r.BuiltinCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssLoader.loadClass(Buil</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>inC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:639)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>java.base/jdk.intern</span><span class='EQUAL'>al</span><span class='INSERT'>.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>ader.Cla</span><span class='EQUAL'>s</span><span class='DELETE'>              </span><span class='INSERT'>sLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:52</span><span class='EQUAL'>1</span><span class='INSERT'>)
+	at BookManager.addnew(BookManager.java:</span><span class='EQUAL'>5</span><span class='INSERT'>8)
+	at Main</span><span class='EQUAL'>.</span><span class='INSERT'>main(Main.java:</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>2)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> Enter book id: Enter book name: </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'> pric</span><span class='EQUAL'>e</span><span class='INSERT'>: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.securit</span><span class='EQUAL'>y</span><span class='DELETE'>w</span><span class='INSERT'>.SecureClassL</span><span class='EQUAL'>o</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.</span><span class='EQUAL'>d</span><span class='INSERT'>efineClass(SecureClassLoader.java</span><span class='EQUAL'>:</span><span class='INSERT'>150)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass</span><span class='EQUAL'>(</span><span class='INSERT'>BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>m</span><span class='INSERT'>r.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$A</span><span class='EQUAL'>p</span><span class='INSERT'>pClassLoader.loadClass(ClassLoaders.java:188)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...</span><span class='EQUAL'>
+</span><span class='DELETE'>Af</span><span class='INSERT'>ko </span><span class='EQUAL'>t</span><span class='INSERT'>hay fil</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>
+----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>li</span><span class='EQUAL'>s</span><span class='DELETE'>or</span><span class='EQUAL'>t</span><span class='DELETE'>ing:
+ID</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'> n</span><span class='EQUAL'>e</span><span class='INSERT'>w</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='DELETE'>        </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>T</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='INSERT'>un</span><span class='EQUAL'>c</span><span class='INSERT'>at</span><span class='EQUAL'>e</span><span class='DELETE'>
+</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='DELETE'>  2 Th</span><span class='INSERT'>fil</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>ase/java.lang.Clas</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='INSERT'>ader.de</span><span class='EQUAL'>f</span><span class='INSERT'>ineClass1(Native</span><span class='EQUAL'> </span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='INSERT'>od)
+	at java.base/java.lang.ClassLoader.def</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>neClass(C</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:1013)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/java.s</span><span class='EQUAL'>ec</span><span class='INSERT'>uri</span><span class='EQUAL'>t</span><span class='INSERT'>y.SecureClassLoader.def</span><span class='EQUAL'>i</span><span class='DELETE'>v</span><span class='INSERT'>neClass(S</span><span class='EQUAL'>e</span><span class='DELETE'> p</span><span class='INSERT'>cur</span><span class='EQUAL'>e</span><span class='DELETE'>op</span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            </span><span class='INSERT'>r.java:</span><span class='EQUAL'>15</span><span class='DELETE'>.97</span><span class='INSERT'>0)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.base/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.BuiltinClassL</span><span class='EQUAL'>o</span><span class='INSERT'>ader.defineClass(Buil</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'>inClassLoad</span><span class='EQUAL'>er</span><span class='INSERT'>.java:862)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.base/jdk.i</span><span class='EQUAL'>n</span><span class='INSERT'>ternal.loa</span><span class='EQUAL'>d</span><span class='DELETE'> </span><span class='INSERT'>er.BuiltinClassLoader.findClassOnClassPa</span><span class='EQUAL'>th</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.java:760)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/jdk.internal.lo</span><span class='EQUAL'>a</span><span class='INSERT'>der.Buil</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>inC</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='INSERT'>assLoader.loadCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssOrNu</span><span class='EQUAL'>ll</span><span class='DELETE'>ow</span><span class='INSERT'>(BuiltinClas</span><span class='EQUAL'>s</span><span class='DELETE'>               15</span><span class='INSERT'>Loader</span><span class='EQUAL'>.</span><span class='DELETE'>40
+    </span><span class='INSERT'>java:68</span><span class='EQUAL'>1</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>java.base/jdk.</span><span class='EQUAL'>in</span><span class='DELETE'>k</span><span class='INSERT'>ternal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>nternal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.l</span><span class='EQUAL'>an</span><span class='INSERT'>g.ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.loadClass(ClassLoader.java:521)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>BookManage</span><span class='EQUAL'>r</span><span class='INSERT'>.addnew(B</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>okManage</span><span class='EQUAL'>r</span><span class='DELETE'>ich                            10</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>java:</span><span class='EQUAL'>5</span><span class='INSERT'>8)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>(empty)</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: After sorting:
+ID    Name                                          Price     
+(empty)
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/java.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.defineClass1(Na</span><span class='EQUAL'>t</span><span class='INSERT'>iv</span><span class='EQUAL'>e</span><span class='INSERT'> Metho</span><span class='EQUAL'>d</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='INSERT'>e/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.sec</span><span class='EQUAL'>u</span><span class='INSERT'>rity.Se</span><span class='EQUAL'>c</span><span class='INSERT'>ureClassLoader.defineClass(Se</span><span class='EQUAL'>c</span><span class='INSERT'>ur</span><span class='EQUAL'>e</span><span class='INSERT'>Cla</span><span class='EQUAL'>ss</span><span class='INSERT'>Loader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.de</span><span class='EQUAL'>f</span><span class='INSERT'>ineClass(B</span><span class='EQUAL'>u</span><span class='INSERT'>i</span><span class='EQUAL'>l</span><span class='INSERT'>tinC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='DELETE'>Your </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>pt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Enter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='INSERT'>s...
+ko</span><span class='EQUAL'> </span><span class='INSERT'>thay f</span><span class='EQUAL'>i</span><span class='DELETE'>d:
+Inva</span><span class='EQUAL'>l</span><span class='DELETE'>id ID!</span><span class='INSERT'>e</span><span class='EQUAL'>
+</span><span class='DELETE'>-</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+ID</span><span class='INSERT'> Enter book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.ClassFormatError:</span><span class='EQUAL'> </span><span class='INSERT'>Truncated</span><span class='EQUAL'> </span><span class='INSERT'>class</span><span class='EQUAL'> </span><span class='INSERT'>file
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                              P</span><span class='INSERT'>java.base/java.lang.ClassLoade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>n</span><span class='EQUAL'>e</span><span class='DELETE'>
+    </span><span class='INSERT'>Class</span><span class='EQUAL'>1</span><span class='INSERT'>(Native</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>Met</span><span class='EQUAL'>h</span><span class='DELETE'>ink</span><span class='INSERT'>od)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.ClassLo</span><span class='EQUAL'>a</span><span class='INSERT'>der.defi</span><span class='EQUAL'>n</span><span class='INSERT'>eClass(ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java:1013)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>java.base/java.secu</span><span class='EQUAL'>r</span><span class='INSERT'>ity.SecureClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass(Se</span><span class='EQUAL'>c</span><span class='DELETE'>h                            </span><span class='INSERT'>ureClassLoader.java:</span><span class='EQUAL'>1</span><span class='DELETE'>0.9</span><span class='EQUAL'>5</span><span class='INSERT'>0)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:86</span><span class='EQUAL'>2</span><span class='INSERT'>)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>T</span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPat</span><span class='EQUAL'>h</span><span class='INSERT'>OrNull(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:</span><span class='EQUAL'>7</span><span class='INSERT'>60)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.BuiltinCla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sL</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.loadClassOrNull(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>ltinC</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:681)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>/jdk.internal.load</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>r.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>ve p</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>adClass(Bui</span><span class='EQUAL'>l</span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>java:63</span><span class='EQUAL'>9</span><span class='DELETE'>7</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.base/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s$AppClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> th</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>r.loadClass(ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs.java:188)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>java.base/jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.ClassLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='INSERT'>s(ClassLoader.java:521)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>BookManager.addnew(BookManager.java:58)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>             15</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='INSERT'>java:</span><span class='EQUAL'>4</span><span class='DELETE'>0</span><span class='INSERT'>2)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1013)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Exception in thread "main" java.lang.ClassFormatError: Truncated class file</span><span class='EQUAL'>
+</span><span class='DELETE'>S</span><span class='INSERT'>	at j</span><span class='EQUAL'>av</span><span class='INSERT'>a.base/java.lang.ClassLoader.def</span><span class='EQUAL'>i</span><span class='INSERT'>neClass1(Native Method)
+	at java.base/java.la</span><span class='EQUAL'>ng</span><span class='INSERT'>.ClassLoader.defineClass(ClassLoader.java:1013)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/java.securi</span><span class='EQUAL'>t</span><span class='INSERT'>y.SecureClassL</span><span class='EQUAL'>o</span><span class='INSERT'>ader.defineClass(SecureClassLoader.java:150)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/jdk.internal.loader.BuiltinClassLoader.de</span><span class='EQUAL'>fi</span><span class='INSERT'>neC</span><span class='EQUAL'>l</span><span class='INSERT'>ass(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>java:862)
+	at java</span><span class='EQUAL'>.</span><span class='INSERT'>base/jdk.internal</span><span class='EQUAL'>.</span><span class='INSERT'>loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.</span><span class='EQUAL'>B</span><span class='DELETE'>y</span><span class='INSERT'>uiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>!</span><span class='INSERT'>r.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at BookManager.addnew(BookManager.java:58)
+	at Main.main(Main.java:42)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+ko thay file
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: ID    Name                                          Price     
+(empty)
+----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save and exit
+----------------------------------Your option: </pre></td><td><pre><span class='EQUAL'>Loading books...
+</span><span class='DELETE'>-</span><span class='INSERT'>ko thay file
+</span><span class='EQUAL'>----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save </span><span class='DELETE'>&</span><span class='INSERT'>and</span><span class='EQUAL'> exit
+----------------------------------</span><span class='DELETE'>-
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>ID    Name                                          Price</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>    </span><span class='INSERT'>
+(empty)
+----------------------------------
+</span><span class='EQUAL'>1</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>nk</span><span class='INSERT'>st all</span><span class='EQUAL'> b</span><span class='DELETE'>ig</span><span class='INSERT'>ooks
+2.</span><span class='EQUAL'> a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> Grow rich</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>                         </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>10.95</span><span class='INSERT'>book</span><span class='EQUAL'>
+</span><span class='DELETE'>    2</span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7 hab</span><span class='INSERT'>d</span><span class='EQUAL'>it</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>k
+4.</span><span class='EQUAL'> </span><span class='DELETE'>high</span><span class='INSERT'>de</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='EQUAL'>e</span><span class='DELETE'>ffec</span><span class='EQUAL'>t</span><span class='DELETE'>ive peopl</span><span class='EQUAL'>e </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>          1</span><span class='INSERT'>book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>oks</span><span class='EQUAL'> </span><span class='DELETE'>and</span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>th</span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='DELETE'>Dea</span><span class='INSERT'>sor</span><span class='EQUAL'>t</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='DELETE'>    </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>and</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>exit
+----------------------------------Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr></table>
+</body></html>
