@@ -38,47 +38,25 @@ pre {
 <h1>file: temp\a1_2101060049</h1>
 <h2 id='score'>Score: 0.0 (0 passed/ total 30 testcases)</h2>
 <h2 id='score'>NOTE: Sample Only = true</h2>
-<h3>Normal Test Cases</h3><div class='error'><strong>Compilation error: </strong> <pre>Main.java:11: error: cannot find symbol
-        Scanner1 sc = new Scanner1(System.in);
-        ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:11: error: cannot find symbol
-        Scanner1 sc = new Scanner1(System.in);
-                          ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:35: error: cannot find symbol
-                    BookManager listBook = new BookManager();
-                    ^
-  symbol:   class BookManager
-  location: class Main
-Main.java:35: error: cannot find symbol
-                    BookManager listBook = new BookManager();
-                                               ^
-  symbol:   class BookManager
-  location: class Main
-Main.java:39: error: cannot find symbol
-                    BookManager addBook = new BookManager();
-                    ^
-  symbol:   class BookManager
-  location: class Main
-Main.java:39: error: cannot find symbol
-                    BookManager addBook = new BookManager();
-                                              ^
-  symbol:   class BookManager
-  location: class Main
-Main.java:43: error: cannot find symbol
-                    BookManager editBook = new BookManager();
-                    ^
-  symbol:   class BookManager
-  location: class Main
-Main.java:43: error: cannot find symbol
-                    BookManager editBook = new BookManager();
-                                               ^
-  symbol:   class BookManager
-  location: class Main
-8 errors
+<h3>Normal Test Cases</h3><div class='error'><strong>Compilation error: </strong> <pre>.\BookManager.java:205: error: class, interface, enum, or record expected
+}
+^
+.\BookManager.java:200: error: cannot find symbol
+            System.out.printf("%5s %-45s %10.2f\n", b.getId(), b.getName(), b.getPrice());
+                                                     ^
+  symbol:   method getId()
+  location: variable b of type Book
+.\BookManager.java:200: error: cannot find symbol
+            System.out.printf("%5s %-45s %10.2f\n", b.getId(), b.getName(), b.getPrice());
+                                                                ^
+  symbol:   method getName()
+  location: variable b of type Book
+.\BookManager.java:200: error: cannot find symbol
+            System.out.printf("%5s %-45s %10.2f\n", b.getId(), b.getName(), b.getPrice());
+                                                                             ^
+  symbol:   method getPrice()
+  location: variable b of type Book
+4 errors
 </pre></div><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
 1. list all books
 2. add a new book

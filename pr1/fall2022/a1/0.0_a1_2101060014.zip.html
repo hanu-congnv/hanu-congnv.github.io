@@ -38,124 +38,83 @@ pre {
 <h1>file: temp\a1_2101060014\a1_2101060014\main\java\com\mycompany\pha</h1>
 <h2 id='score'>Score: 0.0 (0 passed/ total 30 testcases)</h2>
 <h2 id='score'>NOTE: Sample Only = true</h2>
-<h3>Normal Test Cases</h3><div class='error'><strong>Compilation error: </strong> <pre>Main.java:14: error: package model does not exist
+<h3>Normal Test Cases</h3><div class='error'><strong>Compilation error: </strong> <pre>Main.java:12: error: package model does not exist
 import model.Book;
             ^
-Main.java:15: error: package model does not exist
+Main.java:13: error: package model does not exist
 import model.BookManager;
             ^
-Main.java:49: error: cannot find symbol
+Main.java:47: error: cannot find symbol
     public static boolean performOption(BookManager bookManager) {
                                         ^
   symbol:   class BookManager
   location: class Main
-Main.java:83: error: cannot find symbol
+Main.java:81: error: cannot find symbol
     public static void addNewBook(BookManager bookManager) {
                                   ^
   symbol:   class BookManager
   location: class Main
-Main.java:108: error: cannot find symbol
+Main.java:106: error: cannot find symbol
     public static void editBook(BookManager bookManager) {
                                 ^
   symbol:   class BookManager
   location: class Main
-Main.java:127: error: cannot find symbol
+Main.java:125: error: cannot find symbol
     public static void deleteBook(BookManager bookManager) {
                                   ^
   symbol:   class BookManager
   location: class Main
-Main.java:140: error: cannot find symbol
+Main.java:138: error: cannot find symbol
     public static void searchBook(BookManager bookManager) {
                                   ^
   symbol:   class BookManager
   location: class Main
-Main.java:153: error: cannot find symbol
+Main.java:151: error: cannot find symbol
     public static void saveToFile(BookManager bookManager) {
                                   ^
   symbol:   class BookManager
   location: class Main
-Main.java:26: error: cannot find symbol
+Main.java:24: error: cannot find symbol
         BookManager bookManager = new BookManager();
         ^
   symbol:   class BookManager
   location: class Main
-Main.java:26: error: cannot find symbol
+Main.java:24: error: cannot find symbol
         BookManager bookManager = new BookManager();
                                       ^
   symbol:   class BookManager
   location: class Main
-Main.java:50: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-        ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:50: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-                                ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:84: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-        ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:84: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-                                ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:85: error: cannot find symbol
+Main.java:83: error: cannot find symbol
         Book book = new Book();
         ^
   symbol:   class Book
   location: class Main
-Main.java:85: error: cannot find symbol
+Main.java:83: error: cannot find symbol
         Book book = new Book();
                         ^
   symbol:   class Book
   location: class Main
-Main.java:109: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-        ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:109: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-                                ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:113: error: cannot find symbol
+Main.java:111: error: cannot find symbol
         Book book = bookManager.getBookById(id);
         ^
   symbol:   class Book
   location: class Main
-Main.java:128: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-        ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:128: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-                                ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:132: error: cannot find symbol
+Main.java:130: error: cannot find symbol
         Book book = bookManager.getBookById(id);
         ^
   symbol:   class Book
   location: class Main
-Main.java:141: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-        ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:141: error: cannot find symbol
-        Scanner1 keyboard = new Scanner1(System.in);
-                                ^
-  symbol:   class Scanner1
-  location: class Main
-Main.java:144: error: cannot find symbol
+Main.java:142: error: cannot find symbol
         ArrayList<Book> resultList = bookManager.searchByName(keyword);
+                  ^
+  symbol:   class Book
+  location: class Main
+Main.java:156: error: cannot find symbol
+            for (Book b : bookManager.getBooks()) {
+                 ^
+  symbol:   class Book
+  location: class Main
+16 errors
 </pre></div><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
 1. list all books
 2. add a new book
