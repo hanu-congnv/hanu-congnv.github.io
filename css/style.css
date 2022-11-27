@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Pangolin:400,700%7CProxima+Nova');
+
+body {
+    color: #222222;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 15px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    color: #46a049;
+}
+
+.error {
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	padding: 15px;
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+
+table {
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+}
