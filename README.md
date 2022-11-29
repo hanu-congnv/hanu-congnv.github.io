@@ -3,7 +3,9 @@
 ## WPR | Web Programming
 ### Fall 2022
 #### Assignment 1
-[Checkpoint 1](https://hanu-congnv.github.io/wpr/fall2022/a1-cp1/)
+[Checkpoint 1](https://hanu-congnv.github.io/wpr/fall2022/a1-cp1/)  <br />
+[Checkpoint 2](https://hanu-congnv.github.io/wpr/fall2022/a1-cp2/)  <br />
+
 
 ## PR1 | Programming 1
 ### Fall 2022

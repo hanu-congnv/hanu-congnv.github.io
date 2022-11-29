@@ -1,0 +1,239 @@
+<html><head><link rel="stylesheet" href="style.css"></head><body><h1>a1_1901040112</h1><h2>Score: 18/26</h2><table>
+	<tr>
+		<th>Criteria</th>
+		<th>Type</th>
+		<th>Input</th>
+		<th>Expected</th>
+		<th>Score</th>
+		<th>Output</th>
+		<th>Passed (%)</th>
+		<th>Actual</th>
+	</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - radio disabled</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz input[type=\&quot;radio\&quot;]:not(:disabled)&quot;}</td>
+	<td>{&quot;min&quot;:&quot;0&quot;,&quot;max&quot;:&quot;0&quot;}</td>
+	<td>1</td>
+	<td>0</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - Correct answer (user selected): radio selected</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .correct-answer input[type=\&quot;radio\&quot;]:checked&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>1</td>
+	<td>1</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - Correct answer (user selected): styles</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .correct-answer&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;background-color: rgb(212, 237, 218);&quot;}</td>
+	<td>1</td>
+	<td>background-color: rgb(212, 237, 218);
+</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - Correct answer (user un-selected): radio un-selected</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .option-correct input[type=\&quot;radio\&quot;]:not(:checked)&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>1</td>
+	<td>9</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - Correct answer (user un-selected): styles</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .option-correct&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;background-color: rgb(221, 221, 221);&quot;}</td>
+	<td>1</td>
+	<td>background-color: rgb(221, 221, 221);
+</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - Wrong answer (user selected): radio selected</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .wrong-answer input[type=\&quot;radio\&quot;]:checked&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>1</td>
+	<td>2</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - Correct answer (user selected): styles</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .wrong-answer&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;background-color: rgb(248, 215, 218);&quot;}</td>
+	<td>1</td>
+	<td>background-color: rgb(248, 215, 218);
+</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - text: Correct answer (using position)</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;viewport&quot;:null,&quot;prescript&quot;:&quot;var container = document.querySelector(\&quot;#review-quiz\&quot;);\r\nvar els = document.evaluate(\&quot;.\/\/*[text() = 'Correct answer']\&quot;, container, null, XPathResult.ANY_TYPE, null );\r\nvar el = els.iterateNext();\r\nif (el) el.classList.add(\&quot;_bee_\&quot;);&quot;,&quot;selector&quot;:&quot;#review-quiz ._bee_&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;position: absolute;\r\nbackground-color: rgba(0, 0, 0, 0.2);&quot;}</td>
+	<td>1</td>
+	<td>position: absolute;
+background-color: rgba(0, 0, 0, 0.2);
+</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Option review - text: Your answer (using position)</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;viewport&quot;:null,&quot;prescript&quot;:&quot;var container = document.querySelector(\&quot;#review-quiz\&quot;);\r\nvar els = document.evaluate(\&quot;.\/\/*[text() = 'Your answer']\&quot;, container, null, XPathResult.ANY_TYPE, null );\r\nvar el = els.iterateNext();\r\nif (el) el.classList.add(\&quot;_bee_\&quot;);&quot;,&quot;selector&quot;:&quot;#review-quiz ._bee_&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;position: absolute;\r\nbackground-color: rgba(0, 0, 0, 0.2);&quot;}</td>
+	<td>1</td>
+	<td>position: absolute;
+background-color: rgba(0, 0, 0, 0.2);
+</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Result review - title</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;viewport&quot;:null,&quot;prescript&quot;:&quot;var container = document.querySelector(\&quot;#box-result\&quot;);\r\nvar els = document.evaluate(\&quot;.\/\/*[text() = 'Result:']\&quot;, container, null, XPathResult.ANY_TYPE, null );\r\nvar el = els.iterateNext();\r\nif (el) el.classList.add(\&quot;_bee_\&quot;);&quot;,&quot;selector&quot;:&quot;#review-quiz ._bee_&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>1</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Result review - score</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;viewport&quot;:null,&quot;prescript&quot;:&quot;var container = document.querySelector(\&quot;#box-result\&quot;);\r\nvar els = document.evaluate(\&quot;.\/\/*[contains(., '\/10')]\&quot;, container, null, XPathResult.ANY_TYPE, null );\r\nvar el = els.iterateNext();\r\nif (el) el.classList.add(\&quot;_bee_\&quot;);&quot;,&quot;selector&quot;:&quot;#review-quiz ._bee_&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;font-size: 24px;&quot;}</td>
+	<td>1</td>
+	<td></td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Result review - percentage</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;viewport&quot;:null,&quot;prescript&quot;:&quot;var container = document.querySelector(\&quot;#box-result\&quot;);\r\nvar els = document.evaluate(\&quot;.\/\/*[contains(., '%')]\&quot;, container, null, XPathResult.ANY_TYPE, null );\r\nvar el = els.iterateNext();\r\nif (el) el.classList.add(\&quot;_bee_\&quot;);&quot;,&quot;selector&quot;:&quot;#review-quiz ._bee_&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;font-weight: 700;&quot;}</td>
+	<td>1</td>
+	<td></td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Try again - box</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#box-result&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;background-color: rgb(241, 241, 241);\r\nborder: 1px solid rgb(220, 220, 220);&quot;}</td>
+	<td>1</td>
+	<td></td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Try again - button</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#box-result #btn-try-again&quot;,&quot;pseudo&quot;:null}</td>
+	<td>{&quot;styles&quot;:&quot;color: rgb(255, 255, 255);\r\nbackground-color: rgb(33, 150, 243);\r\npadding: 18px;&quot;}</td>
+	<td>1</td>
+	<td></td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>Screen 3: Review Quiz | Try again - button:hover</td>
+	<td>web_have_styles</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;viewport&quot;:null,&quot;prescript&quot;:&quot;document.querySelector(\&quot;#review-quiz\&quot;).setAttribute(\&quot;style\&quot;, \&quot;display: block !important;\&quot;);&quot;,&quot;selector&quot;:&quot;#box-result #btn-try-again&quot;,&quot;pseudo&quot;:&quot;:hover&quot;}</td>
+	<td>{&quot;styles&quot;:&quot;background-color: rgb(13, 139, 242);&quot;}</td>
+	<td>1</td>
+	<td></td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>CSS | src (commented, indented, organized)</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.css&quot;,&quot;keywordPattern&quot;:&quot;(\\\/\\\/\\s*\\S+[\\S ]*)|(\\\/\\*[^\\*\\\/]+\\*\\\/)&quot;}</td>
+	<td>{&quot;min&quot;:&quot;5&quot;,&quot;max&quot;:null}</td>
+	<td>2</td>
+	<td>5</td>
+	<td>100</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>CSS | Valid CSS</td>
+	<td>src_valid_css</td>
+	<td>[]</td>
+	<td>[]</td>
+	<td>5</td>
+	<td>Errors (0/1): </td>
+	<td>100</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>CSS | No embedded styles</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.html&quot;,&quot;keywordPattern&quot;:&quot;&lt;style[^&gt;]*&gt;\\s*\\S+[\\S\\s]*&lt;\\\/style&gt;&quot;}</td>
+	<td>{&quot;min&quot;:&quot;0&quot;,&quot;max&quot;:&quot;0&quot;}</td>
+	<td>1</td>
+	<td>0</td>
+	<td>100</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>CSS | No inline styles</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.html&quot;,&quot;keywordPattern&quot;:&quot;style\\s*=\\s*\&quot;\\s*\\S+[\\S\\s]+\&quot;&quot;}</td>
+	<td>{&quot;min&quot;:&quot;0&quot;,&quot;max&quot;:&quot;0&quot;}</td>
+	<td>1</td>
+	<td>1</td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>Mobile layout | Viewport zoom-level</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;meta[name='viewport']&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>2</td>
+	<td>1</td>
+	<td>100</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>Mobile layout | Breakpoint 700px - page content width</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.css&quot;,&quot;keywordPattern&quot;:&quot;@media(.+)700px&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>2</td>
+	<td>1</td>
+	<td>100</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>Mobile layout | Breakpoint 500px - yellow circles</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.css&quot;,&quot;keywordPattern&quot;:&quot;@media(.+)500px&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>2</td>
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+</tr>
+</table></body></html>
