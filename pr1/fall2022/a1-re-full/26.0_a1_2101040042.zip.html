@@ -1,0 +1,2871 @@
+<html><head><style>body {
+    display: inline-block;
+    padding: 15px;
+}
+h1, h2 {
+    text-align: center;
+}
+#score {
+    color: blue;
+}
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+table, tr, th, td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+td {
+    vertical-align: text-top;
+}
+.insert {
+    background: #f8d7da;
+}
+.delete {
+    background: #cce5ff;
+}/*
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
+</style></head><body>
+<h1>file: temp\a1_2101040042\a1_2101040042</h1>
+<h2 id='score'>Score: 26.0 (8 passed/ total 30 testcases)</h2>
+<h2 id='score'>NOTE: Sample Only = false</h2>
+<h3>Normal Test Cases</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Invalid option!
+</pre></td><td><pre><span class='INSERT'>Loading books...
+</span><span class='EQUAL'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Invalid option!
+</span><span class='DELETE'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Yo</span><span class='EQUAL'>u</span><span class='INSERT'>r o</span><span class='EQUAL'>p</span><span class='INSERT'>tion: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. </span><span class='EQUAL'>li</span><span class='INSERT'>st all books
+2. add a new book
+3. edit book
+4. delete a book
+5. sear</span><span class='EQUAL'>c</span><span class='INSERT'>h books by n</span><span class='EQUAL'>a</span><span class='INSERT'>me
+6. sor</span><span class='EQUAL'>t</span><span class='INSERT'> books d</span><span class='EQUAL'>e</span><span class='INSERT'>scen</span><span class='EQUAL'>d</span><span class='INSERT'>ing</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>oks...
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'> all b</span><span class='EQUAL'>o</span><span class='INSERT'>oks
+2. add a </span><span class='EQUAL'>n</span><span class='DELETE'>:</span><span class='INSERT'>ew book</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'> book
+5. s</span><span class='EQUAL'>e</span><span class='INSERT'>arch</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>descending by p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>opt</span><span class='EQUAL'>i</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>k</span><span class='INSERT'>: Enter</span><span class='EQUAL'> b</span><span class='INSERT'>ook </span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>d:</span><span class='EQUAL'> </span><span class='INSERT'>Enter book n</span><span class='EQUAL'>a</span><span class='DELETE'>nd</span><span class='INSERT'>me:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>Ente</span><span class='EQUAL'>r</span><span class='INSERT'> bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'> </span><span class='INSERT'>p</span><span class='EQUAL'>ric</span><span class='DELETE'>h</span><span class='INSERT'>e:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>     1</span><span class='INSERT'>price
+
+</span><span class='EQUAL'>0.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>ha</span><span class='EQUAL'>b</span><span class='DELETE'>its </span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='EQUAL'>i</span><span class='DELETE'>ghly</span><span class='INSERT'>d:</span><span class='EQUAL'> </span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>r book nam</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>: En</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>pe</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>ok </span><span class='EQUAL'>p</span><span class='DELETE'>l</span><span class='INSERT'>ric</span><span class='EQUAL'>e</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='DELETE'>15.97</span><span class='INSERT'>book</span><span class='EQUAL'>
+</span><span class='INSERT'>4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>book
+</span><span class='EQUAL'>5</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>ks</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>(empty)
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: 
+Invalid ID
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='DELETE'>
+Up</span><span class='INSERT'> A</span><span class='EQUAL'>d</span><span class='DELETE'>at</span><span class='INSERT'>d</span><span class='EQUAL'>ed successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID   </span><span class='EQUAL'> </span><span class='DELETE'>Nam</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='DELETE'>           </span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your option:</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>book </span><span class='EQUAL'>i</span><span class='INSERT'>d: E</span><span class='EQUAL'>n</span><span class='DELETE'>k</span><span class='INSERT'>ter</span><span class='EQUAL'> b</span><span class='DELETE'>ig</span><span class='INSERT'>ook</span><span class='EQUAL'> </span><span class='DELETE'>a</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>ame:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>Ente</span><span class='EQUAL'>r</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='INSERT'>p</span><span class='EQUAL'>ric</span><span class='DELETE'>h</span><span class='INSERT'>e:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>     1</span><span class='INSERT'>price
+
+</span><span class='EQUAL'>0.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='DELETE'>  2</span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7 hab</span><span class='INSERT'>x</span><span class='EQUAL'>it</span><span class='DELETE'>s </span><span class='INSERT'>
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ur</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>opt</span><span class='EQUAL'>i</span><span class='DELETE'>ghly</span><span class='INSERT'>on:</span><span class='EQUAL'> </span><span class='DELETE'>effec</span><span class='INSERT'>En</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>pe</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>ple</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>
+Invalid</span><span class='EQUAL'> </span><span class='DELETE'>         </span><span class='INSERT'>ID
+-----------------------------------
+</span><span class='EQUAL'>1</span><span class='DELETE'>5</span><span class='EQUAL'>.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='EQUAL'>a</span><span class='DELETE'>rry</span><span class='INSERT'> new</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='INSERT'>k
+3. edi</span><span class='EQUAL'>t</span><span class='INSERT'> book
+4. dele</span><span class='EQUAL'>te</span><span class='DELETE'>r</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='EQUAL'> </span><span class='DELETE'>the</span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>s</span><span class='EQUAL'>ea</span><span class='DELETE'>t</span><span class='INSERT'>rc</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>23.00</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: 
+Invalid ID
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter Keyword: 
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='DELETE'>eywor</span><span class='INSERT'> i</span><span class='EQUAL'>d:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice</span><span class='INSERT'>: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>add a new book
+3.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='INSERT'>dit</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book
+4. delete</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='EQUAL'>a</span><span class='INSERT'> </span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>ook
+5. </span><span class='EQUAL'>s</span><span class='INSERT'>earch</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>oks</span><span class='EQUAL'> </span><span class='DELETE'>highl</span><span class='INSERT'>b</span><span class='EQUAL'>y </span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>
+6. sort books d</span><span class='EQUAL'>e</span><span class='INSERT'>s</span><span class='EQUAL'>c</span><span class='DELETE'>t</span><span class='INSERT'>end</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+
+0. sa</span><span class='EQUAL'>ve </span><span class='DELETE'>p</span><span class='INSERT'>& </span><span class='EQUAL'>e</span><span class='INSERT'>xit
+-----------------------------------
+Your </span><span class='EQUAL'>op</span><span class='DELETE'>l</span><span class='INSERT'>tion: Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='DELETE'>15</span><span class='INSERT'>all books
+2</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'> add a new book</span><span class='EQUAL'>
+</span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a book
+</span><span class='EQUAL'>5</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>r</span><span class='INSERT'>ch books b</span><span class='EQUAL'>y </span><span class='DELETE'>P</span><span class='INSERT'>name
+6. s</span><span class='EQUAL'>o</span><span class='INSERT'>r</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'> books d</span><span class='EQUAL'>e</span><span class='INSERT'>scending by p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>a</span><span class='INSERT'>ve & exit
+-----------------------------------
+Your optio</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>En</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>K</span><span class='EQUAL'>e</span><span class='DELETE'>a</span><span class='INSERT'>yword: 
+(emp</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>y)
+-----------------------------------
+1. </span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>ist</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='EQUAL'>all</span><span class='INSERT'> bo</span><span class='EQUAL'>o</span><span class='INSERT'>ks
+2. add a ne</span><span class='EQUAL'>w</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>15</span><span class='INSERT'>price
+
+0</span><span class='EQUAL'>.</span><span class='DELETE'>40</span><span class='INSERT'> save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter Keyword: 
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'> id: Enter book nam</span><span class='EQUAL'>e</span><span class='INSERT'>: Enter book price: Added successfull</span><span class='EQUAL'>y</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a ne</span><span class='EQUAL'>w</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='INSERT'>ok
+3. edit book
+4. delete a book
+5. sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch books by name
+6. sort books </span><span class='EQUAL'>d</span><span class='INSERT'>escending by price
+
+0. save & exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter Keyword: </span><span class='EQUAL'>
+(empty)</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pt</span><span class='INSERT'>oks...
+-----------------------------------
+1. l</span><span class='EQUAL'>i</span><span class='INSERT'>st all b</span><span class='EQUAL'>o</span><span class='INSERT'>oks
+2. add a </span><span class='EQUAL'>n</span><span class='DELETE'>:</span><span class='INSERT'>ew book</span><span class='EQUAL'>
+</span><span class='DELETE'>Aft</span><span class='INSERT'>3. </span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>dit</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>ok
+4. dele</span><span class='EQUAL'>t</span><span class='DELETE'>ing:</span><span class='INSERT'>e a book</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='DELETE'> </span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='DELETE'>  </span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>xit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>hab</span><span class='INSERT'>opt</span><span class='EQUAL'>i</span><span class='INSERT'>on: En</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='INSERT'>er</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='EQUAL'>i</span><span class='DELETE'>ghly</span><span class='INSERT'>d:</span><span class='EQUAL'> </span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>r book nam</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>: En</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>pe</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='INSERT'>k </span><span class='EQUAL'>p</span><span class='DELETE'>l</span><span class='INSERT'>ric</span><span class='EQUAL'>e</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>delete a book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97</span><span class='INSERT'> search books by name</span><span class='EQUAL'>
+</span><span class='INSERT'>6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>Ha</span><span class='INSERT'>p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+
+0. save & exit
+-----------------------------------
+You</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='EQUAL'>o</span><span class='INSERT'>p</span><span class='EQUAL'>t</span><span class='INSERT'>ion: En</span><span class='EQUAL'>ter </span><span class='DELETE'>an</span><span class='INSERT'>book i</span><span class='EQUAL'>d</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>En</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>De</span><span class='INSERT'>book n</span><span class='EQUAL'>a</span><span class='INSERT'>me: En</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>er book price: Added successful</span><span class='EQUAL'>ly</span><span class='INSERT'>.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>list </span><span class='EQUAL'>all</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok</span><span class='EQUAL'>s</span><span class='DELETE'>  </span><span class='INSERT'>
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span><span class='INSERT'>name</span><span class='EQUAL'>
+</span><span class='INSERT'>6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='DELETE'>  1</span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>descend</span><span class='EQUAL'>in</span><span class='DELETE'>k</span><span class='INSERT'>g</span><span class='EQUAL'> b</span><span class='INSERT'>y pr</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>ce
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>a</span><span class='DELETE'>nd</span><span class='INSERT'>ve</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>& exit
+-----------------------------------
+You</span><span class='EQUAL'>r</span><span class='INSERT'> </span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ption:</span><span class='EQUAL'> </span><span class='INSERT'>Afte</span><span class='EQUAL'>r</span><span class='INSERT'> sort</span><span class='EQUAL'>i</span><span class='DELETE'>ch</span><span class='INSERT'>ng:
+(empty)
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'> 10.95</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> After sorting:</span><span class='EQUAL'>
+(empty)</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: 
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. d</span><span class='EQUAL'>elete</span><span class='INSERT'> a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Adde</span><span class='EQUAL'>d successfully</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: 
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: 
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Your </span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>pt</span><span class='INSERT'>ad</span><span class='EQUAL'>i</span><span class='DELETE'>on:
+E</span><span class='EQUAL'>n</span><span class='DELETE'>ter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='DELETE'> id:
+Invalid ID!</span><span class='INSERT'>s...</span><span class='EQUAL'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>Enter book n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>   P</span><span class='INSERT'>p</span><span class='EQUAL'>rice</span><span class='DELETE'>
+</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='DELETE'>Thin</span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'>s
+2.</span><span class='EQUAL'> </span><span class='DELETE'>big</span><span class='INSERT'>add</span><span class='EQUAL'> a</span><span class='INSERT'> </span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>ew</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k
+3.</span><span class='EQUAL'> </span><span class='DELETE'>r</span><span class='INSERT'>ed</span><span class='EQUAL'>i</span><span class='DELETE'>ch</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+</span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>95</span><span class='INSERT'> list all books</span><span class='EQUAL'>
+</span><span class='INSERT'>2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>e</span><span class='INSERT'>dit</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>delete </span><span class='EQUAL'>a</span><span class='INSERT'> </span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>ook
+5. </span><span class='EQUAL'>s</span><span class='INSERT'>earch</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>oks</span><span class='EQUAL'> </span><span class='DELETE'>highl</span><span class='INSERT'>b</span><span class='EQUAL'>y </span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>
+6. sort books d</span><span class='EQUAL'>e</span><span class='INSERT'>s</span><span class='EQUAL'>c</span><span class='DELETE'>t</span><span class='INSERT'>end</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+
+0. sa</span><span class='EQUAL'>ve </span><span class='DELETE'>p</span><span class='INSERT'>& </span><span class='EQUAL'>e</span><span class='INSERT'>xit
+-----------------------------------
+Your </span><span class='EQUAL'>op</span><span class='DELETE'>l</span><span class='INSERT'>tion: Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>
+Invalid</span><span class='EQUAL'> </span><span class='INSERT'>ID!
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'> 15</span><span class='INSERT'>book
+3</span><span class='EQUAL'>.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a book
+</span><span class='EQUAL'>5</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>r</span><span class='INSERT'>ch books b</span><span class='EQUAL'>y </span><span class='DELETE'>P</span><span class='INSERT'>name
+6. s</span><span class='EQUAL'>o</span><span class='INSERT'>r</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'> books d</span><span class='EQUAL'>e</span><span class='INSERT'>scending by p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>a</span><span class='DELETE'>nd</span><span class='INSERT'>ve & exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>op</span><span class='EQUAL'>t</span><span class='DELETE'>he</span><span class='INSERT'>ion:</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>(</span><span class='EQUAL'>e</span><span class='DELETE'>a</span><span class='INSERT'>mp</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>y)
+-----------------------------------
+1. </span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>ist</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='EQUAL'>all</span><span class='INSERT'> bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s</span><span class='INSERT'>
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='DELETE'>15.4</span><span class='INSERT'>books descending by price
+
+</span><span class='EQUAL'>0</span><span class='INSERT'>. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Saving to File...
+Bye!
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Saving to </span><span class='DELETE'>f</span><span class='INSERT'>F</span><span class='EQUAL'>ile...
+Bye!</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='EQUAL'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID   </span><span class='EQUAL'> </span><span class='DELETE'>Nam</span><span class='INSERT'>(</span><span class='EQUAL'>e</span><span class='DELETE'>                                          Price</span><span class='INSERT'>mpty)</span><span class='EQUAL'>
+</span><span class='DELETE'>    </span><span class='INSERT'>-----------------------------------
+</span><span class='EQUAL'>1</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>nk</span><span class='INSERT'>st all</span><span class='EQUAL'> b</span><span class='DELETE'>ig</span><span class='INSERT'>ooks
+2.</span><span class='EQUAL'> a</span><span class='DELETE'>n</span><span class='INSERT'>d</span><span class='EQUAL'>d </span><span class='DELETE'>Grow</span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>rich</span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>                           10</span><span class='INSERT'>book
+3</span><span class='EQUAL'>.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='DELETE'>   2 Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7 hab</span><span class='INSERT'>d</span><span class='EQUAL'>it</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f highly</span><span class='INSERT'>ok
+4.</span><span class='EQUAL'> </span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e </span><span class='DELETE'>people           </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>oks by</span><span class='EQUAL'> </span><span class='DELETE'>a</span><span class='EQUAL'>n</span><span class='DELETE'>d th</span><span class='INSERT'>am</span><span class='EQUAL'>e</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='DELETE'>Dea</span><span class='INSERT'>sor</span><span class='EQUAL'>t</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>       </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr></table>
+<h3>Test Script: Main</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book name:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book price:</span><span class='INSERT'> Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Yo</span><span class='EQUAL'>u</span><span class='INSERT'>r o</span><span class='EQUAL'>p</span><span class='INSERT'>tion: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. </span><span class='EQUAL'>li</span><span class='INSERT'>st all books
+2. add a new book
+3. edit book
+4. delete a book
+5. sear</span><span class='EQUAL'>c</span><span class='INSERT'>h books by n</span><span class='EQUAL'>a</span><span class='INSERT'>me
+6. sor</span><span class='EQUAL'>t</span><span class='INSERT'> books d</span><span class='EQUAL'>e</span><span class='INSERT'>scen</span><span class='EQUAL'>d</span><span class='INSERT'>ing</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>oks...
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'> all b</span><span class='EQUAL'>o</span><span class='INSERT'>oks
+2. add a </span><span class='EQUAL'>n</span><span class='DELETE'>:</span><span class='INSERT'>ew book</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'> book
+5. s</span><span class='EQUAL'>e</span><span class='INSERT'>arch</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>descending by p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>opt</span><span class='EQUAL'>i</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>k</span><span class='INSERT'>: Enter</span><span class='EQUAL'> b</span><span class='INSERT'>ook </span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>d:</span><span class='EQUAL'> </span><span class='INSERT'>Enter book n</span><span class='EQUAL'>a</span><span class='DELETE'>nd</span><span class='INSERT'>me:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>Ente</span><span class='EQUAL'>r</span><span class='INSERT'> bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'> </span><span class='INSERT'>p</span><span class='EQUAL'>ric</span><span class='DELETE'>h</span><span class='INSERT'>e:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>     1</span><span class='INSERT'>price
+
+</span><span class='EQUAL'>0.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='DELETE'> 7</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>ha</span><span class='EQUAL'>b</span><span class='DELETE'>its </span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='EQUAL'>i</span><span class='DELETE'>ghly</span><span class='INSERT'>d:</span><span class='EQUAL'> </span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>r book nam</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>: En</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>pe</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>ok </span><span class='EQUAL'>p</span><span class='DELETE'>l</span><span class='INSERT'>ric</span><span class='EQUAL'>e</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='DELETE'>15.97</span><span class='INSERT'>book</span><span class='EQUAL'>
+</span><span class='INSERT'>4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>book
+</span><span class='EQUAL'>5</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>ks</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>(empty)
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Your option:
+Enter book id:
+Enter bo</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>k n</span><span class='EQUAL'>a</span><span class='DELETE'>me:
+E</span><span class='INSERT'>di</span><span class='EQUAL'>n</span><span class='DELETE'>ter</span><span class='INSERT'>g</span><span class='EQUAL'> book</span><span class='DELETE'> price:
+Updated </span><span class='EQUAL'>s</span><span class='DELETE'>uccessfully</span><span class='INSERT'>..</span><span class='EQUAL'>.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>Enter book n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='DELETE'> Pri</span><span class='INSERT'>suc</span><span class='EQUAL'>ce</span><span class='INSERT'>ssfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>Thi</span><span class='INSERT'>a </span><span class='EQUAL'>n</span><span class='INSERT'>ew boo</span><span class='EQUAL'>k</span><span class='INSERT'>
+3. edit</span><span class='EQUAL'> b</span><span class='DELETE'>ig</span><span class='INSERT'>ook
+4. delete</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok
+5.</span><span class='EQUAL'> </span><span class='INSERT'>sea</span><span class='EQUAL'>r</span><span class='DELETE'>i</span><span class='EQUAL'>ch </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>10.95
+</span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>delet</span><span class='EQUAL'>e </span><span class='DELETE'>7 h</span><span class='EQUAL'>a</span><span class='INSERT'> </span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>ook
+5. </span><span class='EQUAL'>s</span><span class='INSERT'>earch</span><span class='EQUAL'> </span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ks</span><span class='EQUAL'> </span><span class='DELETE'>highl</span><span class='INSERT'>b</span><span class='EQUAL'>y </span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='DELETE'>ffec</span><span class='INSERT'>
+6. sor</span><span class='EQUAL'>t</span><span class='DELETE'>ive</span><span class='EQUAL'> </span><span class='DELETE'>pe</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>oks desc</span><span class='EQUAL'>e</span><span class='INSERT'>nding</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Invalid</span><span class='EQUAL'> </span><span class='INSERT'>ID!
+-----------------------------------
+</span><span class='EQUAL'>1</span><span class='DELETE'>5</span><span class='EQUAL'>.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='EQUAL'>a</span><span class='DELETE'>rry</span><span class='INSERT'> new</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>ok
+3. edi</span><span class='EQUAL'>t</span><span class='INSERT'> book
+4. dele</span><span class='EQUAL'>te</span><span class='DELETE'>r</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='EQUAL'> </span><span class='DELETE'>the</span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>s</span><span class='EQUAL'>ea</span><span class='DELETE'>t</span><span class='INSERT'>rc</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok</span><span class='EQUAL'>s </span><span class='DELETE'>   </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>23.00</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pt</span><span class='INSERT'>oks...
+-----------------------------------
+1. l</span><span class='EQUAL'>i</span><span class='INSERT'>st all bo</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>2. add a </span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>w</span><span class='EQUAL'> </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'>
+3. </span><span class='EQUAL'>e</span><span class='DELETE'>yw</span><span class='INSERT'>dit b</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>ok
+4. </span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'>elete a book</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>id: Enter book n</span><span class='EQUAL'>a</span><span class='INSERT'>me: Enter </span><span class='EQUAL'>b</span><span class='INSERT'>ook pr</span><span class='EQUAL'>i</span><span class='INSERT'>ce: Added successfully.
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all book</span><span class='EQUAL'>s</span><span class='INSERT'>
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add a new bo</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>k
+3.</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>ed</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='INSERT'>t book
+4. de</span><span class='EQUAL'>l</span><span class='INSERT'>ete a book
+5. search books b</span><span class='EQUAL'>y </span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>
+6. sort books d</span><span class='EQUAL'>e</span><span class='INSERT'>s</span><span class='EQUAL'>c</span><span class='DELETE'>t</span><span class='INSERT'>end</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+
+0. sa</span><span class='EQUAL'>ve </span><span class='DELETE'>p</span><span class='INSERT'>& </span><span class='EQUAL'>e</span><span class='INSERT'>xit
+-----------------------------------
+Your </span><span class='EQUAL'>op</span><span class='DELETE'>l</span><span class='INSERT'>tion: Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='DELETE'>15</span><span class='INSERT'>all books
+2</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'> add a new book</span><span class='EQUAL'>
+</span><span class='INSERT'>3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a book
+</span><span class='EQUAL'>5</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>r</span><span class='INSERT'>ch books b</span><span class='EQUAL'>y </span><span class='DELETE'>P</span><span class='INSERT'>name
+6. s</span><span class='EQUAL'>o</span><span class='INSERT'>r</span><span class='EQUAL'>t</span><span class='DELETE'>t</span><span class='INSERT'> books desc</span><span class='EQUAL'>e</span><span class='INSERT'>nding by p</span><span class='EQUAL'>r</span><span class='INSERT'>ice
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>a</span><span class='INSERT'>ve & exit
+-----------------------------------
+Your optio</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>En</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>k</span><span class='EQUAL'>e</span><span class='DELETE'>a</span><span class='INSERT'>yword: (emp</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>y)
+-----------------------------------
+1. </span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>ist</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='EQUAL'>all</span><span class='INSERT'> bo</span><span class='EQUAL'>o</span><span class='INSERT'>ks
+2. add a ne</span><span class='EQUAL'>w</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>15</span><span class='INSERT'>price
+
+0</span><span class='EQUAL'>.</span><span class='DELETE'>40</span><span class='INSERT'> save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+(empty)
+After sorting:
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>ks...
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all books
+2. add a new book
+3. ed</span><span class='EQUAL'>i</span><span class='INSERT'>t b</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ok</span><span class='EQUAL'>
+</span><span class='DELETE'>Af</span><span class='INSERT'>4. dele</span><span class='EQUAL'>te</span><span class='DELETE'>r</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>a b</span><span class='EQUAL'>o</span><span class='DELETE'>rting:</span><span class='INSERT'>ok</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>hab</span><span class='EQUAL'>i</span><span class='INSERT'>d: En</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='INSERT'>er</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f highly</span><span class='INSERT'>ok</span><span class='EQUAL'> </span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='DELETE'>ffec</span><span class='INSERT'>: En</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>pe</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='INSERT'>ok </span><span class='EQUAL'>p</span><span class='DELETE'>l</span><span class='INSERT'>ric</span><span class='EQUAL'>e</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>delete a book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97</span><span class='INSERT'> search books by name</span><span class='EQUAL'>
+</span><span class='INSERT'>6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>by price
+
+0.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>s</span><span class='EQUAL'>a</span><span class='DELETE'>r</span><span class='INSERT'>ve & exit
+-----------------------------------
+You</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='EQUAL'>o</span><span class='INSERT'>p</span><span class='EQUAL'>t</span><span class='INSERT'>ion: En</span><span class='EQUAL'>ter </span><span class='DELETE'>an</span><span class='INSERT'>book i</span><span class='EQUAL'>d</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>En</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>De</span><span class='INSERT'>book n</span><span class='EQUAL'>a</span><span class='INSERT'>me: En</span><span class='EQUAL'>t</span><span class='DELETE'>h</span><span class='INSERT'>er book price: Added successful</span><span class='EQUAL'>ly</span><span class='INSERT'>.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>list </span><span class='EQUAL'>all</span><span class='INSERT'> b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>
+2.</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span><span class='INSERT'>name</span><span class='EQUAL'>
+</span><span class='DELETE'> </span><span class='INSERT'>6.</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>descend</span><span class='EQUAL'>in</span><span class='DELETE'>k</span><span class='INSERT'>g</span><span class='EQUAL'> b</span><span class='INSERT'>y pr</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>ce
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>s</span><span class='EQUAL'>a</span><span class='INSERT'>ve & exit
+-----------------------------------
+Your optio</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>Afte</span><span class='EQUAL'>r</span><span class='INSERT'> s</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>rting:
+(empty)
+After</span><span class='EQUAL'> </span><span class='INSERT'>so</span><span class='EQUAL'>r</span><span class='INSERT'>t</span><span class='EQUAL'>i</span><span class='DELETE'>ch</span><span class='INSERT'>ng:
+(empty)
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>  </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>10.95</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+(empty)
+After sorting:
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> After sorting:</span><span class='EQUAL'>
+(empty)</span><span class='INSERT'>
+After sorting:
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. d</span><span class='EQUAL'>elete</span><span class='INSERT'> a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Adde</span><span class='EQUAL'>d successfully</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter book id:</span><span class='DELETE'>
+I</span><span class='INSERT'> Enter book </span><span class='EQUAL'>n</span><span class='DELETE'>v</span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>me: Enter book pr</span><span class='EQUAL'>i</span><span class='INSERT'>ce: Adde</span><span class='EQUAL'>d </span><span class='DELETE'>ID!</span><span class='INSERT'>successfully.</span><span class='EQUAL'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>Enter book n</span><span class='EQUAL'>ame</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice</span><span class='DELETE'>
+</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='DELETE'>Thin</span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'>s
+2.</span><span class='EQUAL'> </span><span class='DELETE'>big</span><span class='INSERT'>add</span><span class='EQUAL'> a</span><span class='INSERT'> </span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>ew</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok
+3.</span><span class='EQUAL'> </span><span class='DELETE'>r</span><span class='INSERT'>ed</span><span class='EQUAL'>i</span><span class='DELETE'>ch</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Invalid</span><span class='EQUAL'> </span><span class='DELETE'>      </span><span class='INSERT'>ID!
+-----------------------------------
+</span><span class='EQUAL'>1</span><span class='DELETE'>0</span><span class='EQUAL'>.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='DELETE'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+</span><span class='EQUAL'>2</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='DELETE'>hab</span><span class='INSERT'>ed</span><span class='EQUAL'>it</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok
+4.</span><span class='EQUAL'> </span><span class='DELETE'>highly </span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e </span><span class='DELETE'>pe</span><span class='INSERT'>a b</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>ok
+5. s</span><span class='EQUAL'>e</span><span class='INSERT'>arch</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option: (empty)
+-----------------------------------
+</span><span class='EQUAL'>1</span><span class='DELETE'>5</span><span class='EQUAL'>.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='DELETE'>5</span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='EQUAL'>a</span><span class='DELETE'>rry</span><span class='INSERT'> new</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='INSERT'>k
+3. edi</span><span class='EQUAL'>t</span><span class='INSERT'> book
+4. dele</span><span class='EQUAL'>te</span><span class='DELETE'>r</span><span class='EQUAL'> a</span><span class='DELETE'>nd</span><span class='EQUAL'> </span><span class='DELETE'>the</span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>s</span><span class='EQUAL'>ea</span><span class='DELETE'>t</span><span class='INSERT'>rc</span><span class='EQUAL'>h</span><span class='DELETE'>ly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ok</span><span class='EQUAL'>s </span><span class='DELETE'>   </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Saving to File...
+Bye!
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Saving to </span><span class='DELETE'>f</span><span class='INSERT'>F</span><span class='EQUAL'>ile...
+Bye!</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='EQUAL'>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+ID   </span><span class='EQUAL'> </span><span class='DELETE'>Nam</span><span class='INSERT'>(</span><span class='EQUAL'>e</span><span class='DELETE'>                                          Price</span><span class='INSERT'>mpty)</span><span class='EQUAL'>
+</span><span class='DELETE'>    </span><span class='INSERT'>-----------------------------------
+</span><span class='EQUAL'>1</span><span class='INSERT'>.</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>l</span><span class='EQUAL'>i</span><span class='DELETE'>nk</span><span class='INSERT'>st all</span><span class='EQUAL'> b</span><span class='DELETE'>ig</span><span class='INSERT'>ooks
+2.</span><span class='EQUAL'> a</span><span class='DELETE'>n</span><span class='INSERT'>d</span><span class='EQUAL'>d </span><span class='DELETE'>Grow</span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>rich</span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='DELETE'>                           10</span><span class='INSERT'>book
+3</span><span class='EQUAL'>.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='DELETE'>   2 Th</span><span class='EQUAL'>e</span><span class='DELETE'> 7 hab</span><span class='INSERT'>d</span><span class='EQUAL'>it</span><span class='DELETE'>s</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>f highly</span><span class='INSERT'>ok
+4.</span><span class='EQUAL'> </span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e </span><span class='DELETE'>people           </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>book
+</span><span class='EQUAL'>5.</span><span class='DELETE'>97
+</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>se</span><span class='EQUAL'>ar</span><span class='DELETE'>ry</span><span class='INSERT'>ch</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>tter</span><span class='INSERT'>oks by</span><span class='EQUAL'> </span><span class='DELETE'>a</span><span class='EQUAL'>n</span><span class='DELETE'>d th</span><span class='INSERT'>am</span><span class='EQUAL'>e</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='DELETE'>Dea</span><span class='INSERT'>sor</span><span class='EQUAL'>t</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>Hall</span><span class='INSERT'>bo</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>k</span><span class='EQUAL'>s </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'>       </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>15.40</span></pre></td><td><strong>Failed</strong></td></tr></table>
+</body></html>

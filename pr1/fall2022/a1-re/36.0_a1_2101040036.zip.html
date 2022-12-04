@@ -1,0 +1,859 @@
+<html><head><style>body {
+    display: inline-block;
+    padding: 15px;
+}
+h1, h2 {
+    text-align: center;
+}
+#score {
+    color: blue;
+}
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+table, tr, th, td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+td {
+    vertical-align: text-top;
+}
+.insert {
+    background: #f8d7da;
+}
+.delete {
+    background: #cce5ff;
+}/*
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
+</style></head><body>
+<h1>file: temp\a1_2101040036\a1_2101040036</h1>
+<h2 id='score'>Score: 36.0 (11 passed/ total 30 testcases)</h2>
+<h2 id='score'>NOTE: Sample Only = true</h2>
+<h3>Normal Test Cases</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Invalid option
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+</span><span class='EQUAL'>-----------------------------------
+1. </span><span class='DELETE'>l</span><span class='INSERT'>L</span><span class='EQUAL'>ist all books</span><span class='INSERT'>!</span><span class='EQUAL'>
+2. </span><span class='DELETE'>a</span><span class='INSERT'>A</span><span class='EQUAL'>dd a new book</span><span class='INSERT'>!</span><span class='EQUAL'>
+3. </span><span class='DELETE'>e</span><span class='INSERT'>E</span><span class='EQUAL'>dit book</span><span class='INSERT'>!</span><span class='EQUAL'>
+4. </span><span class='DELETE'>d</span><span class='INSERT'>D</span><span class='EQUAL'>elete a book</span><span class='INSERT'>!</span><span class='EQUAL'>
+5. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>earch books by name</span><span class='INSERT'>!</span><span class='EQUAL'>
+6. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>ort books descending by price</span><span class='INSERT'>!</span><span class='EQUAL'>
+
+0. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>ave & </span><span class='DELETE'>e</span><span class='INSERT'>E</span><span class='EQUAL'>xit
+-----------------------------------
+Your option:
+Invalid option</span><span class='DELETE'>!</span><span class='EQUAL'>
+-----------------------------------
+1. </span><span class='DELETE'>l</span><span class='INSERT'>L</span><span class='EQUAL'>ist all books</span><span class='INSERT'>!</span><span class='EQUAL'>
+2. </span><span class='DELETE'>a</span><span class='INSERT'>A</span><span class='EQUAL'>dd a new book</span><span class='INSERT'>!</span><span class='EQUAL'>
+3. </span><span class='DELETE'>e</span><span class='INSERT'>E</span><span class='EQUAL'>dit book</span><span class='INSERT'>!</span><span class='EQUAL'>
+4. </span><span class='DELETE'>d</span><span class='INSERT'>D</span><span class='EQUAL'>elete a book</span><span class='INSERT'>!</span><span class='EQUAL'>
+5. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>earch books by name</span><span class='INSERT'>!</span><span class='EQUAL'>
+6. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>ort books descending by price</span><span class='INSERT'>!</span><span class='EQUAL'>
+
+0. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>ave & </span><span class='DELETE'>e</span><span class='INSERT'>E</span><span class='EQUAL'>xit
+-----------------------------------
+Your option:</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Saving to file...!
+Bye!!!
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+	at java.base/java.util.Scanner.ensureOpen(Scanner.java:1154)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1786)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1654)
+	at Scanner1.nextLine(Scanner1.java:106)
+	at BookManager.handleManager(BookManager.java:89)
+	at Main.main(Main.java:5)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='DELETE'>(</span><span class='INSERT'>Saving to file...!
+Bye!!!
+-----------------------------------
+1. List all books!
+2. Add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book!
+3. Edit book!
+4. Delete a book!
+5. Search books by na</span><span class='EQUAL'>m</span><span class='DELETE'>p</span><span class='INSERT'>e!
+6. Sor</span><span class='EQUAL'>t</span><span class='INSERT'> books descending b</span><span class='EQUAL'>y</span><span class='INSERT'> price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+	at java.base/java.util.Scanner.ensureOpen(Scanner.java:1154</span><span class='EQUAL'>)</span><span class='INSERT'>
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1786)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1654)
+	at Scanner1.nextLine(Scanner1.java:106)
+	at BookManager.handleManager(BookManager.java:89)
+	at Main.main(Main.java:5)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+(empty)
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Enter book id:
+Book id must be an integer
+Enter book id:
+Book id must be an integer
+Enter book id:
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+</span><span class='INSERT'>(empty)
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. </span><span class='EQUAL'>E</span><span class='DELETE'>n</span><span class='INSERT'>di</span><span class='EQUAL'>t</span><span class='INSERT'> book!
+4. D</span><span class='EQUAL'>e</span><span class='INSERT'>lete a book!
+5. Sea</span><span class='EQUAL'>r</span><span class='INSERT'>ch</span><span class='EQUAL'> book</span><span class='INSERT'>s by</span><span class='EQUAL'> </span><span class='INSERT'>name!
+6. Sort books descend</span><span class='EQUAL'>i</span><span class='DELETE'>d</span><span class='INSERT'>ng by price!
+
+0. Save & Exit
+-----------------------------------
+Your option</span><span class='EQUAL'>:
+Enter book </span><span class='INSERT'>id:
+Book id must be a</span><span class='EQUAL'>n</span><span class='DELETE'>am</span><span class='INSERT'> integ</span><span class='EQUAL'>e</span><span class='DELETE'>:</span><span class='INSERT'>r</span><span class='EQUAL'>
+Enter book </span><span class='DELETE'>pr</span><span class='EQUAL'>i</span><span class='DELETE'>ce</span><span class='INSERT'>d</span><span class='EQUAL'>:
+</span><span class='DELETE'>Adde</span><span class='INSERT'>Book i</span><span class='EQUAL'>d </span><span class='DELETE'>s</span><span class='INSERT'>m</span><span class='EQUAL'>u</span><span class='DELETE'>cce</span><span class='EQUAL'>s</span><span class='DELETE'>sfully</span><span class='INSERT'>t be an integer
+Enter book id:
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+(empty)
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Saving to file...!
+Bye!!!
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+	at java.base/java.util.Scanner.ensureOpen(Scanner.java:1154)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1786)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1654)
+	at Scanner1.nextLine(Scanner1.java:106)
+	at BookManager.handleManager(BookManager.java:89)
+	at Main.main(Main.java:5)
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='DELETE'>ur</span><span class='INSERT'>ading</span><span class='EQUAL'> </span><span class='INSERT'>b</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='EQUAL'>o</span><span class='DELETE'>n:</span><span class='INSERT'>ks...
+-----------------------------------</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>1.</span><span class='EQUAL'> </span><span class='INSERT'>List</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books!
+2.</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>Add </span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'> n</span><span class='EQUAL'>e</span><span class='INSERT'>w</span><span class='EQUAL'> </span><span class='INSERT'>book!
+3.</span><span class='EQUAL'> </span><span class='INSERT'>Edit</span><span class='EQUAL'> </span><span class='INSERT'>book!
+4.</span><span class='EQUAL'> </span><span class='INSERT'>Delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book!
+5.</span><span class='EQUAL'> </span><span class='INSERT'>Search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name!
+6.</span><span class='EQUAL'> </span><span class='INSERT'>Sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price!
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>Save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>Exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:
+(empty)
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>List</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books!
+2.</span><span class='EQUAL'> </span><span class='INSERT'>Add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book!
+3.</span><span class='EQUAL'> </span><span class='INSERT'>Edit</span><span class='EQUAL'> </span><span class='INSERT'>book!
+4.</span><span class='EQUAL'> </span><span class='INSERT'>Delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book!
+5.</span><span class='EQUAL'> </span><span class='INSERT'>Search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name!
+6.</span><span class='EQUAL'> </span><span class='INSERT'>Sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>  P</span><span class='INSERT'>p</span><span class='EQUAL'>rice</span><span class='INSERT'>!</span><span class='EQUAL'>
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>Save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'> 1</span><span class='INSERT'>Exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>opt</span><span class='EQUAL'>i</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>k b</span><span class='INSERT'>:
+Sav</span><span class='EQUAL'>i</span><span class='DELETE'>g a</span><span class='EQUAL'>n</span><span class='DELETE'>d</span><span class='INSERT'>g</span><span class='EQUAL'> </span><span class='DELETE'>Gr</span><span class='INSERT'>t</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='EQUAL'> </span><span class='DELETE'>r</span><span class='INSERT'>f</span><span class='EQUAL'>i</span><span class='DELETE'>ch       </span><span class='INSERT'>le...!
+Bye!!!
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>List</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books!
+2.</span><span class='EQUAL'> </span><span class='INSERT'>Add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book!
+3.</span><span class='EQUAL'> </span><span class='INSERT'>Edit</span><span class='EQUAL'> </span><span class='INSERT'>book!
+4.</span><span class='EQUAL'> </span><span class='INSERT'>Delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book!
+5.</span><span class='EQUAL'> </span><span class='INSERT'>Search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name!
+6.</span><span class='EQUAL'> </span><span class='INSERT'>Sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>price!
+
+</span><span class='EQUAL'>0.</span><span class='DELETE'>95
+</span><span class='EQUAL'> </span><span class='INSERT'>Save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='DELETE'> 2</span><span class='INSERT'>Exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>option:
+Exc</span><span class='EQUAL'>e</span><span class='INSERT'>ption</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>t</span><span class='EQUAL'>h</span><span class='INSERT'>re</span><span class='EQUAL'>a</span><span class='DELETE'>b</span><span class='INSERT'>d "ma</span><span class='EQUAL'>i</span><span class='INSERT'>n" java.lang.IllegalS</span><span class='EQUAL'>t</span><span class='DELETE'>s</span><span class='INSERT'>ateException: Scanner</span><span class='EQUAL'> </span><span class='INSERT'>cl</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>sed
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>java.base/java.ut</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='INSERT'>.Scanner.ensur</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>Op</span><span class='EQUAL'>e</span><span class='INSERT'>n(S</span><span class='EQUAL'>c</span><span class='INSERT'>anner.java:1154)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>i</span><span class='INSERT'> ja</span><span class='EQUAL'>v</span><span class='INSERT'>a.bas</span><span class='EQUAL'>e</span><span class='DELETE'> p</span><span class='INSERT'>/java.util.Scann</span><span class='EQUAL'>e</span><span class='INSERT'>r.findWithinH</span><span class='EQUAL'>o</span><span class='DELETE'>pl</span><span class='INSERT'>rizon(Scann</span><span class='EQUAL'>e</span><span class='DELETE'>            </span><span class='INSERT'>r.java:</span><span class='EQUAL'>1</span><span class='DELETE'>5.9</span><span class='EQUAL'>7</span><span class='INSERT'>86)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   </span><span class='INSERT'>java.base/java.util.Scanner.nextLine(Scanner.java:16</span><span class='EQUAL'>5</span><span class='INSERT'>4)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>Sc</span><span class='EQUAL'>a</span><span class='INSERT'>nne</span><span class='EQUAL'>r</span><span class='INSERT'>1.nextLine(Scanne</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>1.java:106)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>okManag</span><span class='EQUAL'>er</span><span class='DELETE'>                                      </span><span class='INSERT'>.handleManager(BookManager.java:89)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>Main.main(Main.java:</span><span class='EQUAL'>5</span><span class='DELETE'>.40</span><span class='INSERT'>)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+(empty)
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Saving to file...!
+Bye!!!
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+	at java.base/java.util.Scanner.ensureOpen(Scanner.java:1154)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1786)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1654)
+	at Scanner1.nextLine(Scanner1.java:106)
+	at BookManager.handleManager(BookManager.java:89)
+	at Main.main(Main.java:5)
+</pre></td><td><pre><span class='INSERT'>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+(empty)
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:
+Saving to file...</span><span class='INSERT'>!</span><span class='EQUAL'>
+Bye!</span><span class='INSERT'>!!
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+	at java.base/java.util.Scanner.ensureOpen(Scanner.java:1154)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1786)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1654)
+	at Scanner1.nextLine(Scanner1.java:106)
+	at BookManager.handleManager(BookManager.java:89)
+	at Main.main(Main.java:5)
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Saving to file...!
+Bye!!!
+-----------------------------------
+1. List all books!
+2. Add a new book!
+3. Edit book!
+4. Delete a book!
+5. Search books by name!
+6. Sort books descending by price!
+
+0. Save & Exit
+-----------------------------------
+Your option:
+Exception in thread "main" java.lang.IllegalStateException: Scanner closed
+	at java.base/java.util.Scanner.ensureOpen(Scanner.java:1154)
+	at java.base/java.util.Scanner.findWithinHorizon(Scanner.java:1786)
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1654)
+	at Scanner1.nextLine(Scanner1.java:106)
+	at BookManager.handleManager(BookManager.java:89)
+	at Main.main(Main.java:5)
+</pre></td><td><pre><span class='EQUAL'>Loading books...
+-----------------------------------
+1. </span><span class='DELETE'>l</span><span class='INSERT'>L</span><span class='EQUAL'>ist all books</span><span class='INSERT'>!</span><span class='EQUAL'>
+2. </span><span class='DELETE'>a</span><span class='INSERT'>A</span><span class='EQUAL'>dd a new book</span><span class='INSERT'>!</span><span class='EQUAL'>
+3. </span><span class='DELETE'>e</span><span class='INSERT'>E</span><span class='EQUAL'>dit book</span><span class='INSERT'>!</span><span class='EQUAL'>
+4. </span><span class='DELETE'>d</span><span class='INSERT'>D</span><span class='EQUAL'>elete a book</span><span class='INSERT'>!</span><span class='EQUAL'>
+5. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>earch books by name</span><span class='INSERT'>!</span><span class='EQUAL'>
+6. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>ort books descending by price</span><span class='INSERT'>!</span><span class='EQUAL'>
+
+0. </span><span class='DELETE'>s</span><span class='INSERT'>S</span><span class='EQUAL'>ave & </span><span class='DELETE'>e</span><span class='INSERT'>E</span><span class='EQUAL'>xit
+-----------------------------------
+Your option:
+</span><span class='DELETE'>ID    N</span><span class='INSERT'>S</span><span class='EQUAL'>a</span><span class='DELETE'>me              </span><span class='INSERT'>ving</span><span class='EQUAL'> </span><span class='INSERT'>to</span><span class='EQUAL'> </span><span class='DELETE'>     </span><span class='INSERT'>file...!
+Bye!!!
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>List</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books!
+2.</span><span class='EQUAL'> </span><span class='INSERT'>Add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book!
+3.</span><span class='EQUAL'> </span><span class='INSERT'>Edit</span><span class='EQUAL'> </span><span class='INSERT'>book!
+4.</span><span class='EQUAL'> </span><span class='INSERT'>Delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book!
+5.</span><span class='EQUAL'> </span><span class='INSERT'>Search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name!
+6.</span><span class='EQUAL'> </span><span class='INSERT'>Sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>p</span><span class='EQUAL'>rice</span><span class='INSERT'>!</span><span class='EQUAL'>
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>Save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>Exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>1</span><span class='INSERT'>option:
+Exception</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='EQUAL'>in</span><span class='DELETE'>k</span><span class='INSERT'> thread</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>"ma</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>n"</span><span class='EQUAL'> </span><span class='INSERT'>java.l</span><span class='EQUAL'>an</span><span class='DELETE'>d</span><span class='INSERT'>g.IllegalStateException:</span><span class='EQUAL'> </span><span class='DELETE'>G</span><span class='INSERT'>Scanne</span><span class='EQUAL'>r</span><span class='INSERT'> cl</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>sed
+	at</span><span class='EQUAL'> </span><span class='DELETE'>r</span><span class='INSERT'>java.base/java.ut</span><span class='EQUAL'>i</span><span class='INSERT'>l.S</span><span class='EQUAL'>c</span><span class='DELETE'>h                            10</span><span class='INSERT'>anner</span><span class='EQUAL'>.</span><span class='DELETE'>9</span><span class='INSERT'>ensureOpen(Scanner.java:11</span><span class='EQUAL'>5</span><span class='INSERT'>4)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   2 T</span><span class='INSERT'>java.base/java.util.Scanner.findWit</span><span class='EQUAL'>h</span><span class='INSERT'>inHorizon(Scann</span><span class='EQUAL'>e</span><span class='DELETE'> </span><span class='INSERT'>r.java:1</span><span class='EQUAL'>7</span><span class='INSERT'>86)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> of h</span><span class='INSERT'>e/java.ut</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='INSERT'>.Scann</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>r.n</span><span class='EQUAL'>e</span><span class='DELETE'>c</span><span class='INSERT'>x</span><span class='EQUAL'>t</span><span class='INSERT'>L</span><span class='EQUAL'>i</span><span class='DELETE'>v</span><span class='INSERT'>n</span><span class='EQUAL'>e</span><span class='DELETE'> p</span><span class='INSERT'>(Scann</span><span class='EQUAL'>e</span><span class='DELETE'>ople            </span><span class='INSERT'>r.java:</span><span class='EQUAL'>1</span><span class='INSERT'>6</span><span class='EQUAL'>5</span><span class='DELETE'>.97</span><span class='INSERT'>4)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>Sc</span><span class='EQUAL'>a</span><span class='INSERT'>nne</span><span class='EQUAL'>r</span><span class='INSERT'>1.nextLine(Scanne</span><span class='EQUAL'>r</span><span class='DELETE'>y</span><span class='INSERT'>1.java:106)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>P</span><span class='INSERT'>Bo</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>kManag</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>.h</span><span class='EQUAL'>and</span><span class='DELETE'> th</span><span class='INSERT'>l</span><span class='EQUAL'>e</span><span class='DELETE'> D</span><span class='INSERT'>Manag</span><span class='EQUAL'>e</span><span class='INSERT'>r(BookManager.java:89)
+	</span><span class='EQUAL'>at</span><span class='DELETE'>hly</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='DELETE'>llows               1</span><span class='INSERT'>in.main(Main.java:</span><span class='EQUAL'>5</span><span class='DELETE'>.40</span><span class='INSERT'>)
+</span></pre></td><td><strong>Failed</strong></td></tr></table>
+<h3>Test Script: Main</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: ID    Name                                          Price     
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Saving to file...!
+Bye!
+</pre></td><td><pre><span class='INSERT'>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Saving to file...</span><span class='INSERT'>!</span><span class='EQUAL'>
+Bye!</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Loading books...
+Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: ID    Name                                          Price     
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr></table>
+</body></html>

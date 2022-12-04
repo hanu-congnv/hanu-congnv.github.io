@@ -1,0 +1,1693 @@
+<html><head><style>body {
+    display: inline-block;
+    padding: 15px;
+}
+h1, h2 {
+    text-align: center;
+}
+#score {
+    color: blue;
+}
+.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+table, tr, th, td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 3px;
+}
+td {
+    vertical-align: text-top;
+}
+.insert {
+    background: #f8d7da;
+}
+.delete {
+    background: #cce5ff;
+}/*
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}*/
+</style></head><body>
+<h1>file: temp\a1_2101040164\Library\src</h1>
+<h2 id='score'>Score: 33.0 (10 passed/ total 30 testcases)</h2>
+<h2 id='score'>NOTE: Sample Only = false</h2>
+<h3>Normal Test Cases</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>-----------------------------------
+1.</span><span class='INSERT'>Exception</span><span class='EQUAL'> </span><span class='DELETE'>l</span><span class='EQUAL'>i</span><span class='DELETE'>s</span><span class='INSERT'>n </span><span class='EQUAL'>t</span><span class='INSERT'>hread</span><span class='EQUAL'> </span><span class='INSERT'>"main" jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>l</span><span class='INSERT'>ang.NoC</span><span class='EQUAL'>l</span><span class='INSERT'>assDefFoundError:</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>B</span><span class='EQUAL'>ook</span><span class='DELETE'>s</span><span class='INSERT'>Manager</span><span class='EQUAL'>
+</span><span class='DELETE'>2. </span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>dd</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='DELETE'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>ew </span><span class='INSERT'>.</span><span class='EQUAL'>book</span><span class='DELETE'>
+3. </span><span class='INSERT'>manag</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>r(Ma</span><span class='EQUAL'>i</span><span class='DELETE'>t book
+4</span><span class='INSERT'>n</span><span class='EQUAL'>.</span><span class='DELETE'> dele</span><span class='INSERT'>java:12)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='DELETE'> book
+5</span><span class='INSERT'>in</span><span class='EQUAL'>.</span><span class='DELETE'> se</span><span class='INSERT'>m</span><span class='EQUAL'>a</span><span class='DELETE'>rch book</span><span class='INSERT'>in(Main.java:7)
+Cau</span><span class='EQUAL'>s</span><span class='INSERT'>ed</span><span class='EQUAL'> by</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='DELETE'>n</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='DELETE'>me
+6</span><span class='INSERT'>va</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>lang.Cla</span><span class='EQUAL'>s</span><span class='INSERT'>sN</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='EQUAL'>t</span><span class='DELETE'> bo</span><span class='INSERT'>F</span><span class='EQUAL'>o</span><span class='DELETE'>ks </span><span class='INSERT'>un</span><span class='EQUAL'>d</span><span class='DELETE'>es</span><span class='INSERT'>Ex</span><span class='EQUAL'>ce</span><span class='DELETE'>nd</span><span class='INSERT'>pt</span><span class='EQUAL'>i</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>g by</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='DELETE'>pric</span><span class='INSERT'>BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'>
+</span><span class='DELETE'>
+0.</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='INSERT'>a.bas</span><span class='EQUAL'>e</span><span class='DELETE'> & ex</span><span class='INSERT'>/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'>
+-----------------------------------
+You</span><span class='INSERT'>e</span><span class='EQUAL'>r</span><span class='DELETE'> optio</span><span class='EQUAL'>n</span><span class='DELETE'>:
+Inv</span><span class='EQUAL'>al</span><span class='DELETE'>i</span><span class='INSERT'>.loa</span><span class='EQUAL'>d</span><span class='DELETE'> op</span><span class='INSERT'>er.Buil</span><span class='EQUAL'>ti</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>!
+-----------------------------------
+1. </span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='DELETE'>i</span><span class='INSERT'>as</span><span class='EQUAL'>s</span><span class='DELETE'>t </span><span class='INSERT'>Lo</span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>der.</span><span class='EQUAL'>l</span><span class='DELETE'> b</span><span class='EQUAL'>o</span><span class='DELETE'>oks
+2. </span><span class='EQUAL'>ad</span><span class='DELETE'>d </span><span class='INSERT'>Cl</span><span class='EQUAL'>a</span><span class='DELETE'> </span><span class='INSERT'>ss(Builti</span><span class='EQUAL'>n</span><span class='DELETE'>ew b</span><span class='INSERT'>ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+3. </span><span class='INSERT'>ad</span><span class='EQUAL'>e</span><span class='DELETE'>di</span><span class='INSERT'>r.java:641)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>oo</span><span class='INSERT'>ase/jd</span><span class='EQUAL'>k</span><span class='DELETE'>
+4</span><span class='EQUAL'>.</span><span class='DELETE'> dele</span><span class='INSERT'>in</span><span class='EQUAL'>te</span><span class='DELETE'> </span><span class='INSERT'>rn</span><span class='EQUAL'>a</span><span class='DELETE'> b</span><span class='INSERT'>l.l</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+5</span><span class='INSERT'>ader</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>Clas</span><span class='EQUAL'>s</span><span class='INSERT'>Load</span><span class='EQUAL'>e</span><span class='INSERT'>rs$AppCl</span><span class='EQUAL'>a</span><span class='INSERT'>ssLoade</span><span class='EQUAL'>r</span><span class='DELETE'>ch b</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='INSERT'>adClass(ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>k</span><span class='INSERT'>ader</span><span class='EQUAL'>s</span><span class='INSERT'>.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>y n</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>
+6</span><span class='INSERT'>/java</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>lang.Cla</span><span class='EQUAL'>s</span><span class='INSERT'>sL</span><span class='EQUAL'>o</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='DELETE'>t bo</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='DELETE'>ks </span><span class='INSERT'>a</span><span class='EQUAL'>d</span><span class='DELETE'>e</span><span class='INSERT'>Cla</span><span class='EQUAL'>s</span><span class='DELETE'>cen</span><span class='INSERT'>s(ClassLoa</span><span class='EQUAL'>d</span><span class='DELETE'>ing by pric</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'> s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e</span><span class='INSERT'>a:521)
+	...</span><span class='EQUAL'> </span><span class='DELETE'>&</span><span class='INSERT'>2</span><span class='EQUAL'> </span><span class='DELETE'>exit
+-----------------------------------
+Y</span><span class='INSERT'>m</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='EQUAL'>r</span><span class='DELETE'> option:</span><span class='INSERT'>e
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Exception in thread "main" java.lang.NoClassDefF</span><span class='EQUAL'>ou</span><span class='INSERT'>ndE</span><span class='EQUAL'>r</span><span class='INSERT'>ror:</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='INSERT'>okManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> BookManager</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass</span><span class='EQUAL'>(</span><span class='INSERT'>BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>m</span><span class='INSERT'>r.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$A</span><span class='EQUAL'>p</span><span class='INSERT'>pClassLoader.loadClass(ClassLoaders.java:188)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521</span><span class='EQUAL'>)</span><span class='INSERT'>
+	... 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Excepti</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>n in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.lang.N</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='INSERT'>ClassDefF</span><span class='EQUAL'>o</span><span class='INSERT'>u</span><span class='EQUAL'>n</span><span class='INSERT'>dError</span><span class='EQUAL'>:</span><span class='DELETE'>
+E</span><span class='INSERT'> BookMa</span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='INSERT'>ag</span><span class='EQUAL'>er</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Main.</span><span class='EQUAL'>book</span><span class='INSERT'>manager(Main.java:12)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Main.ma</span><span class='EQUAL'>i</span><span class='INSERT'>n(Main.java:7)
+Cause</span><span class='EQUAL'>d</span><span class='INSERT'> by</span><span class='EQUAL'>:</span><span class='DELETE'>
+E</span><span class='INSERT'> java.la</span><span class='EQUAL'>n</span><span class='INSERT'>g.ClassNo</span><span class='EQUAL'>t</span><span class='INSERT'>FoundExc</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ption:</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>B</span><span class='EQUAL'>ook</span><span class='DELETE'> </span><span class='INSERT'>Ma</span><span class='EQUAL'>na</span><span class='DELETE'>m</span><span class='INSERT'>g</span><span class='EQUAL'>e</span><span class='DELETE'>:</span><span class='INSERT'>r</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/jdk.i</span><span class='EQUAL'>nter</span><span class='DELETE'> b</span><span class='INSERT'>nal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.BuiltinClassL</span><span class='EQUAL'>o</span><span class='DELETE'>k p</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.loadClass(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>c</span><span class='INSERT'>ltinClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.ClassLoaders$</span><span class='EQUAL'>A</span><span class='INSERT'>ppClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.loadClass(ClassLoa</span><span class='EQUAL'>de</span><span class='DELETE'>d</span><span class='INSERT'>rs.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='DELETE'>ucc</span><span class='EQUAL'>e</span><span class='INSERT'>/java.lang.Cla</span><span class='EQUAL'>ss</span><span class='DELETE'>fu</span><span class='INSERT'>Loader.loadC</span><span class='EQUAL'>l</span><span class='INSERT'>ass(C</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:521)
+	... 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Excepti</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>n in th</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.lang.N</span><span class='EQUAL'>o</span><span class='DELETE'>pti</span><span class='INSERT'>ClassDefF</span><span class='EQUAL'>o</span><span class='INSERT'>u</span><span class='EQUAL'>n</span><span class='DELETE'>:
+</span><span class='INSERT'>d</span><span class='EQUAL'>E</span><span class='INSERT'>rror: BookMa</span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='INSERT'>ag</span><span class='EQUAL'>er</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Main.</span><span class='EQUAL'>book</span><span class='INSERT'>manager(Main.java:12)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>Ma</span><span class='EQUAL'>i</span><span class='INSERT'>n.main(Main.java:7)
+Cause</span><span class='EQUAL'>d</span><span class='INSERT'> by</span><span class='EQUAL'>:</span><span class='DELETE'>
+</span><span class='INSERT'> java.lang.ClassNotFound</span><span class='EQUAL'>E</span><span class='INSERT'>xceptio</span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='INSERT'>: BookManag</span><span class='EQUAL'>er</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.internal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.BuiltinClassL</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>ader.loadClass(Builti</span><span class='EQUAL'>n</span><span class='INSERT'>Cl</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>ssLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at java.base/jdk.i</span><span class='EQUAL'>nter</span><span class='DELETE'> b</span><span class='INSERT'>nal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>aders$A</span><span class='EQUAL'>p</span><span class='INSERT'>pClassLoade</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='INSERT'>.loadClass(ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs.java</span><span class='EQUAL'>:</span><span class='INSERT'>188)</span><span class='EQUAL'>
+</span><span class='DELETE'>Dup</span><span class='INSERT'>	at java.base/java.lang.C</span><span class='EQUAL'>l</span><span class='DELETE'>ic</span><span class='INSERT'>assLo</span><span class='EQUAL'>a</span><span class='DELETE'>t</span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='INSERT'>r.loa</span><span class='EQUAL'>d</span><span class='INSERT'>Class(ClassLoader.java:521)
+	...</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Your o</span><span class='INSERT'>Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+ID</span><span class='EQUAL'> </span><span class='INSERT'>in</span><span class='EQUAL'> </span><span class='INSERT'>thread</span><span class='EQUAL'> </span><span class='INSERT'>"main"</span><span class='EQUAL'> </span><span class='INSERT'>java.lang.</span><span class='EQUAL'>N</span><span class='INSERT'>oCl</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>ssD</span><span class='EQUAL'>e</span><span class='DELETE'>                                          P</span><span class='INSERT'>fFoundE</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='INSERT'>ror: BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'>
+</span><span class='DELETE'>    1</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ma</span><span class='EQUAL'>in</span><span class='INSERT'>.boo</span><span class='EQUAL'>k</span><span class='DELETE'> big </span><span class='INSERT'>m</span><span class='EQUAL'>an</span><span class='DELETE'>d Grow </span><span class='INSERT'>age</span><span class='EQUAL'>r</span><span class='INSERT'>(Ma</span><span class='EQUAL'>i</span><span class='DELETE'>ch           </span><span class='INSERT'>n.java:12)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>                10</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='DELETE'>95</span><span class='INSERT'>java:7)</span><span class='EQUAL'>
+</span><span class='DELETE'>   </span><span class='INSERT'>Caused</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>by:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>java.lang.ClassNotFoundExc</span><span class='EQUAL'>e</span><span class='INSERT'>ption:</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>BookManager
+	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'>s </span><span class='INSERT'>ernal.l</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y </span><span class='INSERT'>tinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>ffec</span><span class='INSERT'>r.loadClass(Buil</span><span class='EQUAL'>ti</span><span class='INSERT'>nClassLoader.ja</span><span class='EQUAL'>v</span><span class='DELETE'>e</span><span class='INSERT'>a:641)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>p</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/jdk.internal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.ClassLoaders$A</span><span class='EQUAL'>p</span><span class='INSERT'>pC</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>loadClass(ClassLoaders.java:188)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.base/java.lang.ClassLo</span><span class='EQUAL'>a</span><span class='INSERT'>de</span><span class='EQUAL'>r</span><span class='DELETE'>ry P</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>adClass(ClassLoad</span><span class='EQUAL'>er</span><span class='DELETE'>     </span><span class='INSERT'>.java:521)
+	...</span><span class='EQUAL'> </span><span class='INSERT'>2</span><span class='EQUAL'> </span><span class='DELETE'>                                15.40</span><span class='INSERT'>more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Your o</span><span class='INSERT'>Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad "main"</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>java.lang.N</span><span class='EQUAL'>o</span><span class='INSERT'>ClassDefF</span><span class='EQUAL'>o</span><span class='DELETE'>k i</span><span class='INSERT'>un</span><span class='EQUAL'>d</span><span class='DELETE'>:
+</span><span class='EQUAL'>E</span><span class='DELETE'>nte</span><span class='INSERT'>rro</span><span class='EQUAL'>r</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>B</span><span class='EQUAL'>ook</span><span class='DELETE'> </span><span class='INSERT'>Ma</span><span class='EQUAL'>na</span><span class='DELETE'>m</span><span class='INSERT'>g</span><span class='EQUAL'>e</span><span class='DELETE'>:</span><span class='INSERT'>r</span><span class='EQUAL'>
+</span><span class='DELETE'>En</span><span class='INSERT'>	a</span><span class='EQUAL'>t</span><span class='DELETE'>er</span><span class='EQUAL'> </span><span class='INSERT'>Main.</span><span class='EQUAL'>book</span><span class='DELETE'> p</span><span class='INSERT'>manage</span><span class='EQUAL'>r</span><span class='INSERT'>(Ma</span><span class='EQUAL'>i</span><span class='DELETE'>ce</span><span class='INSERT'>n.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='DELETE'>Upd</span><span class='INSERT'>	</span><span class='EQUAL'>at</span><span class='INSERT'> Main.main(Main.java:7)
+Caus</span><span class='EQUAL'>ed </span><span class='DELETE'>successfull</span><span class='INSERT'>b</span><span class='EQUAL'>y</span><span class='INSERT'>: java</span><span class='EQUAL'>.</span><span class='DELETE'>
+-----------------------------------
+1</span><span class='INSERT'>lang</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='DELETE'>i</span><span class='INSERT'>as</span><span class='EQUAL'>s</span><span class='INSERT'>No</span><span class='EQUAL'>t</span><span class='INSERT'>FoundException:</span><span class='EQUAL'> </span><span class='DELETE'>all b</span><span class='INSERT'>B</span><span class='EQUAL'>ook</span><span class='DELETE'>s</span><span class='INSERT'>Manager</span><span class='EQUAL'>
+</span><span class='DELETE'>2.</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='DELETE'>dd </span><span class='INSERT'>va.b</span><span class='EQUAL'>a</span><span class='DELETE'> n</span><span class='INSERT'>s</span><span class='EQUAL'>e</span><span class='DELETE'>w boo</span><span class='INSERT'>/jd</span><span class='EQUAL'>k</span><span class='DELETE'>
+3</span><span class='EQUAL'>.</span><span class='DELETE'> ed</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'> book
+4</span><span class='INSERT'>ernal</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>loa</span><span class='EQUAL'>de</span><span class='INSERT'>r.Bui</span><span class='EQUAL'>l</span><span class='DELETE'>e</span><span class='EQUAL'>t</span><span class='DELETE'>e </span><span class='INSERT'>inCl</span><span class='EQUAL'>a</span><span class='DELETE'> b</span><span class='INSERT'>ssL</span><span class='EQUAL'>o</span><span class='DELETE'>ok
+5. s</span><span class='INSERT'>ad</span><span class='EQUAL'>e</span><span class='DELETE'>a</span><span class='EQUAL'>r</span><span class='DELETE'>ch b</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='DELETE'>ok</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='DELETE'> by </span><span class='INSERT'>s(Builti</span><span class='EQUAL'>n</span><span class='INSERT'>Cl</span><span class='EQUAL'>a</span><span class='DELETE'>me
+6. </span><span class='INSERT'>s</span><span class='EQUAL'>s</span><span class='INSERT'>L</span><span class='EQUAL'>o</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.java:641)
+	a</span><span class='EQUAL'>t </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>ooks de</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'>c</span><span class='EQUAL'>e</span><span class='DELETE'>n</span><span class='INSERT'>/j</span><span class='EQUAL'>d</span><span class='INSERT'>k.</span><span class='EQUAL'>in</span><span class='DELETE'>g by p</span><span class='INSERT'>te</span><span class='EQUAL'>r</span><span class='DELETE'>ic</span><span class='INSERT'>nal.load</span><span class='EQUAL'>e</span><span class='DELETE'>
+
+0</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>Clas</span><span class='EQUAL'>s</span><span class='INSERT'>Lo</span><span class='EQUAL'>a</span><span class='DELETE'>ve & </span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>xit
+-----------------------------------
+You</span><span class='EQUAL'>r</span><span class='DELETE'> o</span><span class='INSERT'>s$A</span><span class='EQUAL'>p</span><span class='DELETE'>ti</span><span class='INSERT'>pClassL</span><span class='EQUAL'>o</span><span class='DELETE'>n:
+ID    N</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>                                          P</span><span class='EQUAL'>r</span><span class='DELETE'>ice
+    1 Think big </span><span class='INSERT'>.lo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> Gr</span><span class='INSERT'>Class(ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='DELETE'>ich                            </span><span class='INSERT'>s.java:</span><span class='EQUAL'>1</span><span class='DELETE'>0.95</span><span class='INSERT'>88)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> of highly </span><span class='EQUAL'>e</span><span class='DELETE'>ffecti</span><span class='INSERT'>/ja</span><span class='EQUAL'>v</span><span class='DELETE'>e peop</span><span class='INSERT'>a.</span><span class='EQUAL'>l</span><span class='DELETE'>e            15</span><span class='INSERT'>ang</span><span class='EQUAL'>.</span><span class='DELETE'>97
+    5 H</span><span class='INSERT'>Cl</span><span class='EQUAL'>a</span><span class='DELETE'>rry P</span><span class='INSERT'>ssL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>.lo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> the De</span><span class='INSERT'>Cl</span><span class='EQUAL'>a</span><span class='DELETE'>th</span><span class='INSERT'>ss(C</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='EQUAL'>a</span><span class='DELETE'>ll</span><span class='INSERT'>ssL</span><span class='EQUAL'>o</span><span class='DELETE'>ws               </span><span class='INSERT'>ader.java:5</span><span class='EQUAL'>2</span><span class='DELETE'>3</span><span class='INSERT'>1)
+	</span><span class='EQUAL'>.</span><span class='DELETE'>00</span><span class='INSERT'>.. 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Exception in thread "main" java.lang.NoClassDefF</span><span class='EQUAL'>ou</span><span class='INSERT'>ndErro</span><span class='EQUAL'>r</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>okManager
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>i</span><span class='INSERT'>n.b</span><span class='EQUAL'>o</span><span class='INSERT'>okma</span><span class='EQUAL'>n</span><span class='INSERT'>ager(Main.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFound</span><span class='EQUAL'>E</span><span class='INSERT'>xceptio</span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='INSERT'>: BookManag</span><span class='EQUAL'>er</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.internal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.BuiltinClassL</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>ader.loadClass(Bu</span><span class='EQUAL'>i</span><span class='INSERT'>ltinClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='DELETE'>I</span><span class='INSERT'>	at java.base/jdk.inter</span><span class='EQUAL'>n</span><span class='INSERT'>al.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.ja</span><span class='EQUAL'>va</span><span class='INSERT'>:188)
+	at java.base/java.</span><span class='EQUAL'>l</span><span class='DELETE'>i</span><span class='INSERT'>ang.ClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.loadClass(ClassLoader.java:521)
+	...</span><span class='EQUAL'> </span><span class='DELETE'>ID</span><span class='INSERT'>2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Your o</span><span class='INSERT'>Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='INSERT'>ad "main" java.lang.NoClassDefFoundE</span><span class='EQUAL'>r</span><span class='INSERT'>ror:</span><span class='EQUAL'> </span><span class='INSERT'>Boo</span><span class='EQUAL'>k</span><span class='INSERT'>Manag</span><span class='EQUAL'>e</span><span class='DELETE'>yw</span><span class='INSERT'>r
+	at Main.b</span><span class='EQUAL'>o</span><span class='INSERT'>okmanage</span><span class='EQUAL'>r</span><span class='DELETE'>d</span><span class='INSERT'>(Main.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>in.</span><span class='EQUAL'>m</span><span class='INSERT'>ain(Main.java:7)
+Caus</span><span class='EQUAL'>e</span><span class='DELETE'>                                  </span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>by:</span><span class='EQUAL'> </span><span class='DELETE'>      Pri</span><span class='INSERT'>java.lang.ClassNotFoundEx</span><span class='EQUAL'>ce</span><span class='DELETE'>
+    2</span><span class='INSERT'>ption:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r
+	at</span><span class='EQUAL'> </span><span class='DELETE'>7 h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'>s </span><span class='INSERT'>ernal.l</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y effec</span><span class='EQUAL'>ti</span><span class='DELETE'>ve p</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>adC</span><span class='EQUAL'>l</span><span class='INSERT'>ass(BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:641)</span><span class='EQUAL'>
+</span><span class='DELETE'>    5</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>H</span><span class='INSERT'>j</span><span class='EQUAL'>a</span><span class='INSERT'>va.base/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.ClassLoaders$AppClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>.lo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> th</span><span class='INSERT'>Class(ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs.java:188)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>th</span><span class='INSERT'>va.</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='EQUAL'>a</span><span class='INSERT'>ng.C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='INSERT'>s(ClassLoader.java:521)
+	...</span><span class='EQUAL'> </span><span class='DELETE'>  </span><span class='INSERT'>2</span><span class='EQUAL'> </span><span class='DELETE'>           15.40</span><span class='INSERT'>more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Exception in thread "main" java.lang.NoClassDefF</span><span class='EQUAL'>ou</span><span class='INSERT'>ndErro</span><span class='EQUAL'>r</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>okManager
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>i</span><span class='INSERT'>n.b</span><span class='EQUAL'>o</span><span class='INSERT'>okma</span><span class='EQUAL'>n</span><span class='INSERT'>ager(Main.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFound</span><span class='EQUAL'>E</span><span class='INSERT'>xceptio</span><span class='EQUAL'>n</span><span class='DELETE'>t</span><span class='INSERT'>: BookManag</span><span class='EQUAL'>er</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/jd</span><span class='EQUAL'>k</span><span class='INSERT'>.int</span><span class='EQUAL'>e</span><span class='DELETE'>yw</span><span class='INSERT'>rnal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='INSERT'>.BuiltinClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.loadClass(BuiltinClassLoader.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass</span><span class='EQUAL'>(</span><span class='INSERT'>ClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>mp</span><span class='INSERT'>rs.java:188)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521</span><span class='EQUAL'>)</span><span class='INSERT'>
+	... 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Your o</span><span class='INSERT'>Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+Af</span><span class='INSERT'> in </span><span class='EQUAL'>t</span><span class='INSERT'>hr</span><span class='EQUAL'>e</span><span class='DELETE'>r</span><span class='INSERT'>ad</span><span class='EQUAL'> </span><span class='INSERT'>"main" java.lang.NoCla</span><span class='EQUAL'>s</span><span class='INSERT'>sDefF</span><span class='EQUAL'>o</span><span class='INSERT'>undE</span><span class='EQUAL'>r</span><span class='INSERT'>ror: BookManager
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>in</span><span class='INSERT'>.bookmana</span><span class='EQUAL'>g</span><span class='INSERT'>er(Main.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   N</span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='INSERT'>in.</span><span class='EQUAL'>m</span><span class='INSERT'>ain(Main.java:7)
+Caus</span><span class='EQUAL'>e</span><span class='INSERT'>d</span><span class='EQUAL'> </span><span class='INSERT'>by:</span><span class='EQUAL'> </span><span class='DELETE'>                                        Pri</span><span class='INSERT'>java.lang.ClassNotFoundEx</span><span class='EQUAL'>ce</span><span class='DELETE'>
+</span><span class='INSERT'>ption:</span><span class='EQUAL'> </span><span class='DELETE'>   2 Th</span><span class='INSERT'>BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r
+	at</span><span class='EQUAL'> </span><span class='DELETE'>7 h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'>s </span><span class='INSERT'>ernal.l</span><span class='EQUAL'>o</span><span class='DELETE'>f h</span><span class='INSERT'>ader.Bu</span><span class='EQUAL'>i</span><span class='DELETE'>gh</span><span class='EQUAL'>l</span><span class='DELETE'>y effec</span><span class='EQUAL'>ti</span><span class='DELETE'>ve p</span><span class='INSERT'>nClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>r.l</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>adClass(BuiltinC</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97</span><span class='INSERT'>java:641)</span><span class='EQUAL'>
+</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>   5 H</span><span class='INSERT'>java.b</span><span class='EQUAL'>a</span><span class='INSERT'>se/jdk.inte</span><span class='EQUAL'>r</span><span class='INSERT'>nal.loade</span><span class='EQUAL'>r</span><span class='DELETE'>y P</span><span class='INSERT'>.ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s$AppClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> th</span><span class='EQUAL'>e</span><span class='DELETE'> Death</span><span class='INSERT'>r.</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='INSERT'>o</span><span class='EQUAL'>a</span><span class='INSERT'>dC</span><span class='EQUAL'>l</span><span class='INSERT'>ass(C</span><span class='EQUAL'>l</span><span class='INSERT'>assL</span><span class='EQUAL'>o</span><span class='DELETE'>w</span><span class='INSERT'>ader</span><span class='EQUAL'>s</span><span class='DELETE'>               </span><span class='INSERT'>.java:</span><span class='EQUAL'>1</span><span class='DELETE'>5.40</span><span class='INSERT'>88)</span><span class='EQUAL'>
+</span><span class='DELETE'>    1 Think</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='DELETE'>i</span><span class='INSERT'>ase/java.lan</span><span class='EQUAL'>g</span><span class='DELETE'> </span><span class='INSERT'>.Cl</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='INSERT'>ssLoa</span><span class='EQUAL'>d</span><span class='DELETE'> G</span><span class='INSERT'>e</span><span class='EQUAL'>r</span><span class='INSERT'>.l</span><span class='EQUAL'>o</span><span class='DELETE'>w </span><span class='INSERT'>adClass(ClassLoade</span><span class='EQUAL'>r</span><span class='DELETE'>ich</span><span class='INSERT'>.java:521)
+	...</span><span class='EQUAL'> </span><span class='INSERT'>2</span><span class='EQUAL'> </span><span class='DELETE'>                          10.95</span><span class='INSERT'>more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Exception in thread "main" java.lang.NoClassDefF</span><span class='EQUAL'>ou</span><span class='INSERT'>ndE</span><span class='EQUAL'>r</span><span class='INSERT'>ror:</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='INSERT'>okManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundExce</span><span class='EQUAL'>ption:</span><span class='INSERT'> BookManager</span><span class='EQUAL'>
+</span><span class='INSERT'>	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass</span><span class='EQUAL'>(</span><span class='INSERT'>BuiltinClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>m</span><span class='INSERT'>r.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$A</span><span class='EQUAL'>p</span><span class='INSERT'>pClassLoader.loadClass(ClassLoaders.java:188)
+	a</span><span class='EQUAL'>t</span><span class='DELETE'>y</span><span class='INSERT'> java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521</span><span class='EQUAL'>)</span><span class='INSERT'>
+	... 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Exception in thread "main" java.lang.NoClassDefF</span><span class='EQUAL'>ou</span><span class='INSERT'>ndErro</span><span class='EQUAL'>r</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>okManager
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>i</span><span class='INSERT'>n.b</span><span class='EQUAL'>o</span><span class='INSERT'>okma</span><span class='EQUAL'>n</span><span class='INSERT'>ager(Main.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='DELETE'>E</span><span class='INSERT'>	at Mai</span><span class='EQUAL'>n</span><span class='INSERT'>.main(Main.java:7)
+Caused by: java.lang.ClassNo</span><span class='EQUAL'>t</span><span class='INSERT'>FoundException: BookManag</span><span class='EQUAL'>er</span><span class='INSERT'>
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.internal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.BuiltinClassL</span><span class='EQUAL'>o</span><span class='DELETE'>k </span><span class='INSERT'>ader.loadClass(Bu</span><span class='EQUAL'>i</span><span class='INSERT'>ltinClassLoa</span><span class='EQUAL'>d</span><span class='INSERT'>er.java</span><span class='EQUAL'>:</span><span class='INSERT'>641)</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>	at java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/jdk.interna</span><span class='EQUAL'>l</span><span class='INSERT'>.load</span><span class='EQUAL'>e</span><span class='DELETE'>t</span><span class='INSERT'>r.ClassLoad</span><span class='EQUAL'>e</span><span class='INSERT'>rs$AppClassLoader.loa</span><span class='EQUAL'>d</span><span class='INSERT'>Class(ClassLoaders.java:188)
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.ba</span><span class='EQUAL'>s</span><span class='DELETE'>ucc</span><span class='EQUAL'>e</span><span class='INSERT'>/java.lang.Cla</span><span class='EQUAL'>ss</span><span class='DELETE'>fu</span><span class='INSERT'>Loader.loadC</span><span class='EQUAL'>l</span><span class='INSERT'>ass(C</span><span class='EQUAL'>l</span><span class='DELETE'>y</span><span class='INSERT'>assLoader.java:521)
+	... 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Your o</span><span class='INSERT'>Exce</span><span class='EQUAL'>ption</span><span class='DELETE'>:
+E</span><span class='INSERT'> i</span><span class='EQUAL'>n</span><span class='INSERT'> </span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='INSERT'>h</span><span class='EQUAL'>r</span><span class='INSERT'>ead</span><span class='EQUAL'> </span><span class='DELETE'>book </span><span class='INSERT'>"ma</span><span class='EQUAL'>i</span><span class='DELETE'>d:
+I</span><span class='EQUAL'>n</span><span class='INSERT'>" ja</span><span class='EQUAL'>va</span><span class='DELETE'>lid ID!
+-----------------------------------
+1</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='EQUAL'>l</span><span class='DELETE'>ist </span><span class='EQUAL'>a</span><span class='DELETE'>l</span><span class='INSERT'>ng.NoC</span><span class='EQUAL'>l</span><span class='INSERT'>assDefFoundError:</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>B</span><span class='EQUAL'>ook</span><span class='DELETE'>s</span><span class='INSERT'>Manager</span><span class='EQUAL'>
+</span><span class='DELETE'>2. </span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>dd</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='DELETE'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>ew </span><span class='INSERT'>.</span><span class='EQUAL'>book</span><span class='DELETE'>
+3. </span><span class='INSERT'>manag</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>r(Ma</span><span class='EQUAL'>i</span><span class='INSERT'>n.java:12)
+	a</span><span class='EQUAL'>t </span><span class='DELETE'>book
+4</span><span class='INSERT'>Main.main(Main</span><span class='EQUAL'>.</span><span class='DELETE'> delete </span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='DELETE'> book</span><span class='INSERT'>:7)</span><span class='EQUAL'>
+</span><span class='DELETE'>5. </span><span class='INSERT'>Cau</span><span class='EQUAL'>se</span><span class='DELETE'>arch books</span><span class='INSERT'>d</span><span class='EQUAL'> by</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='DELETE'>n</span><span class='INSERT'>java.l</span><span class='EQUAL'>a</span><span class='DELETE'>me
+6</span><span class='INSERT'>ng</span><span class='EQUAL'>.</span><span class='DELETE'> </span><span class='INSERT'>Cla</span><span class='EQUAL'>s</span><span class='INSERT'>sN</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='EQUAL'>t</span><span class='DELETE'> bo</span><span class='INSERT'>F</span><span class='EQUAL'>o</span><span class='DELETE'>ks </span><span class='INSERT'>un</span><span class='EQUAL'>d</span><span class='DELETE'>es</span><span class='INSERT'>Ex</span><span class='EQUAL'>ce</span><span class='INSERT'>ptio</span><span class='EQUAL'>n</span><span class='DELETE'>di</span><span class='INSERT'>: BookMa</span><span class='EQUAL'>n</span><span class='INSERT'>a</span><span class='EQUAL'>g</span><span class='DELETE'> by p</span><span class='INSERT'>e</span><span class='EQUAL'>r</span><span class='DELETE'>ice</span><span class='EQUAL'>
+</span><span class='DELETE'>
+0.</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e & </span><span class='INSERT'>a.bas</span><span class='EQUAL'>e</span><span class='DELETE'>x</span><span class='INSERT'>/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'>
+-----------------------------------
+Y</span><span class='INSERT'>ernal.l</span><span class='EQUAL'>o</span><span class='DELETE'>u</span><span class='INSERT'>ade</span><span class='EQUAL'>r</span><span class='DELETE'> op</span><span class='INSERT'>.Buil</span><span class='EQUAL'>ti</span><span class='INSERT'>nClassL</span><span class='EQUAL'>o</span><span class='DELETE'>n:
+ID    N</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>                                          P</span><span class='EQUAL'>r</span><span class='INSERT'>.loadClass(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>ce
+    1 Th</span><span class='INSERT'>lt</span><span class='EQUAL'>in</span><span class='DELETE'>k big </span><span class='INSERT'>ClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='EQUAL'>d</span><span class='DELETE'> G</span><span class='INSERT'>e</span><span class='EQUAL'>r</span><span class='DELETE'>ow rich                            </span><span class='INSERT'>.java:64</span><span class='EQUAL'>1</span><span class='DELETE'>0.95</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='INSERT'>ase/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.loader.Cla</span><span class='EQUAL'>s</span><span class='DELETE'> </span><span class='INSERT'>sL</span><span class='EQUAL'>o</span><span class='DELETE'>f highly </span><span class='INSERT'>ad</span><span class='EQUAL'>e</span><span class='DELETE'>ffective </span><span class='INSERT'>rs$A</span><span class='EQUAL'>p</span><span class='DELETE'>eo</span><span class='EQUAL'>p</span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97
+    5 H</span><span class='INSERT'>lo</span><span class='EQUAL'>a</span><span class='DELETE'>rry P</span><span class='INSERT'>dClass(ClassL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s.java:188)
+	</span><span class='EQUAL'>a</span><span class='DELETE'>nd </span><span class='EQUAL'>t</span><span class='DELETE'>he</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>th</span><span class='INSERT'>va.</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='EQUAL'>a</span><span class='INSERT'>ng.C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adClass(Clas</span><span class='EQUAL'>s</span><span class='DELETE'>               1</span><span class='INSERT'>Loader.java:</span><span class='EQUAL'>5</span><span class='INSERT'>21)
+	.</span><span class='EQUAL'>.</span><span class='DELETE'>40</span><span class='INSERT'>. 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>Y</span><span class='INSERT'>Exception in thread "main" java.lang.NoClassDefF</span><span class='EQUAL'>ou</span><span class='INSERT'>ndErro</span><span class='EQUAL'>r</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>B</span><span class='EQUAL'>o</span><span class='DELETE'>p</span><span class='INSERT'>okManager
+	a</span><span class='EQUAL'>t</span><span class='INSERT'> Ma</span><span class='EQUAL'>i</span><span class='INSERT'>n.b</span><span class='EQUAL'>o</span><span class='INSERT'>okma</span><span class='EQUAL'>n</span><span class='INSERT'>ager(Main.java</span><span class='EQUAL'>:</span><span class='INSERT'>12)</span><span class='EQUAL'>
+</span><span class='DELETE'>S</span><span class='INSERT'>	at Main.main(Main.java:7)
+Caused by: j</span><span class='EQUAL'>av</span><span class='INSERT'>a.lang.ClassNotFoundExcept</span><span class='EQUAL'>i</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='INSERT'>: BookMana</span><span class='EQUAL'>g</span><span class='INSERT'>er
+	at</span><span class='EQUAL'> </span><span class='INSERT'>java.base/jdk.in</span><span class='EQUAL'>t</span><span class='INSERT'>ernal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at</span><span class='EQUAL'> </span><span class='DELETE'>f</span><span class='INSERT'>java.base/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>nterna</span><span class='EQUAL'>l</span><span class='INSERT'>.load</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='INSERT'>ClassLoaders$AppClassLoader</span><span class='EQUAL'>.</span><span class='INSERT'>loadClass(ClassLoaders</span><span class='EQUAL'>.</span><span class='INSERT'>java:188)</span><span class='EQUAL'>
+</span><span class='DELETE'>By</span><span class='INSERT'>	at java.base/java.lang.ClassLoad</span><span class='EQUAL'>e</span><span class='DELETE'>!</span><span class='INSERT'>r.loadClass(ClassLoader.java:521)
+	... 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>Exception in thread "main" java.lang.NoClassDefFoundError: BookManager
+	at Main.bookmanager(Main.java:12)
+	at Main.main(Main.java:7)
+Caused by: java.lang.ClassNotFoundException: BookManager
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 2 more
+</pre></td><td><pre><span class='DELETE'>L</span><span class='INSERT'>Excepti</span><span class='EQUAL'>o</span><span class='INSERT'>n in thre</span><span class='EQUAL'>ad</span><span class='INSERT'> "ma</span><span class='EQUAL'>in</span><span class='DELETE'>g</span><span class='INSERT'>"</span><span class='EQUAL'> </span><span class='DELETE'>books</span><span class='INSERT'>java</span><span class='EQUAL'>.</span><span class='INSERT'>lang</span><span class='EQUAL'>.</span><span class='DELETE'>.
+-----------------------------------
+1. </span><span class='INSERT'>NoC</span><span class='EQUAL'>l</span><span class='DELETE'>i</span><span class='INSERT'>as</span><span class='EQUAL'>s</span><span class='DELETE'>t all</span><span class='INSERT'>DefFoundError:</span><span class='EQUAL'> </span><span class='DELETE'>b</span><span class='INSERT'>B</span><span class='EQUAL'>ook</span><span class='DELETE'>s</span><span class='INSERT'>Manager</span><span class='EQUAL'>
+</span><span class='DELETE'>2. </span><span class='INSERT'>	</span><span class='EQUAL'>a</span><span class='DELETE'>dd</span><span class='INSERT'>t</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='DELETE'> </span><span class='INSERT'>i</span><span class='EQUAL'>n</span><span class='DELETE'>ew </span><span class='INSERT'>.</span><span class='EQUAL'>book</span><span class='DELETE'>
+3. </span><span class='INSERT'>manag</span><span class='EQUAL'>e</span><span class='DELETE'>d</span><span class='INSERT'>r(Ma</span><span class='EQUAL'>i</span><span class='DELETE'>t book</span><span class='INSERT'>n.java:12)</span><span class='EQUAL'>
+</span><span class='DELETE'>4. dele</span><span class='INSERT'>	a</span><span class='EQUAL'>t</span><span class='DELETE'>e</span><span class='EQUAL'> </span><span class='INSERT'>M</span><span class='EQUAL'>a</span><span class='DELETE'> book</span><span class='INSERT'>in.main(Main.java:7)</span><span class='EQUAL'>
+</span><span class='DELETE'>5. se</span><span class='INSERT'>C</span><span class='EQUAL'>a</span><span class='DELETE'>rch book</span><span class='INSERT'>u</span><span class='EQUAL'>s</span><span class='INSERT'>ed</span><span class='EQUAL'> by</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='INSERT'>java.la</span><span class='EQUAL'>n</span><span class='INSERT'>g.Cl</span><span class='EQUAL'>a</span><span class='DELETE'>me
+6. </span><span class='INSERT'>s</span><span class='EQUAL'>s</span><span class='INSERT'>N</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='EQUAL'>t</span><span class='DELETE'> b</span><span class='INSERT'>F</span><span class='EQUAL'>o</span><span class='DELETE'>oks </span><span class='INSERT'>un</span><span class='EQUAL'>d</span><span class='DELETE'>es</span><span class='INSERT'>Ex</span><span class='EQUAL'>ce</span><span class='DELETE'>nd</span><span class='INSERT'>pt</span><span class='EQUAL'>i</span><span class='INSERT'>o</span><span class='EQUAL'>n</span><span class='DELETE'>g</span><span class='INSERT'>:</span><span class='EQUAL'> </span><span class='DELETE'>by pric</span><span class='INSERT'>BookManag</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'>
+</span><span class='DELETE'>
+0.</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>s</span><span class='INSERT'>j</span><span class='EQUAL'>av</span><span class='DELETE'>e & </span><span class='INSERT'>a.bas</span><span class='EQUAL'>e</span><span class='DELETE'>x</span><span class='INSERT'>/jdk.</span><span class='EQUAL'>i</span><span class='INSERT'>n</span><span class='EQUAL'>t</span><span class='DELETE'>
+-----------------------------------
+Y</span><span class='INSERT'>ernal.l</span><span class='EQUAL'>o</span><span class='INSERT'>ader.B</span><span class='EQUAL'>u</span><span class='DELETE'>r op</span><span class='INSERT'>il</span><span class='EQUAL'>ti</span><span class='DELETE'>o</span><span class='EQUAL'>n</span><span class='DELETE'>:
+ID    N</span><span class='INSERT'>ClassLo</span><span class='EQUAL'>a</span><span class='DELETE'>m</span><span class='INSERT'>d</span><span class='EQUAL'>e</span><span class='DELETE'>                                          P</span><span class='EQUAL'>r</span><span class='INSERT'>.loadClass(Bu</span><span class='EQUAL'>i</span><span class='DELETE'>ce
+    1 Th</span><span class='INSERT'>lt</span><span class='EQUAL'>in</span><span class='DELETE'>k big </span><span class='INSERT'>Cl</span><span class='EQUAL'>a</span><span class='DELETE'>n</span><span class='INSERT'>ssLoa</span><span class='EQUAL'>d</span><span class='DELETE'> G</span><span class='INSERT'>e</span><span class='EQUAL'>r</span><span class='DELETE'>ow rich                            </span><span class='INSERT'>.java:64</span><span class='EQUAL'>1</span><span class='DELETE'>0.95</span><span class='INSERT'>)</span><span class='EQUAL'>
+</span><span class='DELETE'>    2 The 7</span><span class='INSERT'>	at</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>jav</span><span class='EQUAL'>a</span><span class='INSERT'>.</span><span class='EQUAL'>b</span><span class='DELETE'>it</span><span class='INSERT'>a</span><span class='EQUAL'>s</span><span class='DELETE'> of highly </span><span class='EQUAL'>e</span><span class='DELETE'>ffec</span><span class='INSERT'>/jdk.in</span><span class='EQUAL'>t</span><span class='DELETE'>iv</span><span class='EQUAL'>e</span><span class='DELETE'> p</span><span class='INSERT'>rnal.load</span><span class='EQUAL'>e</span><span class='INSERT'>r.ClassL</span><span class='EQUAL'>o</span><span class='INSERT'>aders$Ap</span><span class='EQUAL'>p</span><span class='INSERT'>C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoad</span><span class='EQUAL'>e</span><span class='DELETE'>            15</span><span class='INSERT'>r</span><span class='EQUAL'>.</span><span class='DELETE'>97
+    5 H</span><span class='INSERT'>loadClass(Cl</span><span class='EQUAL'>a</span><span class='DELETE'>rry P</span><span class='INSERT'>ssL</span><span class='EQUAL'>o</span><span class='DELETE'>tt</span><span class='INSERT'>ad</span><span class='EQUAL'>er</span><span class='DELETE'> </span><span class='INSERT'>s.java:188)
+	</span><span class='EQUAL'>a</span><span class='DELETE'>nd </span><span class='EQUAL'>t</span><span class='DELETE'>he</span><span class='EQUAL'> </span><span class='DELETE'>D</span><span class='INSERT'>java.bas</span><span class='EQUAL'>e</span><span class='INSERT'>/j</span><span class='EQUAL'>a</span><span class='DELETE'>th</span><span class='INSERT'>va.</span><span class='EQUAL'>l</span><span class='DELETE'>y H</span><span class='EQUAL'>a</span><span class='INSERT'>ng.C</span><span class='EQUAL'>l</span><span class='INSERT'>assLoader.</span><span class='EQUAL'>lo</span><span class='DELETE'>w</span><span class='INSERT'>adCla</span><span class='EQUAL'>s</span><span class='DELETE'>               1</span><span class='INSERT'>s(ClassLoader.java:</span><span class='EQUAL'>5</span><span class='INSERT'>21)
+	.</span><span class='EQUAL'>.</span><span class='DELETE'>40</span><span class='INSERT'>. 2 more
+</span></pre></td><td><strong>Failed</strong></td></tr></table>
+<h3>Test Script: Main</h3><table><tr><th>Test case</th><th>Input</th><th>Expected</th><th>Actual</th><th>Diff</th><th>Result</th></tr><tr><td>TC1-Feat0: menu</td><td><pre>9</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Invalid option!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC2-Feat2: list all books - empty</td><td><pre>1</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC3-Feat3: add a new book - success</td><td><pre>2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Added successfully</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC4-Feat3: add a new book - error</td><td><pre>2
+5
+Harry Potter
+15.4
+2
+5
+Harry Potter
+15.4</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Duplicated ID</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Duplicated ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC5-Feat2: list all books - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+1
+</pre></td><td><pre>Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter                                       15.40</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: ID    Name                                               Price 
+    1 Think big and Grow rich                                 10.95
+    2 The 7 habits of highly effective people                 15.97
+    5 Harry Potter                                            15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC6-Feat4: edit book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+5
+Harry Potter and the Deathly Hallows
+23
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Enter book name:
+Enter book price:
+Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               23.00</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Updated successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: ID    Name                                               Price 
+    1 Think big and Grow rich                                 10.95
+    2 The 7 habits of highly effective people                 15.97
+    5 Harry Potter and the Deathly Hallows                    23.00
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC7-Feat4: edit book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter
+15.4
+3
+6
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC8-Feat6: search books by name - matches</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+the
+</pre></td><td><pre>Your option:
+Enter keyword:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword: ID    Name                                               Price 
+    5 Harry Potter and the Deathly Hallows                    15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>Enter </span><span class='INSERT'>boo</span><span class='EQUAL'>k</span><span class='INSERT'> id: Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r book name: Enter book price: Added successfull</span><span class='EQUAL'>y</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a ne</span><span class='EQUAL'>w</span><span class='INSERT'> bo</span><span class='EQUAL'>o</span><span class='DELETE'>r</span><span class='INSERT'>k
+3. e</span><span class='EQUAL'>d</span><span class='DELETE'>:</span><span class='INSERT'>it book
+4. delete a book</span><span class='EQUAL'>
+</span><span class='DELETE'>ID</span><span class='INSERT'>5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'>N</span><span class='INSERT'>n</span><span class='EQUAL'>ame</span><span class='INSERT'>
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>price
+
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>id:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>name:</span><span class='EQUAL'> </span><span class='INSERT'>Enter</span><span class='EQUAL'> </span><span class='INSERT'>book</span><span class='EQUAL'> </span><span class='INSERT'>price:</span><span class='EQUAL'> </span><span class='INSERT'>Added</span><span class='EQUAL'> </span><span class='INSERT'>successfully.
+-----------------------------------
+1.</span><span class='EQUAL'> </span><span class='INSERT'>list</span><span class='EQUAL'> </span><span class='INSERT'>all</span><span class='EQUAL'> </span><span class='INSERT'>books
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>new</span><span class='EQUAL'> </span><span class='INSERT'>book
+3.</span><span class='EQUAL'> </span><span class='INSERT'>edit</span><span class='EQUAL'> </span><span class='INSERT'>book
+4.</span><span class='EQUAL'> </span><span class='INSERT'>delete</span><span class='EQUAL'> </span><span class='INSERT'>a</span><span class='EQUAL'> </span><span class='INSERT'>book
+5.</span><span class='EQUAL'> </span><span class='INSERT'>search</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='INSERT'>name
+6.</span><span class='EQUAL'> </span><span class='INSERT'>sort</span><span class='EQUAL'> </span><span class='INSERT'>books</span><span class='EQUAL'> </span><span class='INSERT'>descending</span><span class='EQUAL'> </span><span class='INSERT'>by</span><span class='EQUAL'> </span><span class='DELETE'> P</span><span class='INSERT'>p</span><span class='EQUAL'>rice
+</span><span class='INSERT'>
+0.</span><span class='EQUAL'> </span><span class='INSERT'>save</span><span class='EQUAL'> </span><span class='INSERT'>&</span><span class='EQUAL'> </span><span class='INSERT'>exit
+-----------------------------------
+Your</span><span class='EQUAL'> </span><span class='DELETE'>2</span><span class='INSERT'>option:</span><span class='EQUAL'> </span><span class='DELETE'>Th</span><span class='INSERT'>Ent</span><span class='EQUAL'>e</span><span class='INSERT'>r</span><span class='EQUAL'> </span><span class='DELETE'>7</span><span class='INSERT'>book id: Enter</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>book n</span><span class='EQUAL'>a</span><span class='INSERT'>me: Enter </span><span class='EQUAL'>b</span><span class='INSERT'>ook pr</span><span class='EQUAL'>i</span><span class='INSERT'>ce: Added successfully.
+-----------------------------------
+1. lis</span><span class='EQUAL'>t</span><span class='INSERT'> all book</span><span class='EQUAL'>s</span><span class='INSERT'>
+2.</span><span class='EQUAL'> </span><span class='INSERT'>add a new b</span><span class='EQUAL'>o</span><span class='DELETE'>f</span><span class='INSERT'>ok
+3.</span><span class='EQUAL'> </span><span class='DELETE'>h</span><span class='INSERT'>ed</span><span class='EQUAL'>i</span><span class='DELETE'>g</span><span class='INSERT'>t book
+4. delete a book
+5. searc</span><span class='EQUAL'>h</span><span class='DELETE'>l</span><span class='INSERT'> books b</span><span class='EQUAL'>y </span><span class='INSERT'>nam</span><span class='EQUAL'>e</span><span class='DELETE'>ff</span><span class='INSERT'>
+6. sort books d</span><span class='EQUAL'>e</span><span class='INSERT'>s</span><span class='EQUAL'>c</span><span class='DELETE'>t</span><span class='INSERT'>end</span><span class='EQUAL'>i</span><span class='INSERT'>ng by price
+
+0. sa</span><span class='EQUAL'>ve </span><span class='DELETE'>p</span><span class='INSERT'>& </span><span class='EQUAL'>e</span><span class='INSERT'>xit
+-----------------------------------
+Your </span><span class='EQUAL'>op</span><span class='DELETE'>l</span><span class='INSERT'>tion: Enter keyword: ID    Nam</span><span class='EQUAL'>e</span><span class='INSERT'>         </span><span class='EQUAL'>            </span><span class='DELETE'>15.97</span><span class='INSERT'>                          Price </span><span class='EQUAL'>
+    5 Harry Potter and the Deathly Hallows               </span><span class='INSERT'>     </span><span class='EQUAL'>15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC9-Feat6: search books by name - no result</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+5
+love story
+</pre></td><td><pre>Your option:
+Enter keyword:
+(empty)</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter keyword: (empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC10-Feat7: sort books by price - not empty</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+6
+</pre></td><td><pre>Your option:
+After sorting:
+ID    Name                                          Price
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40
+    1 Think big and Grow rich                            10.95</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+ID    Name                                               Price 
+    2 The 7 habits of highly effective people                 15.97
+    5 Harry Potter and the Deathly Hallows                    15.40
+    1 Think big and Grow rich                                 10.95
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC11-Feat7: sort books by price - empty</td><td><pre>6
+</pre></td><td><pre>Your option:
+(empty)</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: After sorting:
+(empty)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option</span><span class='INSERT'>: After sorting</span><span class='EQUAL'>:
+(empty)</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC12-Feat5: delete a book - success</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+5
+</pre></td><td><pre>Your option:
+Enter book id:
+Deleted successfully</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: java.lang.NoSuchMethodException: BookManager.delete(Book)
+	at java.base/java.lang.Class.getMethod(Class.java:2277)
+	at Main.main(Main.java:104)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Enter book id:</span><span class='INSERT'> Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book</span><span class='EQUAL'>
+</span><span class='DELETE'>D</span><span class='INSERT'>3. edit book
+4. d</span><span class='EQUAL'>elete</span><span class='INSERT'> a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Adde</span><span class='EQUAL'>d successfully</span><span class='INSERT'>.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: java.lang.NoSuchMethodException: BookManager.delete(Book)
+	at java.base/java.lang.Class.getMethod(Class.java:2277)
+	at Main.main(Main.java:104)
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC13-Feat5: delete a book - error</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+4
+6
+1
+</pre></td><td><pre>Your option:
+Enter book id:
+Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Invalid ID!
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: ID    Name                                               Price 
+    1 Think big and Grow rich                                 10.95
+    2 The 7 habits of highly effective people                 15.97
+    5 Harry Potter and the Deathly Hallows                    15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre></pre></td><td><strong>Passed</strong></td></tr><tr><td>TC14-Feat8: save & exit</td><td><pre>2
+1
+Think big and Grow rich
+10.95
+2
+2
+The 7 habits of highly effective people
+15.97
+2
+5
+Harry Potter and the Deathly Hallows
+15.4
+0
+</pre></td><td><pre>Your option:
+Saving to file...
+Bye!</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: Bye!
+</pre></td><td><pre><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+</span><span class='EQUAL'>Your option:</span><span class='INSERT'> Enter book id: Enter book name: Enter book price: Added successfully.</span><span class='EQUAL'>
+</span><span class='DELETE'>S</span><span class='INSERT'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. s</span><span class='EQUAL'>av</span><span class='INSERT'>e & exit
+-----------------------------------
+Your option: Enter book id: Enter book name: Enter book price: Added successfully.
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descend</span><span class='EQUAL'>ing </span><span class='INSERT'>by price
+
+0. save & exi</span><span class='EQUAL'>t</span><span class='INSERT'>
+-----------------------------------
+Y</span><span class='EQUAL'>o</span><span class='INSERT'>ur</span><span class='EQUAL'> </span><span class='INSERT'>option: Enter book id: Enter book name: Enter book price: Added success</span><span class='EQUAL'>f</span><span class='INSERT'>ully.
+-----------------------------------
+1. l</span><span class='EQUAL'>i</span><span class='INSERT'>st a</span><span class='EQUAL'>l</span><span class='INSERT'>l books
+2. add a n</span><span class='EQUAL'>e</span><span class='INSERT'>w book
+3</span><span class='EQUAL'>.</span><span class='INSERT'> edit book
+4</span><span class='EQUAL'>.</span><span class='INSERT'> delete a book
+5</span><span class='EQUAL'>.</span><span class='INSERT'> search books by name</span><span class='EQUAL'>
+</span><span class='INSERT'>6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span><span class='EQUAL'>Bye!</span><span class='INSERT'>
+</span></pre></td><td><strong>Failed</strong></td></tr><tr><td>TC15-Feat1: load books from file</td><td><pre>1</pre></td><td><pre>Loading books...
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:
+ID    Name                                          Price
+    1 Think big and Grow rich                            10.95
+    2 The 7 habits of highly effective people            15.97
+    5 Harry Potter and the Deathly Hallows               15.40</pre></td><td><pre>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: ID    Name                                               Price 
+    1 Think big and Grow rich                                 10.95
+    2 The 7 habits of highly effective people                 15.97
+    5 Harry Potter and the Deathly Hallows                    15.40
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </pre></td><td><pre><span class='DELETE'>Loading books...
+</span><span class='EQUAL'>-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option:</span><span class='DELETE'>
+</span><span class='INSERT'> </span><span class='EQUAL'>ID    Name                                          </span><span class='INSERT'>     </span><span class='EQUAL'>Price</span><span class='INSERT'> </span><span class='EQUAL'>
+    1 Think big and Grow rich</span><span class='INSERT'> </span><span class='EQUAL'>                            </span><span class='INSERT'>    </span><span class='EQUAL'>10.95
+    2 The 7 habits of highly effective people</span><span class='INSERT'>    </span><span class='EQUAL'>            </span><span class='INSERT'> </span><span class='EQUAL'>15.97
+    5 Harry Potter and the Deathly Hallows               </span><span class='INSERT'>     </span><span class='EQUAL'>15.40</span><span class='INSERT'>
+-----------------------------------
+1. list all books
+2. add a new book
+3. edit book
+4. delete a book
+5. search books by name
+6. sort books descending by price
+
+0. save & exit
+-----------------------------------
+Your option: </span></pre></td><td><strong>Failed</strong></td></tr></table>
+</body></html>
