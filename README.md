@@ -13,3 +13,8 @@
 #### Assignment
 [Reports](https://hanu-congnv.github.io/pr1/fall2022/a1/)  <br />
 [Invalid zip files](https://hanu-congnv.github.io/pr1/fall2022/a1/invalid-zip-files.txt) 
+
+#### Assignment Re-submission
+[Reports](https://hanu-congnv.github.io/pr1/fall2022/a1-re/)  <br />
+[Invalid zip files](https://hanu-congnv.github.io/pr1/fall2022/a1-re/invalid-zip-files.txt) 
+
