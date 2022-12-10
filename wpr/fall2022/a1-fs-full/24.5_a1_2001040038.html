@@ -1,0 +1,112 @@
+<html><head><link rel="stylesheet" href="/css/style.css"></head><body><h1>a1_2001040038</h1><h2>Score: 24.50/27.00</h2><table>
+	<tr>
+		<th>Criteria</th>
+		<th>Type</th>
+		<th>Input</th>
+		<th>Expected</th>
+		<th>Score</th>
+		<th>Output</th>
+		<th>Passed (%)</th>
+		<th>Actual</th>
+	</tr>
+<tr>
+	<td>Quiz behavior | Start quiz</td>
+	<td>web_call_api</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;script&quot;:null,&quot;prescript&quot;:&quot;let btn = document.querySelector(\&quot;#btn-start\&quot;);\r\nbtn.click();&quot;}</td>
+	<td>{&quot;api&quot;:&quot;http:\/\/localhost:3001\/attempts$&quot;}</td>
+	<td>5.00</td>
+	<td>http://localhost:56654/index.html,https://fonts.googleapis.com/css?family=Pangolin:400,700,Proxima+Nova,http://localhost:56654/style.css,http://localhost:56654/script.js,http://localhost:56654/images/background.jpg,https://fonts.gstatic.com/s/pangolin/v11/cY9GfjGcW0FPpi-tWMfN79w.woff2,http://localhost:3001/attempts,https://fonts.gstatic.com/s/pangolin/v11/cY9GfjGcW0FPpi-tWMfN79w.woff2</td>
+	<td>100.00</td>
+	<td>5.00</td>
+</tr>
+<tr>
+	<td>Quiz behavior | Show questions (options)</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:&quot;let btn = document.querySelector(\&quot;#btn-start\&quot;);\r\nbtn.click();&quot;,&quot;selector&quot;:&quot;#attempt-quiz input[type=\&quot;radio\&quot;]:not(:checked)&quot;}</td>
+	<td>{&quot;min&quot;:&quot;30&quot;,&quot;max&quot;:&quot;40&quot;}</td>
+	<td>2.50</td>
+	<td>35</td>
+	<td>100.00</td>
+	<td>2.50</td>
+</tr>
+<tr>
+	<td>Quiz behavior | Show questions - data from API</td>
+	<td>web_populate_api</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;prescript&quot;:&quot;let btn = document.querySelector(\&quot;#btn-start\&quot;);\r\nbtn.click();&quot;,&quot;api&quot;:&quot;http:\/\/localhost:3001\/attempts$&quot;}</td>
+	<td>{&quot;data&quot;:&quot;questions[0].text&quot;,&quot;container&quot;:&quot;#attempt-quiz .question-text&quot;}</td>
+	<td>2.50</td>
+	<td>true</td>
+	<td>100.00</td>
+	<td>2.50</td>
+</tr>
+<tr>
+	<td>Quiz behavior | Submit your answers</td>
+	<td>web_call_api</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;script&quot;:&quot;await page.click('#btn-start');\r\nawait page.waitForNetworkIdle({idleTime: 1000});\r\nawait page.on('dialog', async (dialog) =&gt; { await dialog.accept(); });\r\nawait page.click('#btn-submit');\r\nawait page.waitForNetworkIdle({idleTime: 1000});&quot;,&quot;prescript&quot;:null}</td>
+	<td>{&quot;api&quot;:&quot;http:\/\/localhost:3001\/attempts\/([a-z0-9]{24})\/submit&quot;}</td>
+	<td>5.00</td>
+	<td>http://localhost:56654/index.html,https://fonts.googleapis.com/css?family=Pangolin:400,700,Proxima+Nova,http://localhost:56654/style.css,http://localhost:56654/script.js,http://localhost:56654/images/background.jpg,https://fonts.gstatic.com/s/pangolin/v11/cY9GfjGcW0FPpi-tWMfN79w.woff2,http://localhost:3001/attempts,https://fonts.gstatic.com/s/pangolin/v11/cY9GfjGcW0FPpi-tWMfN79w.woff2,http://localhost:3001/attempts/63943863f985f3ae64e0a101/submit,http://localhost:3001/attempts/63943863f985f3ae64e0a101/submit</td>
+	<td>100.00</td>
+	<td>5.00</td>
+</tr>
+<tr>
+	<td>Quiz behavior | Show result &amp; review questions - answers</td>
+	<td>web_have_elements</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;script&quot;:&quot;await page.click('#btn-start');\r\nawait page.waitForNetworkIdle({idleTime: 1000});\r\nawait page.on('dialog', async (dialog) =&gt; { await dialog.accept(); });\r\nawait page.click('#btn-submit');\r\nawait page.waitForNetworkIdle({idleTime: 1000});&quot;,&quot;prescript&quot;:null,&quot;selector&quot;:&quot;#review-quiz .option-correct&quot;}</td>
+	<td>{&quot;min&quot;:&quot;10&quot;,&quot;max&quot;:&quot;10&quot;}</td>
+	<td>2.50</td>
+	<td>0</td>
+	<td>0.00</td>
+	<td>0.00</td>
+</tr>
+<tr>
+	<td>Quiz behavior | Show result &amp; review questions - result</td>
+	<td>web_populate_api</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;script&quot;:&quot;await page.click('#btn-start');\r\nawait page.waitForNetworkIdle({idleTime: 1000});\r\nawait page.on('dialog', async (dialog) =&gt; { await dialog.accept(); });\r\nawait page.click('#btn-submit');\r\nawait page.waitForNetworkIdle({idleTime: 1000});&quot;,&quot;prescript&quot;:null,&quot;api&quot;:&quot;http:\/\/localhost:3001\/attempts\/([a-z0-9]{24})\/submit&quot;}</td>
+	<td>{&quot;data&quot;:&quot;scoreText&quot;,&quot;container&quot;:&quot;#box-result&quot;}</td>
+	<td>2.50</td>
+	<td>true</td>
+	<td>100.00</td>
+	<td>2.50</td>
+</tr>
+<tr>
+	<td>JS | src (commented, indented, organized)</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.js&quot;,&quot;keywordPattern&quot;:&quot;(\\\/\\\/\\s*\\S+[\\\\S ]*)|(\\\/\\*[^\\*\\\/]+\\*\\\/)&quot;}</td>
+	<td>{&quot;min&quot;:&quot;5&quot;,&quot;max&quot;:null}</td>
+	<td>2.00</td>
+	<td>15</td>
+	<td>100.00</td>
+	<td>2.00</td>
+</tr>
+<tr>
+	<td>JS | No embedded scripts</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.html&quot;,&quot;keywordPattern&quot;:&quot;&lt;script[^&lt;\\\/s]+&lt;\\\/script&quot;}</td>
+	<td>{&quot;min&quot;:&quot;0&quot;,&quot;max&quot;:&quot;0&quot;}</td>
+	<td>1.00</td>
+	<td>0</td>
+	<td>100.00</td>
+	<td>1.00</td>
+</tr>
+<tr>
+	<td>JS | No inline scripts</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.html&quot;,&quot;keywordPattern&quot;:&quot;&lt;(.*)(onclick|onchange|onsubmit|onload)=\&quot;(.*)\&quot;&quot;}</td>
+	<td>{&quot;min&quot;:&quot;0&quot;,&quot;max&quot;:&quot;0&quot;}</td>
+	<td>1.00</td>
+	<td>0</td>
+	<td>100.00</td>
+	<td>1.00</td>
+</tr>
+<tr>
+	<td>JS | No console errors</td>
+	<td>browser_console</td>
+	<td>{&quot;route&quot;:&quot;\/index.html&quot;,&quot;script&quot;:&quot;await page.click('#btn-start');\r\nawait page.waitForNetworkIdle({idleTime: 1000});\r\nawait page.on('dialog', async (dialog) =&gt; { await dialog.accept(); });\r\nawait page.click('#btn-submit');\r\nawait page.waitForNetworkIdle({idleTime: 1000});&quot;,&quot;prescript&quot;:null,&quot;type&quot;:&quot;pageerror&quot;}</td>
+	<td>{&quot;message&quot;:null}</td>
+	<td>3.00</td>
+	<td></td>
+	<td>100.00</td>
+	<td>3.00</td>
+</tr>
+</table></body></html>
