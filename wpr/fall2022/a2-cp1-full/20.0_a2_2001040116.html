@@ -1,0 +1,82 @@
+<html><head><link rel="stylesheet" href="/css/style.css"></head><body><h1>a2_2001040116</h1><h2>Score: 20.00/45.00</h2><table>
+	<tr>
+		<th>Criteria</th>
+		<th>Type</th>
+		<th>Input</th>
+		<th>Expected</th>
+		<th>Score</th>
+		<th>Output</th>
+		<th>Passed (%)</th>
+		<th>Actual</th>
+	</tr>
+<tr>
+	<td>Attempt: Start a new attempt | 10 questions</td>
+	<td>api_structure</td>
+	<td>{&quot;request&quot;:&quot;return await fetch(url+\&quot;\/attempts\&quot;, {method: \&quot;POST\&quot;});&quot;}</td>
+	<td>{&quot;structure&quot;:&quot;{\r\n    questions: [\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n        {_id: \&quot;\&quot;, text: \&quot;\&quot;, answers: []},\r\n    ]\r\n}&quot;,&quot;matched&quot;:&quot;1&quot;}</td>
+	<td>10.00</td>
+	<td>{&quot;_id&quot;:&quot;6399f7aacaa8d0f5d059d20b&quot;,&quot;questions&quot;:[{&quot;_id&quot;:&quot;6399ccac83099e35b2094282&quot;,&quot;text&quot;:&quot;What is the correct HTML for adding a background color?&quot;,&quot;answers&quot;:[&quot;&lt;body style=\&quot;background-color:yellow;\&quot;&gt;&quot;,&quot;&lt;background&gt;yellow&lt;/background&gt;&quot;,&quot;&lt;body bg=\&quot;yellow\&quot;&gt;&quot;]},{&quot;_id&quot;:&quot;6399e201d11a1557cc00def3&quot;,&quot;text&quot;:&quot;How can you open a link in a new tab/browser window?&quot;,&quot;answers&quot;:[&quot;&lt;a href=\&quot;url\&quot; target=\&quot;_blank\&quot;&gt;&quot;,&quot;&lt;a href=\&quot;url\&quot; target=\&quot;new\&quot;&gt;&quot;,&quot;&lt;a href=\&quot;url\&quot; new&gt;&quot;]},{&quot;_id&quot;:&quot;5f6bb67997518f0bc82e4233&quot;,&quot;text&quot;:&quot;Choose the correct HTML element for the largest heading:&quot;,&quot;answers&quot;:[&quot;&lt;head&gt;&quot;,&quot;&lt;heading&gt;&quot;,&quot;&lt;h1&gt;&quot;,&quot;&lt;h6&gt;&quot;]},{&quot;_id&quot;:&quot;6399f7651be10336322d88c5&quot;,&quot;text&quot;:&quot;What is the correct HTML for adding a background color?&quot;,&quot;answers&quot;:[&quot;&lt;body style=\&quot;background-color:yellow;\&quot;&gt;&quot;,&quot;&lt;background&gt;yellow&lt;/background&gt;&quot;,&quot;&lt;body bg=\&quot;yellow\&quot;&gt;&quot;]},{&quot;_id&quot;:&quot;6399e31455c00aca85fd46d8&quot;,&quot;text&quot;:&quot;Inline elements are normally displayed without starting a new line.&quot;,&quot;answers&quot;:[&quot; True&quot;,&quot; False&quot;]},{&quot;_id&quot;:&quot;6399cbac0079f499c9e49e10&quot;,&quot;text&quot;:&quot;Inline elements are normally displayed without starting a new line.&quot;,&quot;answers&quot;:[&quot; True&quot;,&quot; False&quot;]},{&quot;_id&quot;:&quot;6399e3390628f04af3770332&quot;,&quot;text&quot;:&quot;Who is making the Web standards?&quot;,&quot;answers&quot;:[&quot;Mozilla&quot;,&quot;Microsoft&quot;,&quot;Google&quot;,&quot;The World Wide Web Consortium&quot;]},{&quot;_id&quot;:&quot;6399e31455c00aca85fd46da&quot;,&quot;text&quot;:&quot;Choose the correct HTML element to define emphasized text&quot;,&quot;answers&quot;:[&quot;&lt;italic&gt;&quot;,&quot;&lt;i&gt;&quot;,&quot;&lt;em&gt;&quot;]},{&quot;_id&quot;:&quot;6399e31455c00aca85fd46df&quot;,&quot;text&quot;:&quot;How can you make a numbered list?&quot;,&quot;answers&quot;:[&quot;&lt;dl&gt;&quot;,&quot;&lt;ol&gt;&quot;,&quot;&lt;ul&gt;&quot;,&quot;&lt;list&gt;&quot;]},{&quot;_id&quot;:&quot;6399c8d7c92071433d2e12eb&quot;,&quot;text&quot;:&quot;How can you make a numbered list?&quot;,&quot;answers&quot;:[&quot;&lt;dl&gt;&quot;,&quot;&lt;ol&gt;&quot;,&quot;&lt;ul&gt;&quot;,&quot;&lt;list&gt;&quot;]}],&quot;startedAt&quot;:&quot;2022-12-14T16:19:54.964Z&quot;,&quot;score&quot;:0,&quot;completed&quot;:false}</td>
+	<td>100.00</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>Attempt: Start a new attempt | Random questions</td>
+	<td>src_have_keywords</td>
+	<td>{&quot;fileNamePattern&quot;:&quot;.*.js&quot;,&quot;keywordPattern&quot;:&quot;(aggregate[\\s]*\\(|random[\\s]*\\()&quot;}</td>
+	<td>{&quot;min&quot;:&quot;1&quot;,&quot;max&quot;:null}</td>
+	<td>10.00</td>
+	<td>1</td>
+	<td>100.00</td>
+	<td>10.00</td>
+</tr>
+<tr>
+	<td>Attempt: Start a new attempt | _id</td>
+	<td>api_structure</td>
+	<td>{&quot;request&quot;:&quot;return await fetch(url+\&quot;\/attempts\&quot;, {method: \&quot;POST\&quot;});&quot;}</td>
+	<td>{&quot;structure&quot;:&quot;{_id: \&quot;\&quot;}&quot;,&quot;matched&quot;:&quot;1&quot;}</td>
+	<td>5.00</td>
+	<td>null</td>
+	<td>0.00</td>
+	<td>0.00</td>
+</tr>
+<tr>
+	<td>Attempt: Start a new attempt | completed = false</td>
+	<td>api_value</td>
+	<td>{&quot;request&quot;:&quot;return await fetch(url+\&quot;\/attempts\&quot;, {method: \&quot;POST\&quot;});&quot;}</td>
+	<td>{&quot;value&quot;:&quot;{completed: false}&quot;}</td>
+	<td>5.00</td>
+	<td>null</td>
+	<td>0.00</td>
+	<td>0.00</td>
+</tr>
+<tr>
+	<td>Attempt: Start a new attempt | startedAt</td>
+	<td>api_structure</td>
+	<td>{&quot;request&quot;:&quot;return await fetch(url+\&quot;\/attempts\&quot;, {method: \&quot;POST\&quot;});&quot;}</td>
+	<td>{&quot;structure&quot;:&quot;{startedAt: \&quot;2022-12-11T17:37:30.258Z\&quot;}&quot;,&quot;matched&quot;:&quot;1&quot;}</td>
+	<td>5.00</td>
+	<td>null</td>
+	<td>0.00</td>
+	<td>0.00</td>
+</tr>
+<tr>
+	<td>Attempt: Start a new attempt | no correct answers returned (1)</td>
+	<td>api_structure</td>
+	<td>{&quot;request&quot;:&quot;return await fetch(url+\&quot;\/attempts\&quot;, {method: \&quot;POST\&quot;});&quot;}</td>
+	<td>{&quot;structure&quot;:&quot;{correctAnswers:[]}&quot;}</td>
+	<td>5.00</td>
+	<td>null</td>
+	<td>0.00</td>
+	<td>0.00</td>
+</tr>
+<tr>
+	<td>Attempt: Start a new attempt | no correct answers returned (2)</td>
+	<td>api_structure</td>
+	<td>{&quot;request&quot;:&quot;return await fetch(url+\&quot;\/attempts\&quot;, {method: \&quot;POST\&quot;});&quot;}</td>
+	<td>{&quot;structure&quot;:&quot;{\r\nquestions:[{correctAnswer: 0}]\r\n}&quot;}</td>
+	<td>5.00</td>
+	<td>null</td>
+	<td>0.00</td>
+	<td>0.00</td>
+</tr>
+</table></body></html>

@@ -9,6 +9,7 @@
 [Final submission](https://hanu-congnv.github.io/wpr/fall2022/a1-fs/)  <br />
 
 #### Assignment 2
+[Checkpoint 1](https://hanu-congnv.github.io/wpr/fall2022/a2-cp1/)  <br />
 
 
 ## PR1 | Programming 1
